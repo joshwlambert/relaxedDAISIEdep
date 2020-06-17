@@ -108,121 +108,105 @@ for (i in seq_len(nrow(param_space))) {
 
 #Inference with CR and RR on RR simulations
 
-#simulate with rr clado sd 1
 rr_clado_sd1_sim_cr_ml <- list()
 rr_clado_sd1_sim_rr_clado_ml <- list()
 rr_clado_sd1_sim_rr_ext_ml <- list()
 rr_clado_sd1_sim_rr_carr_cap_ml <- list()
 rr_clado_sd1_sim_rr_ana_ml <- list()
 
-#simulation with rr clado sd 10
 rr_clado_sd10_sim_cr_ml <- list()
 rr_clado_sd10_sim_rr_clado_ml <- list()
 rr_clado_sd10_sim_rr_ext_ml <- list()
 rr_clado_sd10_sim_rr_carr_cap_ml <- list()
 rr_clado_sd10_sim_rr_ana_ml <- list()
 
-#simulation with rr ext sd 1
 rr_ext_sd1_sim_cr_ml <- list()
 rr_ext_sd1_sim_rr_clado_ml <- list()
 rr_ext_sd1_sim_rr_ext_ml <- list()
 rr_ext_sd1_sim_rr_carr_cap_ml <- list()
 rr_ext_sd1_sim_rr_ana_ml <- list()
 
-#simulation with rr ext sd 10
 rr_ext_sd10_sim_cr_ml <- list()
 rr_ext_sd10_sim_rr_clado_ml <- list()
 rr_ext_sd10_sim_rr_ext_ml <- list()
 rr_ext_sd10_sim_rr_carr_cap_ml <- list()
 rr_ext_sd10_sim_rr_ana_ml <- list()
 
-#simulation with rr carr_cap sd 1
 rr_carr_cap_sd1_sim_cr_ml <- list()
 rr_carr_cap_sd1_sim_rr_clado_ml <- list()
 rr_carr_cap_sd1_sim_rr_ext_ml <- list()
 rr_carr_cap_sd1_sim_rr_carr_cap_ml <- list()
 rr_carr_cap_sd1_sim_rr_ana_ml <- list()
 
-#simulation with rr carr_cap sd 10
 rr_carr_cap_sd10_sim_cr_ml <- list()
 rr_carr_cap_sd10_sim_rr_clado_ml <- list()
 rr_carr_cap_sd10_sim_rr_ext_ml <- list()
 rr_carr_cap_sd10_sim_rr_carr_cap_ml <- list()
 rr_carr_cap_sd10_sim_rr_ana_ml <- list()
 
-#simulation with rr ana sd 1
 rr_ana_sd1_sim_cr_ml <- list()
 rr_ana_sd1_sim_rr_clado_ml <- list()
 rr_ana_sd1_sim_rr_ext_ml <- list()
 rr_ana_sd1_sim_rr_carr_cap_ml <- list()
 rr_ana_sd1_sim_rr_ana_ml <- list()
 
-#simulation with rr ana sd 10
 rr_ana_sd10_sim_cr_ml <- list()
 rr_ana_sd10_sim_rr_clado_ml <- list()
 rr_ana_sd10_sim_rr_ext_ml <- list()
 rr_ana_sd10_sim_rr_carr_cap_ml <- list()
 rr_ana_sd10_sim_rr_ana_ml <- list()
 
-for (i in seq_along(cr_data_set)) {
+for (i in seq_along(rr_clado_data_set_sd1)) {
 
-  #simulate with rr clado sd 1
   rr_clado_sd1_sim_cr_ml[[i]] <- list()
   rr_clado_sd1_sim_rr_clado_ml[[i]] <- list()
   rr_clado_sd1_sim_rr_ext_ml[[i]] <- list()
   rr_clado_sd1_sim_rr_carr_cap_ml[[i]] <- list()
   rr_clado_sd1_sim_rr_ana_ml[[i]] <- list()
 
-  #simulation with rr clado sd 10
   rr_clado_sd10_sim_cr_ml[[i]] <- list()
   rr_clado_sd10_sim_rr_clado_ml[[i]] <- list()
   rr_clado_sd10_sim_rr_ext_ml[[i]] <- list()
   rr_clado_sd10_sim_rr_carr_cap_ml[[i]] <- list()
   rr_clado_sd10_sim_rr_ana_ml[[i]] <- list()
 
-  #simulation with rr ext sd 1
   rr_ext_sd1_sim_cr_ml[[i]] <- list()
   rr_ext_sd1_sim_rr_clado_ml[[i]] <- list()
   rr_ext_sd1_sim_rr_ext_ml[[i]] <- list()
   rr_ext_sd1_sim_rr_carr_cap_ml[[i]] <- list()
   rr_ext_sd1_sim_rr_ana_ml[[i]] <- list()
 
-  #simulation with rr ext sd 10
   rr_ext_sd10_sim_cr_ml[[i]] <- list()
   rr_ext_sd10_sim_rr_clado_ml[[i]] <- list()
   rr_ext_sd10_sim_rr_ext_ml[[i]] <- list()
   rr_ext_sd10_sim_rr_carr_cap_ml[[i]] <- list()
   rr_ext_sd10_sim_rr_ana_ml[[i]] <- list()
 
-  #simulation with rr carr_cap sd 1
   rr_carr_cap_sd1_sim_cr_ml[[i]] <- list()
   rr_carr_cap_sd1_sim_rr_clado_ml[[i]] <- list()
   rr_carr_cap_sd1_sim_rr_ext_ml[[i]] <- list()
   rr_carr_cap_sd1_sim_rr_carr_cap_ml[[i]] <- list()
   rr_carr_cap_sd1_sim_rr_ana_ml[[i]] <- list()
 
-  #simulation with rr carr_cap sd 10
   rr_carr_cap_sd10_sim_cr_ml[[i]] <- list()
   rr_carr_cap_sd10_sim_rr_clado_ml[[i]] <- list()
   rr_carr_cap_sd10_sim_rr_ext_ml[[i]] <- list()
   rr_carr_cap_sd10_sim_rr_carr_cap_ml[[i]] <- list()
   rr_carr_cap_sd10_sim_rr_ana_ml[[i]] <- list()
 
-  #simulation with rr ana sd 1
   rr_ana_sd1_sim_cr_ml[[i]] <- list()
   rr_ana_sd1_sim_rr_clado_ml[[i]] <- list()
   rr_ana_sd1_sim_rr_ext_ml[[i]] <- list()
   rr_ana_sd1_sim_rr_carr_cap_ml[[i]] <- list()
   rr_ana_sd1_sim_rr_ana_ml[[i]] <- list()
 
-  #simulation with rr ana sd 10
   rr_ana_sd10_sim_cr_ml[[i]] <- list()
   rr_ana_sd10_sim_rr_clado_ml[[i]] <- list()
   rr_ana_sd10_sim_rr_ext_ml[[i]] <- list()
   rr_ana_sd10_sim_rr_carr_cap_ml[[i]] <- list()
   rr_ana_sd10_sim_rr_ana_ml[[i]] <- list()
 
-  for (j in seq_along(cr_data_set[[i]])) {
+  for (j in seq_along(rr_clado_data_set_sd1[[i]])) {
     cr_sim_cr_ml[[i]][[j]] <- DAISIE_ML_CS(
       datalist = cr_data_set[[i]][[j]],
       initparsopt = c(0.5, 0.5, 20, 0.005, 0.5),
