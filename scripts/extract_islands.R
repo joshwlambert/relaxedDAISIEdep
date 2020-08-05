@@ -37,7 +37,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Aldabra_Group, file = "Aldabra_Group.RData")
 }
 
@@ -69,7 +69,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Azores, file = "Azores.RData")
 }
 
@@ -101,7 +101,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Bermuda, file = "Bermuda.RData")
 }
 
@@ -133,7 +133,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Canaries, file = "Canaries.RData")
 }
 
@@ -165,7 +165,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Cape_Verde, file = "Cape_Verde.RData")
 }
 
@@ -197,7 +197,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Chatham, file = "Chatham.RData")
 }
 
@@ -229,7 +229,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Christmas_Island, file = "Christmas_Island.RData")
 }
 
@@ -261,7 +261,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Cocos, file = "Cocos.RData")
 }
 
@@ -293,7 +293,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Comoros, file = "Comoros.RData")
 }
 
@@ -325,7 +325,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Fernando_Noronha, file = "Fernando_Noronha.RData")
 }
 
@@ -357,7 +357,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Galapagos, file = "Galapagos.RData")
 }
 
@@ -389,7 +389,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Gough, file = "Gough.RData")
 }
 
@@ -421,7 +421,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Guadalupe, file = "Guadalupe.RData")
 }
 
@@ -453,7 +453,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Guam_Marianas, file = "Guam_Marianas.RData")
 }
 
@@ -485,7 +485,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Hawaii, file = "Hawaii.RData")
 }
 
@@ -517,7 +517,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Juan_Fernandez, file = "Juan_Fernandez.RData")
 }
 
@@ -549,7 +549,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Lord_Howe, file = "Lord_Howe.RData")
 }
 
@@ -581,7 +581,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Madeira, file = "Madeira.RData")
 }
 
@@ -613,7 +613,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Marquesas, file = "Marquesas.RData")
 }
 
@@ -645,7 +645,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Mauritius_Island, file = "Mauritius_Island.RData")
 }
 
@@ -677,7 +677,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(New_Caledonia, file = "New_Caledonia.RData")
 }
 
@@ -709,7 +709,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Niue, file = "Niue.RData")
 }
 
@@ -741,7 +741,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Norfolk, file = "Norfolk.RData")
 }
 
@@ -773,7 +773,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Ogasawara, file = "Ogasawara.RData")
 }
 
@@ -805,7 +805,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Palau, file = "Palau.RData")
 }
 
@@ -837,7 +837,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Pitcairn, file = "Pitcairn.RData")
 }
 
@@ -869,7 +869,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Rapa_Nui, file = "Rapa_Nui.RData")
 }
 
@@ -901,7 +901,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Reunion, file = "Reunion.RData")
 }
 
@@ -933,7 +933,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Rodrigues, file = "Rodrigues.RData")
 }
 
@@ -965,7 +965,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Saint_Helena, file = "Saint_Helena.RData")
 }
 
@@ -997,7 +997,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Samoa, file = "Samoa.RData")
 }
 
@@ -1029,7 +1029,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(SaoTome_Principe, file = "SaoTome_Principe.RData")
 }
 
@@ -1061,7 +1061,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Selvagens, file = "Selvagens.RData")
 }
 
@@ -1093,7 +1093,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Seychelles_Inner, file = "Seychelles_Inner.RData")
 }
 
@@ -1125,7 +1125,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Society, file = "Society.RData")
 }
 
@@ -1157,7 +1157,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Socorro, file = "Socorro.RData")
 }
 
@@ -1170,8 +1170,8 @@ Tonga[[1]] <- list(island_age = Tonga[[1]]$island_age,
 #Calculate number of species
 brts <- sapply(Tonga, '[', 2)
 brts <- unname(unlist(brts))
-brts <- brts[-which(brts == Cocos[[1]]$not_present)]
-brts <- brts[-which(brts == Cocos[[1]]$island_age)]
+brts <- brts[-which(brts == Tonga[[1]]$not_present)]
+brts <- brts[-which(brts == Tonga[[1]]$island_age)]
 stac <- sapply(Tonga, '[', 3)
 stac <- unname(unlist(stac))
 if (any(stac == 5)) {
@@ -1189,7 +1189,7 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Tonga, file = "Tonga.RData")
 }
 
@@ -1221,6 +1221,6 @@ total_spec <- num_spec + miss_spec
 
 #Check if archipelago has more than 10 species and more than 50% species
 #coverage, if so save data set
-if (num_spec >= 10 && miss_spec < total_spec / 2) {
+if (num_spec >= 10 && miss_spec <= total_spec / 2) {
   save(Tristan_da_Cunha, file = "Tristan_da_Cunha.RData")
 }
