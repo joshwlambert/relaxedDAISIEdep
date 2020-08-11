@@ -4,22 +4,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of relaxedDAISIE is to ...
+relaxedDAISIE is a package that contains all the code to reproduce Lambert
+et al. (2020) doi:
 
 ## Installation
 
-You can install the released version of relaxedDAISIE from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of relaxedDAISIE from [github](https://github.com/joshwlambert/relaxedDAISIE) with:
 
 ``` r
-install.packages("relaxedDAISIE")
-```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(relaxedDAISIE)
-## basic example code
+devtools::install.github("joshwlambert/relaxedDAISIE")
 ```
 
