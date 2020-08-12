@@ -82,11 +82,11 @@ Comoros_cr_dd <- list()
 for (i in seq_along(init_param_set)) {
   Comoros_cr_dd[[i]] <- DAISIE_ML_CS(
     datalist = Comoros,
-    initparsopt = c(Aldabra_Group_cr_dd_init[[i]]$lambda_c,
-                    Aldabra_Group_cr_dd_init[[i]]$mu,
-                    Aldabra_Group_cr_dd_init[[i]]$K,
-                    Aldabra_Group_cr_dd_init[[i]]$gamma,
-                    Aldabra_Group_cr_dd_init[[i]]$lambda_a),
+    initparsopt = c(Comoros_cr_dd_init[[i]]$lambda_c,
+                    Comoros_cr_dd_init[[i]]$mu,
+                    Comoros_cr_dd_init[[i]]$K,
+                    Comoros_cr_dd_init[[i]]$gamma,
+                    Comoros_cr_dd_init[[i]]$lambda_a),
     idparsopt = 1:5,
     parsfix = NULL,
     idparsfix = NULL,
