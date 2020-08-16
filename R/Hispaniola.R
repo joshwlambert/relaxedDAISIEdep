@@ -20,6 +20,5 @@
 #'   2-type analysis}
 #'   ...
 #' }
-#' @source Valente et al. (2020) doi:
-#' \url{https://doi.org/10.1038/s41586-020-2022-5}
+#' @source Etienne et al. (in prep)
 "Hispaniola"
