@@ -20,6 +20,6 @@
 #'   2-type analysis}
 #'   ...
 #' }
-#' @source Valente et al. (2020) doi:
-#' \url{https://doi.org/10.1038/s41586-020-2022-5}
+#' @source Valente et al. (2017) doi:
+#' \url{https://doi.org/10.1038/s41559-016-0026}
 "Greater_Antilles"
