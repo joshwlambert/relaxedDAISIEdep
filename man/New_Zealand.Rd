@@ -22,8 +22,8 @@ An object of class \code{list} of length 40:
 }
 }
 \source{
-Valente et al. (2020) doi:
-\url{https://doi.org/10.1038/s41586-020-2022-5}
+Valente et al. (2019) doi:
+\url{https://doi.org/10.1016/j.cub.2019.06.058}
 }
 \usage{
 New_Zealand

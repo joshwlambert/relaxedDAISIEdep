@@ -22,8 +22,8 @@ An object of class \code{list} of length 17:
 }
 }
 \source{
-Valente et al. (2020) doi:
-\url{https://doi.org/10.1038/s41586-020-2022-5}
+Valente et al. (2017) doi:
+\url{https://doi.org/10.1038/s41559-016-0026}
 }
 \usage{
 Greater_Antilles

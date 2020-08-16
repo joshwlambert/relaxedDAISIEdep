@@ -22,8 +22,7 @@ An object of class \code{list} of length 6:
 }
 }
 \source{
-Valente et al. (2020) doi:
-\url{https://doi.org/10.1038/s41586-020-2022-5}
+Etienne et al. (in prep)
 }
 \usage{
 Hispaniola
