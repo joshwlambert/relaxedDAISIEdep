@@ -1,28 +1,6 @@
 library(DAISIE)
 
-set.seed(1)
-
-#create parameter space
-
-lac <- c(1.0, 2.0)
-mu <- c(1.0, 2.0)
-K <- c(10, 30, Inf)
-gam <- c(0.005, 0.01)
-laa <- c(0.5, 1.0)
-
-param_space <- expand.grid(lac, mu, K, gam, laa)
-
-#Simulate with CR model
-
-cr_data_set <- list()
-
-for (i in seq_len(nrow(param_space))) {
-  cr_data_set[[i]] <- DAISIE_sim_constant_rate(
-    time = 5,
-    M = 1000,
-    pars = as.numeric(param_space[i, ]),
-    replicates = 1000)
-}
+data(sim_data)
 
 #Inference with CR and RR on CR simulations
 
