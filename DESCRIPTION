@@ -2,7 +2,7 @@ Package: relaxedDAISIE
 Type: Package
 Title: Scripts and data for Lambert et al. (doi:
 Version: 0.1.0
-Depends: R (>= 3.5.0)
+Depends: R (>= 4.0.0)
 Author: Joshua W Lambert
 Maintainer: Joshua W Lambert <j.w.l.lambert@rug.nl>
 Description: Package containing all of the code needed to reproduce
