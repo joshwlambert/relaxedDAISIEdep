@@ -186,37 +186,36 @@ max_loglik <- which(max(loglik) == loglik)
 #Calculate BIC
 BIC <- 4 * log(1000) - 2 * Aldabra_Group_cr_dd_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate mu diversity-independent model ###
+### Relaxed rate mu diversity-independent no cladogenesis model ###
 
-Aldabra_Group_rr_mu_di_init <- list()
+Aldabra_Group_rr_mu_di_no_lambda_c_init <- list()
 
 for (i in seq_along(init_param_set)) {
-  Aldabra_Group_rr_mu_di_init[[i]] <- DAISIE_ML_CS(
+  Aldabra_Group_rr_mu_di_no_lambda_c_init[[i]] <- DAISIE_ML_CS(
     datalist = Aldabra_Group,
-    initparsopt = c(init_param_set[[i]][1],
-                    init_param_set[[i]][2],
+    initparsopt = c(init_param_set[[i]][2],
                     init_param_set[[i]][4],
                     init_param_set[[i]][5],
                     1),
-    idparsopt = c(1, 2, 4, 5, 6),
-    parsfix = Inf,
-    idparsfix = 3,
+    idparsopt = c(2, 4, 5, 6),
+    parsfix = c(0, Inf),
+    idparsfix = c(1, 3),
     ddmodel = 0,
     optimmethod = "simplex",
     CS_version = DAISIE::create_CS_version(model = 2,
                                            relaxed_par = "extinction"))
 }
 
-Aldabra_Group_rr_mu_di <- list()
+Aldabra_Group_rr_mu_di_no_lambda_c <- list()
 
 for (i in seq_along(init_param_set)) {
-  Aldabra_Group_rr_mu_di[[i]] <- DAISIE_ML_CS(
+  Aldabra_Group_rr_mu_di_no_lambda_c[[i]] <- DAISIE_ML_CS(
     datalist = Aldabra_Group,
-    initparsopt = c(Aldabra_Group_rr_mu_di_init[[i]]$lambda_c,
-                    Aldabra_Group_rr_mu_di_init[[i]]$mu,
-                    Aldabra_Group_rr_mu_di_init[[i]]$gamma,
-                    Aldabra_Group_rr_mu_di_init[[i]]$lambda_a,
-                    Aldabra_Group_rr_mu_di_init[[i]]$sd),
+    initparsopt = c(Aldabra_Group_rr_mu_di_no_lambda_c_init[[i]]$lambda_c,
+                    Aldabra_Group_rr_mu_di_no_lambda_c_init[[i]]$mu,
+                    Aldabra_Group_rr_mu_di_no_lambda_c_init[[i]]$gamma,
+                    Aldabra_Group_rr_mu_di_no_lambda_c_init[[i]]$lambda_a,
+                    Aldabra_Group_rr_mu_di_no_lambda_c_init[[i]]$sd),
     idparsopt = c(1, 2, 4, 5, 6),
     parsfix = Inf,
     idparsfix = 3,
@@ -227,9 +226,9 @@ for (i in seq_along(init_param_set)) {
 }
 
 #Extract global optima
-loglik <- sapply(Aldabra_Group_rr_mu_di, '[[', 6)
+loglik <- sapply(Aldabra_Group_rr_mu_di_no_lambda_c, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
-BIC <- 4 * log(1000) - 2 * Aldabra_Group_cr_di[[max_loglik]]$loglik
+BIC <- 4 * log(1000) - 2 * Aldabra_Group_cr_di_no_lambda_c[[max_loglik]]$loglik
 
