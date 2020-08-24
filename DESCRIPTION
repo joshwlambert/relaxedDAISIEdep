@@ -3,11 +3,17 @@ Type: Package
 Title: Scripts and data for Lambert et al. (doi:
 Version: 0.1.0
 Depends: R (>= 4.0.0)
+Imports: 
+    DAISIE,
+    ggplot2
 Author: Joshua W Lambert
 Maintainer: Joshua W Lambert <j.w.l.lambert@rug.nl>
 Description: Package containing all of the code needed to reproduce
-    Lamebert et al. (doi: ).
+    Lambert et al. (doi: ).
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat,
+    covr
