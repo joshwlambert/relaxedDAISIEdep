@@ -55,6 +55,7 @@ Galapagos_subplex_loglik <- sapply(Galapagos_subplex, '[[', 6)
 Galapagos_delta_loglik <- abs(Galapagos_simplex_loglik -
                                 Galapagos_subplex_loglik)
 which(Galapagos_delta_loglik > 1e-3)
+max(Galapagos_simplex_loglik) - max(Galapagos_subplex_loglik) < 1e-3
 
 Greater_Antilles_simplex <- list()
 Greater_Antilles_subplex <- list()
@@ -94,6 +95,8 @@ Greater_Antilles_subplex_loglik <- sapply(Greater_Antilles_subplex, '[[', 6)
 Greater_Antilles_delta_loglik <- abs(Greater_Antilles_simplex_loglik -
                                        Greater_Antilles_subplex_loglik)
 which(Greater_Antilles_delta_loglik > 1e-3)
+max(Greater_Antilles_simplex_loglik) -
+  max(Greater_Antilles_subplex_loglik) < 1e-3
 
 New_Zealand_simplex <- list()
 New_Zealand_subplex <- list()
@@ -133,6 +136,7 @@ New_Zealand_subplex_loglik <- sapply(New_Zealand_subplex, '[[', 6)
 New_Zealand_delta_loglik <- abs(New_Zealand_simplex_loglik -
                                        New_Zealand_subplex_loglik)
 which(New_Zealand_delta_loglik > 1e-3)
+max(New_Zealand_simplex_loglik) - max(New_Zealand_subplex_loglik) < 1e-3
 
 Hispaniola_simplex <- list()
 Hispaniola_subplex <- list()
@@ -172,3 +176,4 @@ Hispaniola_subplex_loglik <- sapply(Hispaniola_subplex, '[[', 6)
 Hispaniola_delta_loglik <- abs(Hispaniola_simplex_loglik -
                                  Hispaniola_subplex_loglik)
 which(Hispaniola_delta_loglik > 1e-3)
+max(Hispaniola_simplex_loglik) - max(Hispaniola_subplex_loglik) < 1e-3
