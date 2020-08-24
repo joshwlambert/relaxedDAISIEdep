@@ -120,3 +120,100 @@ rr_ana_sd_00001 <- DAISIE_loglik_CS(
   abstolint = 1e-16,
   reltolint = 1e-10)
 
+
+#Cladogenesis lineage
+
+clado_lineage <- calc_rr_approach_cr(parameter = "cladogenesis",
+                                     clade = "lineage")
+
+plot(clado_lineage[[1]],
+     clado_lineage[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Cladogenesis lineage")
+
+#Extinction lineage
+
+ext_lineage <- calc_rr_approach_cr(parameter = "extinction",
+                                   clade = "lineage")
+
+plot(ext_lineage[[1]],
+     ext_lineage[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Extinction lineage")
+
+#Carrying capacity lineage
+
+k_lineage <- calc_rr_approach_cr(parameter = "carrying_capacity",
+                                 clade = "lineage")
+
+plot(k_lineage[[1]],
+     k_lineage[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Carrying capacity lineage")
+
+#Anagenesis lineage
+
+ana_lineage <- calc_rr_approach_cr(parameter = "anagenesis",
+                                   clade = "lineage")
+
+plot(ana_lineage[[1]],
+     ana_lineage[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Anagenesis lineage")
+
+#Cladogenesis radiation
+
+clado_radiation <- calc_rr_approach_cr(parameter = "cladogenesis",
+                                       clade = "radiation")
+
+plot(clado_radiation[[1]],
+     clado_radiation[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Cladogenesis radiation")
+
+#Extinction radiation
+
+ext_radiation <- calc_rr_approach_cr(parameter = "extinction",
+                                     clade = "radiation")
+
+plot(ext_radiation[[1]],
+     ext_radiation[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Extinction radiation")
+
+#Carrying capacity radiation
+
+k_radiation <- calc_rr_approach_cr(parameter = "carrying_capacity",
+                                   clade = "radiation")
+
+plot(k_radiation[[1]],
+     k_radiation[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Carrying capacity radiation")
+
+#Anagenesis radiation
+
+ana_radiation <- calc_rr_approach_cr(parameter = "anagenesis",
+                                     clade = "radiation")
+
+plot(ana_radiation[[1]],
+     ana_radiation[[2]],
+     ylab = "Delta likelihood",
+     xlab = "sd",
+     col = "red",
+     main = "Anagenesis radiation")
+
