@@ -55,7 +55,7 @@ loglik <- sapply(Comoros_cr_di, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
-BIC <- 4 * log(1000) - 2 * Comoros_cr_di[[max_loglik]]$loglik
+BIC <- 4 * (log(1000) + log(2 * pi)) - 2 * Comoros_cr_di[[max_loglik]]$loglik
 
 ### Constant rate diversity-dependent model ###
 
@@ -100,4 +100,4 @@ loglik <- sapply(Comoros_cr_dd, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
-BIC <- 5 * log(1000) - 2 * Comoros_cr_dd[[max_loglik]]$loglik
+BIC <- 5 * (log(1000) + log(2 * pi)) - 2 * Comoros_cr_dd[[max_loglik]]$loglik

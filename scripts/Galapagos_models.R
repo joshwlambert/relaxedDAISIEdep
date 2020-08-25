@@ -55,7 +55,7 @@ loglik <- sapply(Galapagos_cr_di, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
-BIC <- 4 * log(1000) - 2 * Galapagos_cr_di[[max_loglik]]$loglik
+BIC <- 4 * (log(1000) + log(2 * pi)) - 2 * Galapagos_cr_di[[max_loglik]]$loglik
 
 ### Constant rate diversity-dependent model ###
 
@@ -100,7 +100,7 @@ loglik <- sapply(Galapagos_cr_dd, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
-BIC <- 5 * log(1000) - 2 * Galapagos_cr_dd[[max_loglik]]$loglik
+BIC <- 5 * (log(1000) + log(2 * pi)) - 2 * Galapagos_cr_dd[[max_loglik]]$loglik
 
 ### Constant rate diversity-independent no anagenesis model ###
 
@@ -141,7 +141,7 @@ loglik <- sapply(Galapagos_cr_di_no_lambda_a, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
-BIC <- 3 * log(1000) - 2 * Galapagos_cr_di_no_lambda_a[[max_loglik]]$loglik
+BIC <- 3 * (log(1000) + log(2 * pi)) - 2 * Galapagos_cr_di_no_lambda_a[[max_loglik]]$loglik
 
 ### Constant rate diversity-dependent no anagenesis model ###
 
@@ -184,4 +184,4 @@ loglik <- sapply(Galapagos_cr_dd_no_lambda_a, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
-BIC <- 4 * log(1000) - 2 * Galapagos_cr_dd_no_lambda_a[[max_loglik]]$loglik
+BIC <- 4 * (log(1000) + log(2 * pi)) - 2 * Galapagos_cr_dd_no_lambda_a[[max_loglik]]$loglik
