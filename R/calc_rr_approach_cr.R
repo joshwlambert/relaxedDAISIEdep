@@ -46,7 +46,6 @@ calc_rr_approach_cr <- function(parameter = "cladogenesis",
 
   sd <- c()
   lik_integrated <- c()
-  lik_integrated_old <- c()
   x <- 1
   for (i in seq(0.1, 5, 0.1)) {
     sd[x] <- i
