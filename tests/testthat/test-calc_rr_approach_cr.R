@@ -89,25 +89,24 @@ test_that("calc_rr_approach_cr anagenesis lineage produces correct output", {
       6.164827e-07, 6.242838e-07, 6.319105e-07, 6.392474e-07, 6.463835e-07))
 })
 
-# test_that("calc_rr_approach_cr cladogenesis radiation produces correct
-#           output", {
-#   delta_loglik <- calc_rr_approach_cr(parameter = "cladogenesis",
-#                                       clade = "radiation")
-#   testthat::expect_length(delta_loglik, 2)
-#   testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
-#   testthat::expect_true(is.numeric(delta_loglik$sd))
-#   testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
-#   testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
-#   testthat::expect_equal(
-#     delta_loglik$delta_likelihood,
-#     c(1.336006e-09, 5.305746e-09, 1.179795e-08, 2.063867e-08, 3.160615e-08,
-#       4.444721e-08, 5.889432e-08, 7.467860e-08, 9.154141e-08, 1.092417e-07,
-#       1.275609e-07, 1.463046e-07, 1.653037e-07, 1.844130e-07, 2.035103e-07,
-#       2.224930e-07, 2.412763e-07, 2.597945e-07, 2.779930e-07, 2.958324e-07,
-#       3.132727e-07, 3.302978e-07, 3.468816e-07, 3.630320e-07, 3.787290e-07,
-#       3.939766e-07, 4.087729e-07, 4.231239e-07, 4.370409e-07, 4.505261e-07,
-#       4.635948e-07, 4.762268e-07, 4.884742e-07, 5.003361e-07, 5.118190e-07,
-#       5.229390e-07, 5.336631e-07, 5.440896e-07, 5.541771e-07, 5.639229e-07,
-#       5.734292e-07, 5.825489e-07, 5.914524e-07, 6.000508e-07, 6.083768e-07,
-#       6.164827e-07, 6.242838e-07, 6.319105e-07, 6.392474e-07, 6.463835e-07))
-# })
+test_that("calc_rr_approach_cr cladogenesis radiation produces correct
+          output", {
+  delta_loglik <- calc_rr_approach_cr(parameter = "cladogenesis",
+                                      clade = "radiation")
+  testthat::expect_length(delta_loglik, 2)
+  testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
+  testthat::expect_true(is.numeric(delta_loglik$sd))
+  testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
+  testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
+  testthat::expect_equal(
+    delta_loglik$delta_likelihood,
+    c(0.1500304, 0.5728220, 1.1952314, 1.9221553, 2.6657661, 3.3651653,
+      3.9894116, 4.5297037, 4.9896684, 5.3782654, 5.7057823, 5.9819633,
+      6.2153175, 6.4129930, 6.5808841, 6.7238142, 6.8457243, 6.9498409,
+      7.0388151, 7.1148368, 7.1797243, 7.2349961, 7.2819276, 7.3215956,
+      7.3549142, 7.3826636, 7.4055122, 7.4240358, 7.4387324, 7.4500342,
+      7.4583181, 7.4639136, 7.4671099, 7.4681616, 7.4672934, 7.4647044,
+      7.4605712, 7.4550509, 7.4482838, 7.4403952, 7.4314973, 7.4216908,
+      7.4110663, 7.3997053, 7.3876813, 7.3750609, 7.3619041, 7.3482655,
+      7.3341942, 7.3197354))
+})
