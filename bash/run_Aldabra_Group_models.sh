@@ -11,4 +11,4 @@ mkdir -p results
 mkdir -p logs
 
 module load R
-Rscript Aldabra_Group_models.R
+Rscript /home/p287218/relaxedDAISIE/scripts/Aldabra_Group_models.R
