@@ -1,47 +1,55 @@
 context("calc_rr_approach_cr")
 
 test_that("calc_rr_approach_cr cladogenesis lineage produces correct output", {
-  delta_loglik <- calc_rr_approach_cr(parameter = "cladogenesis",
-                                      clade = "lineage")
-  testthat::expect_length(delta_loglik, 2)
-  testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
-  testthat::expect_true(is.numeric(delta_loglik$sd))
-  testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
-  testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
-  testthat::expect_equal(
-    delta_loglik$delta_likelihood,
-    c(6.745636e-06, 2.686875e-05, 5.999232e-05, 1.053927e-04, 1.619278e-04,
-      2.280367e-04, 3.018335e-04, 3.812652e-04, 4.642815e-04, 5.489726e-04,
-      6.336574e-04, 7.169236e-04, 7.976313e-04, 8.748952e-04, 9.480537e-04,
-      1.016636e-03, 1.080330e-03, 1.138949e-03, 1.192410e-03, 1.240710e-03,
-      1.283907e-03, 1.322108e-03, 1.355455e-03, 1.384116e-03, 1.408276e-03,
-      1.428136e-03, 1.443902e-03, 1.455784e-03, 1.463994e-03, 1.468742e-03,
-      1.470234e-03, 1.468673e-03, 1.464254e-03, 1.457169e-03, 1.447598e-03,
-      1.435718e-03, 1.421695e-03, 1.405689e-03, 1.387853e-03, 1.368330e-03,
-      1.347256e-03, 1.324761e-03, 1.300966e-03, 1.275985e-03, 1.249927e-03,
-      1.222893e-03, 1.194978e-03, 1.166271e-03, 1.136855e-03, 1.106810e-03))
+  if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
+    delta_loglik <- calc_rr_approach_cr(parameter = "cladogenesis",
+                                        clade = "lineage")
+    testthat::expect_length(delta_loglik, 2)
+    testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
+    testthat::expect_true(is.numeric(delta_loglik$sd))
+    testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
+    testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
+    testthat::expect_equal(
+      delta_loglik$delta_likelihood,
+      c(6.745636e-06, 2.686875e-05, 5.999232e-05, 1.053927e-04, 1.619278e-04,
+        2.280367e-04, 3.018335e-04, 3.812652e-04, 4.642815e-04, 5.489726e-04,
+        6.336574e-04, 7.169236e-04, 7.976313e-04, 8.748952e-04, 9.480537e-04,
+        1.016636e-03, 1.080330e-03, 1.138949e-03, 1.192410e-03, 1.240710e-03,
+        1.283907e-03, 1.322108e-03, 1.355455e-03, 1.384116e-03, 1.408276e-03,
+        1.428136e-03, 1.443902e-03, 1.455784e-03, 1.463994e-03, 1.468742e-03,
+        1.470234e-03, 1.468673e-03, 1.464254e-03, 1.457169e-03, 1.447598e-03,
+        1.435718e-03, 1.421695e-03, 1.405689e-03, 1.387853e-03, 1.368330e-03,
+        1.347256e-03, 1.324761e-03, 1.300966e-03, 1.275985e-03, 1.249927e-03,
+        1.222893e-03, 1.194978e-03, 1.166271e-03, 1.136855e-03, 1.106810e-03))
+  } else{
+    skip("Run only on TRAVIS and AppVeyor")
+  }
 })
 
 test_that("calc_rr_approach_cr extinction lineage produces correct output", {
-  delta_loglik <- calc_rr_approach_cr(parameter = "extinction",
-                                      clade = "lineage")
-  testthat::expect_length(delta_loglik, 2)
-  testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
-  testthat::expect_true(is.numeric(delta_loglik$sd))
-  testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
-  testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
-  testthat::expect_equal(
-    delta_loglik$delta_likelihood,
-    c(2.328006e-05, 9.266425e-05, 2.067158e-04, 3.629248e-04, 5.577890e-04,
-      7.871187e-04, 1.046443e-03, 1.331368e-03, 1.637807e-03, 1.962099e-03,
-      2.301032e-03, 2.651825e-03, 3.012080e-03, 3.379734e-03, 3.753008e-03,
-      4.130365e-03, 4.510471e-03, 4.892164e-03, 5.274431e-03, 5.656382e-03,
-      6.037237e-03, 6.416311e-03, 6.793001e-03, 7.166780e-03, 7.537183e-03,
-      7.903805e-03, 8.266295e-03, 8.624347e-03, 8.977700e-03, 9.326131e-03,
-      9.669451e-03, 1.000750e-02, 1.034016e-02, 1.066733e-02, 1.098892e-02,
-      1.130489e-02, 1.161520e-02, 1.191982e-02, 1.221876e-02, 1.251202e-02,
-      1.279963e-02, 1.308162e-02, 1.335804e-02, 1.362893e-02, 1.389436e-02,
-      1.415439e-02, 1.440910e-02, 1.465855e-02, 1.490284e-02, 1.514204e-02))
+  if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
+    delta_loglik <- calc_rr_approach_cr(parameter = "extinction",
+                                        clade = "lineage")
+    testthat::expect_length(delta_loglik, 2)
+    testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
+    testthat::expect_true(is.numeric(delta_loglik$sd))
+    testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
+    testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
+    testthat::expect_equal(
+      delta_loglik$delta_likelihood,
+      c(2.328006e-05, 9.266425e-05, 2.067158e-04, 3.629248e-04, 5.577890e-04,
+        7.871187e-04, 1.046443e-03, 1.331368e-03, 1.637807e-03, 1.962099e-03,
+        2.301032e-03, 2.651825e-03, 3.012080e-03, 3.379734e-03, 3.753008e-03,
+        4.130365e-03, 4.510471e-03, 4.892164e-03, 5.274431e-03, 5.656382e-03,
+        6.037237e-03, 6.416311e-03, 6.793001e-03, 7.166780e-03, 7.537183e-03,
+        7.903805e-03, 8.266295e-03, 8.624347e-03, 8.977700e-03, 9.326131e-03,
+        9.669451e-03, 1.000750e-02, 1.034016e-02, 1.066733e-02, 1.098892e-02,
+        1.130489e-02, 1.161520e-02, 1.191982e-02, 1.221876e-02, 1.251202e-02,
+        1.279963e-02, 1.308162e-02, 1.335804e-02, 1.362893e-02, 1.389436e-02,
+        1.415439e-02, 1.440910e-02, 1.465855e-02, 1.490284e-02, 1.514204e-02))
+  } else{
+    skip("Run only on TRAVIS and AppVeyor")
+  }
 })
 
 # test_that("calc_rr_approach_cr carrying_capacity lineage produces correct
@@ -68,45 +76,53 @@ test_that("calc_rr_approach_cr extinction lineage produces correct output", {
 # })
 
 test_that("calc_rr_approach_cr anagenesis lineage produces correct output", {
-  delta_loglik <- calc_rr_approach_cr(parameter = "anagenesis",
-                                      clade = "lineage")
-  testthat::expect_length(delta_loglik, 2)
-  testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
-  testthat::expect_true(is.numeric(delta_loglik$sd))
-  testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
-  testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
-  testthat::expect_equal(
-    delta_loglik$delta_likelihood,
-    c(1.336006e-09, 5.305746e-09, 1.179795e-08, 2.063867e-08, 3.160615e-08,
-      4.444721e-08, 5.889432e-08, 7.467860e-08, 9.154141e-08, 1.092417e-07,
-      1.275609e-07, 1.463046e-07, 1.653037e-07, 1.844130e-07, 2.035103e-07,
-      2.224930e-07, 2.412763e-07, 2.597945e-07, 2.779930e-07, 2.958324e-07,
-      3.132727e-07, 3.302978e-07, 3.468816e-07, 3.630320e-07, 3.787290e-07,
-      3.939766e-07, 4.087729e-07, 4.231239e-07, 4.370409e-07, 4.505261e-07,
-      4.635948e-07, 4.762268e-07, 4.884742e-07, 5.003361e-07, 5.118190e-07,
-      5.229390e-07, 5.336631e-07, 5.440896e-07, 5.541771e-07, 5.639229e-07,
-      5.734292e-07, 5.825489e-07, 5.914524e-07, 6.000508e-07, 6.083768e-07,
-      6.164827e-07, 6.242838e-07, 6.319105e-07, 6.392474e-07, 6.463835e-07))
+  if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
+    delta_loglik <- calc_rr_approach_cr(parameter = "anagenesis",
+                                        clade = "lineage")
+    testthat::expect_length(delta_loglik, 2)
+    testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
+    testthat::expect_true(is.numeric(delta_loglik$sd))
+    testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
+    testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
+    testthat::expect_equal(
+      delta_loglik$delta_likelihood,
+      c(1.336006e-09, 5.305746e-09, 1.179795e-08, 2.063867e-08, 3.160615e-08,
+        4.444721e-08, 5.889432e-08, 7.467860e-08, 9.154141e-08, 1.092417e-07,
+        1.275609e-07, 1.463046e-07, 1.653037e-07, 1.844130e-07, 2.035103e-07,
+        2.224930e-07, 2.412763e-07, 2.597945e-07, 2.779930e-07, 2.958324e-07,
+        3.132727e-07, 3.302978e-07, 3.468816e-07, 3.630320e-07, 3.787290e-07,
+        3.939766e-07, 4.087729e-07, 4.231239e-07, 4.370409e-07, 4.505261e-07,
+        4.635948e-07, 4.762268e-07, 4.884742e-07, 5.003361e-07, 5.118190e-07,
+        5.229390e-07, 5.336631e-07, 5.440896e-07, 5.541771e-07, 5.639229e-07,
+        5.734292e-07, 5.825489e-07, 5.914524e-07, 6.000508e-07, 6.083768e-07,
+        6.164827e-07, 6.242838e-07, 6.319105e-07, 6.392474e-07, 6.463835e-07))
+  } else{
+    skip("Run only on TRAVIS and AppVeyor")
+  }
 })
 
 test_that("calc_rr_approach_cr cladogenesis radiation produces correct
           output", {
-  delta_loglik <- calc_rr_approach_cr(parameter = "cladogenesis",
-                                      clade = "radiation")
-  testthat::expect_length(delta_loglik, 2)
-  testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
-  testthat::expect_true(is.numeric(delta_loglik$sd))
-  testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
-  testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
-  testthat::expect_equal(
-    delta_loglik$delta_likelihood,
-    c(0.1500304, 0.5728220, 1.1952314, 1.9221553, 2.6657661, 3.3651653,
-      3.9894116, 4.5297037, 4.9896684, 5.3782654, 5.7057823, 5.9819633,
-      6.2153175, 6.4129930, 6.5808841, 6.7238142, 6.8457243, 6.9498409,
-      7.0388151, 7.1148368, 7.1797243, 7.2349961, 7.2819276, 7.3215956,
-      7.3549142, 7.3826636, 7.4055122, 7.4240358, 7.4387324, 7.4500342,
-      7.4583181, 7.4639136, 7.4671099, 7.4681616, 7.4672934, 7.4647044,
-      7.4605712, 7.4550509, 7.4482838, 7.4403952, 7.4314973, 7.4216908,
-      7.4110663, 7.3997053, 7.3876813, 7.3750609, 7.3619041, 7.3482655,
-      7.3341942, 7.3197354))
+  if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
+    delta_loglik <- calc_rr_approach_cr(parameter = "cladogenesis",
+                                        clade = "radiation")
+    testthat::expect_length(delta_loglik, 2)
+    testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
+    testthat::expect_true(is.numeric(delta_loglik$sd))
+    testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
+    testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
+    testthat::expect_equal(
+      delta_loglik$delta_likelihood,
+      c(0.1500304, 0.5728220, 1.1952314, 1.9221553, 2.6657661, 3.3651653,
+        3.9894116, 4.5297037, 4.9896684, 5.3782654, 5.7057823, 5.9819633,
+        6.2153175, 6.4129930, 6.5808841, 6.7238142, 6.8457243, 6.9498409,
+        7.0388151, 7.1148368, 7.1797243, 7.2349961, 7.2819276, 7.3215956,
+        7.3549142, 7.3826636, 7.4055122, 7.4240358, 7.4387324, 7.4500342,
+        7.4583181, 7.4639136, 7.4671099, 7.4681616, 7.4672934, 7.4647044,
+        7.4605712, 7.4550509, 7.4482838, 7.4403952, 7.4314973, 7.4216908,
+        7.4110663, 7.3997053, 7.3876813, 7.3750609, 7.3619041, 7.3482655,
+        7.3341942, 7.3197354))
+  } else{
+    skip("Run only on TRAVIS and AppVeyor")
+  }
 })
