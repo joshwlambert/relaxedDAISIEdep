@@ -11,4 +11,4 @@ mkdir -p results
 mkdir -p logs
 
 module load R
-Rscript run_rr_approach_cr.R
+Rscript Aldabra_Group_models.R
