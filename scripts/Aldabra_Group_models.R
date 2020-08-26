@@ -53,9 +53,11 @@ for (i in seq_along(init_param_set)) {
 #Extract global optima
 loglik <- sapply(Aldabra_Group_cr_di, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
+Aldabra_Group_cr_di_max_loglik <- Aldabra_Group_cr_di[[max_loglik]]
 
 #Calculate BIC
-BIC <- 4 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_di[[max_loglik]]$loglik
+Aldabra_Group_cr_di_BIC <-
+  4 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_di[[max_loglik]]$loglik
 
 ### Constant rate diversity-dependent model ###
 
@@ -98,9 +100,11 @@ for (i in seq_along(init_param_set)) {
 #Extract global optima
 loglik <- sapply(Aldabra_Group_cr_dd, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
+Aldabra_Group_cr_dd_max_loglik <- Aldabra_Group_cr_dd[[max_loglik]]
 
 #Calculate BIC
-BIC <- 5 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_dd[[max_loglik]]$loglik
+Aldabra_Group_cr_dd_BIC <-
+  5 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_dd[[max_loglik]]$loglik
 
 ### Constant rate diversity-independent no cladogenesis model ###
 
@@ -139,9 +143,13 @@ for (i in seq_along(init_param_set)) {
 #Extract global optima
 loglik <- sapply(Aldabra_Group_cr_di_no_lambda_c, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
+Aldabra_Group_cr_di_no_lambda_c_max_loglik <-
+  Aldabra_Group_cr_di_no_lambda_c[[max_loglik]]
 
 #Calculate BIC
-BIC <- 3 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_di_no_lambda_c[[max_loglik]]$loglik
+Aldabra_Group_cr_di_no_lambda_c_BIC <-
+  3 * (log(1000) + log(2 * pi)) -
+  2 * Aldabra_Group_cr_di_no_lambda_c[[max_loglik]]$loglik
 
 ### Constant rate diversity-dependent no cladogenesis model ###
 
@@ -182,9 +190,13 @@ for (i in seq_along(init_param_set)) {
 #Extract global optima
 loglik <- sapply(Aldabra_Group_cr_dd_no_lambda_c, '[[', 6)
 max_loglik <- which(max(loglik) == loglik)
+Aldabra_Group_cr_dd_no_lambda_c_max_loglik <-
+  Aldabra_Group_cr_dd_no_lambda_c[[max_loglik]]
 
 #Calculate BIC
-BIC <- 4 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_dd_no_lambda_c[[max_loglik]]$loglik
+Aldabra_Group_cr_dd_no_lambda_c_BIC <-
+  4 * (log(1000) + log(2 * pi)) -
+  2 * Aldabra_Group_cr_dd_no_lambda_c[[max_loglik]]$loglik
 
 ### Relaxed rate mu diversity-independent no cladogenesis model ###
 
@@ -231,3 +243,18 @@ max_loglik <- which(max(loglik) == loglik)
 
 #Calculate BIC
 BIC <- 4 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_di_no_lambda_c[[max_loglik]]$loglik
+
+#Save results
+results_file_path <- file.path(getwd(), "results", "Aldabra_Group.RData")
+Aldabra_Group_results <- list(
+  Aldabra_Group_cr_di_max_loglik = Aldabra_Group_cr_di_max_loglik,
+  Aldabra_Group_cr_di_BIC = Aldabra_Group_cr_di_BIC,
+  Aldabra_Group_cr_dd_max_loglik = Aldabra_Group_cr_dd_max_loglik,
+  Aldabra_Group_cr_dd_BIC = Aldabra_Group_cr_dd_BIC,
+  Aldabra_Group_cr_di_no_lambda_c_max_loglik = Aldabra_Group_cr_di_no_lambda_c_max_loglik,
+  Aldabra_Group_cr_di_BIC = Aldabra_Group_cr_di_BIC,
+  Aldabra_Group_cr_dd_no_lambda_c_max_loglik = Aldabra_Group_cr_dd_no_lambda_c_max_loglik,
+  Aldabra_Group_cr_dd_no_lambda_c_BIC = Aldabra_Group_cr_dd_no_lambda_c_BIC)
+
+save(Aldabra_Group_results,
+     file = results_file_path)
