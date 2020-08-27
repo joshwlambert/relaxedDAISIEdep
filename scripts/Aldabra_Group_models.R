@@ -461,7 +461,17 @@ Aldabra_Group_results <- list(
   Aldabra_Group_cr_di_no_lambda_c_max_loglik = Aldabra_Group_cr_di_no_lambda_c_max_loglik,
   Aldabra_Group_cr_di_BIC = Aldabra_Group_cr_di_BIC,
   Aldabra_Group_cr_dd_no_lambda_c_max_loglik = Aldabra_Group_cr_dd_no_lambda_c_max_loglik,
-  Aldabra_Group_cr_dd_no_lambda_c_BIC = Aldabra_Group_cr_dd_no_lambda_c_BIC)
+  Aldabra_Group_cr_dd_no_lambda_c_BIC = Aldabra_Group_cr_dd_no_lambda_c_BIC,
+  Aldabra_Group_rr_mu_di_no_lambda_c_max_loglik = Aldabra_Group_rr_mu_di_no_lambda_c_max_loglik,
+  Aldabra_Group_rr_mu_di_no_lambda_c_BIC = Aldabra_Group_rr_mu_di_no_lambda_c_BIC,
+  Aldabra_Group_rr_mu_dd_no_lambda_c_max_loglik = Aldabra_Group_rr_mu_dd_no_lambda_c_max_loglik,
+  Aldabra_Group_rr_mu_dd_no_lambda_c_BIC = Aldabra_Group_rr_mu_dd_no_lambda_c_BIC,
+  Aldabra_Group_rr_k_no_lambda_c_max_loglik = Aldabra_Group_rr_k_no_lambda_c_max_loglik,
+  Aldabra_Group_rr_k_no_lambda_c_BIC = Aldabra_Group_rr_k_no_lambda_c_BIC,
+  Aldabra_Group_rr_lambda_a_di_no_lambda_c_max_loglik = Aldabra_Group_rr_lambda_a_di_no_lambda_c_max_loglik,
+  Aldabra_Group_rr_lambda_a_di_no_lambda_c_BIC = Aldabra_Group_rr_lambda_a_di_no_lambda_c_BIC,
+  Aldabra_Group_rr_lambda_a_dd_no_lambda_c_max_loglik = Aldabra_Group_rr_lambda_a_dd_no_lambda_c_max_loglik,
+  Aldabra_Group_rr_lambda_a_dd_no_lambda_c_BIC = Aldabra_Group_rr_lambda_a_dd_no_lambda_c_BIC)
 
 save(Aldabra_Group_results,
      file = results_file_path)
