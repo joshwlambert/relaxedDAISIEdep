@@ -198,7 +198,7 @@ Aldabra_Group_cr_dd_no_lambda_c_BIC <-
   4 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_cr_dd_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate mu diversity-independent no cladogenesis model ###
+### Relaxed rate extinction diversity-independent no cladogenesis model ###
 
 Aldabra_Group_rr_mu_di_no_lambda_c_init <- list()
 
@@ -247,7 +247,7 @@ Aldabra_Group_rr_mu_di_no_lambda_c_BIC <-
   4 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_rr_mu_di_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate mu diversity-dependent no cladogenesis model ###
+### Relaxed rate extinction diversity-dependent no cladogenesis model ###
 
 Aldabra_Group_rr_mu_dd_no_lambda_c_init <- list()
 
@@ -298,7 +298,7 @@ Aldabra_Group_rr_mu_dd_no_lambda_c_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_rr_mu_dd_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate K' no cladogenesis model ###
+### Relaxed rate carrying capacity no cladogenesis model ###
 
 Aldabra_Group_rr_k_no_lambda_c_init <- list()
 
@@ -349,7 +349,107 @@ Aldabra_Group_rr_k_no_lambda_c_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_rr_k_no_lambda_c[[max_loglik]]$loglik
 
+### Relaxed rate anagenesis diversity-independent no cladogenesis model ###
 
+Aldabra_Group_rr_lambda_a_di_no_lambda_c_init <- list()
+
+for (i in seq_along(init_param_set)) {
+  Aldabra_Group_rr_lambda_a_di_no_lambda_c_init[[i]] <- DAISIE_ML_CS(
+    datalist = Aldabra_Group,
+    initparsopt = c(init_param_set[[i]][2],
+                    init_param_set[[i]][3],
+                    init_param_set[[i]][4],
+                    init_param_set[[i]][5],
+                    1),
+    idparsopt = c(2, 3, 4, 5, 6),
+    parsfix = 0,
+    idparsfix = 1,
+    ddmodel = 11,
+    optimmethod = "simplex",
+    CS_version = DAISIE::create_CS_version(model = 2,
+                                           relaxed_par = "anagenesis"))
+}
+
+Aldabra_Group_rr_lambda_a_di_no_lambda_c <- list()
+
+for (i in seq_along(init_param_set)) {
+  Aldabra_Group_rr_lambda_a_di_no_lambda_c[[i]] <- DAISIE_ML_CS(
+    datalist = Aldabra_Group,
+    initparsopt = c(Aldabra_Group_rr_lambda_a_di_no_lambda_c_init[[i]]$mu,
+                    Aldabra_Group_rr_lambda_a_di_no_lambda_c_init[[i]]$K,
+                    Aldabra_Group_rr_lambda_a_di_no_lambda_c_init[[i]]$gamma,
+                    Aldabra_Group_rr_lambda_a_di_no_lambda_c_init[[i]]$lambda_a,
+                    Aldabra_Group_rr_lambda_a_di_no_lambda_c_init[[i]]$sd),
+    idparsopt = c(2, 3, 4, 5, 6),
+    parsfix = 0,
+    idparsfix = 1,
+    ddmodel = 11,
+    optimmethod = "simplex",
+    CS_version = DAISIE::create_CS_version(model = 2,
+                                           relaxed_par = "anagenesis"))
+}
+
+#Extract global optima
+loglik <- sapply(Aldabra_Group_rr_lambda_a_di_no_lambda_c, '[[', 6)
+max_loglik <- which(max(loglik) == loglik)
+Aldabra_Group_rr_lambda_a_di_no_lambda_c_max_loglik <-
+  Aldabra_Group_rr_lambda_a_di_no_lambda_c[[max_loglik]]
+
+#Calculate BIC
+Aldabra_Group_rr_lambda_a_di_no_lambda_c_BIC <-
+  5 * (log(1000) + log(2 * pi)) -
+  2 * Aldabra_Group_rr_lambda_a_di_no_lambda_c[[max_loglik]]$loglik
+
+### Relaxed rate anagenesis diversity-dependent no cladogenesis model ###
+
+Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init <- list()
+
+for (i in seq_along(init_param_set)) {
+  Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init[[i]] <- DAISIE_ML_CS(
+    datalist = Aldabra_Group,
+    initparsopt = c(init_param_set[[i]][2],
+                    init_param_set[[i]][3],
+                    init_param_set[[i]][4],
+                    init_param_set[[i]][5],
+                    1),
+    idparsopt = c(2, 3, 4, 5, 6),
+    parsfix = 0,
+    idparsfix = 1,
+    ddmodel = 11,
+    optimmethod = "simplex",
+    CS_version = DAISIE::create_CS_version(model = 2,
+                                           relaxed_par = "anagenesis"))
+}
+
+Aldabra_Group_rr_lambda_a_dd_no_lambda_c <- list()
+
+for (i in seq_along(init_param_set)) {
+  Aldabra_Group_rr_lambda_a_dd_no_lambda_c[[i]] <- DAISIE_ML_CS(
+    datalist = Aldabra_Group,
+    initparsopt = c(Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init[[i]]$mu,
+                    Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init[[i]]$K,
+                    Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init[[i]]$gamma,
+                    Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init[[i]]$lambda_a,
+                    Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init[[i]]$sd),
+    idparsopt = c(2, 3, 4, 5, 6),
+    parsfix = 0,
+    idparsfix = 1,
+    ddmodel = 11,
+    optimmethod = "simplex",
+    CS_version = DAISIE::create_CS_version(model = 2,
+                                           relaxed_par = "anagenesis"))
+}
+
+#Extract global optima
+loglik <- sapply(Aldabra_Group_rr_lambda_a_dd_no_lambda_c, '[[', 6)
+max_loglik <- which(max(loglik) == loglik)
+Aldabra_Group_rr_lambda_a_dd_no_lambda_c_max_loglik <-
+  Aldabra_Group_rr_lambda_a_dd_no_lambda_c[[max_loglik]]
+
+#Calculate BIC
+Aldabra_Group_rr_lambda_a_dd_no_lambda_c_BIC <-
+  5 * (log(1000) + log(2 * pi)) -
+  2 * Aldabra_Group_rr_lambda_a_dd_no_lambda_c[[max_loglik]]$loglik
 
 #Save results
 results_file_path <- file.path(getwd(), "results", "Aldabra_Group.RData")
