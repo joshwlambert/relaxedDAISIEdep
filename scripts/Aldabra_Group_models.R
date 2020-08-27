@@ -12,6 +12,7 @@ for (i in 1:10) {
  init_param_set[[i]][3] <- runif(1, 30, 100)
  init_param_set[[i]][4] <- runif(1, 0.001, 0.01)
  init_param_set[[i]][5] <- runif(1, 0.1, 2)
+ init_param_set[[i]][6] <- runif(1, 0.1, 1)
 }
 
 ### Constant rate diversity-independent model ###
@@ -208,7 +209,7 @@ for (i in seq_along(init_param_set)) {
     initparsopt = c(init_param_set[[i]][2],
                     init_param_set[[i]][4],
                     init_param_set[[i]][5],
-                    1),
+                    init_param_set[[i]][6]),
     idparsopt = c(2, 4, 5, 6),
     parsfix = c(0, Inf),
     idparsfix = c(1, 3),
@@ -258,7 +259,7 @@ for (i in seq_along(init_param_set)) {
                     init_param_set[[i]][3],
                     init_param_set[[i]][4],
                     init_param_set[[i]][5],
-                    1),
+                    init_param_set[[i]][6]),
     idparsopt = c(2, 3, 4, 5, 6),
     parsfix = 0,
     idparsfix = 1,
@@ -309,7 +310,7 @@ for (i in seq_along(init_param_set)) {
                     init_param_set[[i]][3],
                     init_param_set[[i]][4],
                     init_param_set[[i]][5],
-                    1),
+                    init_param_set[[i]][6]),
     idparsopt = c(2, 3, 4, 5, 6),
     parsfix = 0,
     idparsfix = 1,
@@ -360,7 +361,7 @@ for (i in seq_along(init_param_set)) {
                     init_param_set[[i]][3],
                     init_param_set[[i]][4],
                     init_param_set[[i]][5],
-                    1),
+                    init_param_set[[i]][6]),
     idparsopt = c(2, 3, 4, 5, 6),
     parsfix = 0,
     idparsfix = 1,
@@ -411,7 +412,7 @@ for (i in seq_along(init_param_set)) {
                     init_param_set[[i]][3],
                     init_param_set[[i]][4],
                     init_param_set[[i]][5],
-                    1),
+                    init_param_set[[i]][6]),
     idparsopt = c(2, 3, 4, 5, 6),
     parsfix = 0,
     idparsfix = 1,
