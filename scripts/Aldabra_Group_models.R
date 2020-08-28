@@ -15,7 +15,8 @@ for (i in 1:10) {
  init_param_set[[i]][6] <- runif(1, 0.1, 1)
 }
 
-### Constant rate diversity-independent model ###
+
+# Constant rate diversity-independent model -------------------------------
 
 Aldabra_Group_cr_di_init <- list()
 
@@ -60,7 +61,8 @@ Aldabra_Group_cr_di_max_loglik <- Aldabra_Group_cr_di[[max_loglik]]
 Aldabra_Group_cr_di_BIC <-
   4 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_di[[max_loglik]]$loglik
 
-### Constant rate diversity-dependent model ###
+
+# Constant rate diversity-dependent model ---------------------------------
 
 Aldabra_Group_cr_dd_init <- list()
 
@@ -107,7 +109,8 @@ Aldabra_Group_cr_dd_max_loglik <- Aldabra_Group_cr_dd[[max_loglik]]
 Aldabra_Group_cr_dd_BIC <-
   5 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_dd[[max_loglik]]$loglik
 
-### Constant rate diversity-independent no cladogenesis model ###
+
+# Constant rate diversity-independent no cladogenesis model ---------------
 
 Aldabra_Group_cr_di_no_lambda_c_init <- list()
 
@@ -152,7 +155,8 @@ Aldabra_Group_cr_di_no_lambda_c_BIC <-
   3 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_cr_di_no_lambda_c[[max_loglik]]$loglik
 
-### Constant rate diversity-dependent no cladogenesis model ###
+
+# Constant rate diversity-dependent no cladogenesis model -----------------
 
 Aldabra_Group_cr_dd_no_lambda_c_init <- list()
 
@@ -199,7 +203,8 @@ Aldabra_Group_cr_dd_no_lambda_c_BIC <-
   4 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_cr_dd_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate extinction diversity-independent no cladogenesis model ###
+
+# Relaxed rate extinction diversity-independent no cladogenesis mo --------
 
 Aldabra_Group_rr_mu_di_no_lambda_c_init <- list()
 
@@ -248,7 +253,8 @@ Aldabra_Group_rr_mu_di_no_lambda_c_BIC <-
   4 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_rr_mu_di_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate extinction diversity-dependent no cladogenesis model ###
+
+# Relaxed rate extinction diversity-dependent no cladogenesis model -------
 
 Aldabra_Group_rr_mu_dd_no_lambda_c_init <- list()
 
@@ -299,7 +305,8 @@ Aldabra_Group_rr_mu_dd_no_lambda_c_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_rr_mu_dd_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate carrying capacity no cladogenesis model ###
+
+# Relaxed rate carrying capacity no cladogenesis model --------------------
 
 Aldabra_Group_rr_k_no_lambda_c_init <- list()
 
@@ -350,7 +357,8 @@ Aldabra_Group_rr_k_no_lambda_c_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_rr_k_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate anagenesis diversity-independent no cladogenesis model ###
+
+# Relaxed rate anagenesis diversity-independent no cladogenesis mo --------
 
 Aldabra_Group_rr_lambda_a_di_no_lambda_c_init <- list()
 
@@ -401,7 +409,8 @@ Aldabra_Group_rr_lambda_a_di_no_lambda_c_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Aldabra_Group_rr_lambda_a_di_no_lambda_c[[max_loglik]]$loglik
 
-### Relaxed rate anagenesis diversity-dependent no cladogenesis model ###
+
+# Relaxed rate anagenesis diversity-dependent no cladogenesis model -------
 
 Aldabra_Group_rr_lambda_a_dd_no_lambda_c_init <- list()
 
