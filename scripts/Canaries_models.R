@@ -15,7 +15,7 @@ for (i in 1:10) {
   init_param_set[[i]][6] <- runif(1, 0.1, 1)
 }
 
-### Constant rate diversity-independent model ###
+# Constant rate diversity-independent model -------------------------------
 
 Canaries_cr_di_init <- list()
 
@@ -60,7 +60,7 @@ Canaries_cr_di_max_loglik <- Canaries_cr_di[[max_loglik]]
 Canaries_cr_di_BIC <-
   4 * (log(1000) + log(2 * pi)) - 2 * Canaries_cr_di[[max_loglik]]$loglik
 
-### Constant rate diversity-dependent model ###
+# Constant rate diversity-dependent model ---------------------------------
 
 Canaries_cr_dd_init <- list()
 
@@ -107,7 +107,8 @@ Canaries_cr_dd_max_loglik <- Canaries_cr_dd[[max_loglik]]
 Canaries_cr_dd_BIC <-
   5 * (log(1000) + log(2 * pi)) - 2 * Canaries_cr_dd[[max_loglik]]$loglik
 
-### Relaxed rate cladogenesis diversity-independent model ###
+
+# Relaxed rate cladogenesis diversity-independent model -------------------
 
 Canaries_rr_lambda_c_di_init <- list()
 
@@ -158,7 +159,7 @@ Canaries_rr_lambda_c_di_BIC <-
   4 * (log(1000) + log(2 * pi)) -
   2 * Canaries_rr_lambda_c_di[[max_loglik]]$loglik
 
-### Relaxed rate cladogenesis diversity-dependent model ###
+# Relaxed rate cladogenesis diversity-dependent model ---------------------
 
 Canaries_rr_lambda_c_dd_init <- list()
 
@@ -211,7 +212,8 @@ Canaries_rr_lambda_c_dd_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Canaries_rr_lambda_c_dd[[max_loglik]]$loglik
 
-### Relaxed rate extinction diversity-independent model ###
+
+# Relaxed rate extinction diversity-independent model ---------------------
 
 Canaries_rr_mu_di_init <- list()
 
@@ -261,7 +263,7 @@ Canaries_rr_mu_di_max_loglik <-
 Canaries_rr_mu_di_BIC <-
   4 * (log(1000) + log(2 * pi)) - 2 * Canaries_rr_mu_di[[max_loglik]]$loglik
 
-### Relaxed rate extinction diversity-dependent model ###
+# Relaxed rate extinction diversity-dependent model -----------------------
 
 Canaries_rr_mu_dd_init <- list()
 
@@ -313,7 +315,7 @@ Canaries_rr_mu_dd_max_loglik <-
 Canaries_rr_mu_dd_BIC <-
   5 * (log(1000) + log(2 * pi)) - 2 * Canaries_rr_mu_dd[[max_loglik]]$loglik
 
-### Relaxed rate carrying capacity model ###
+# Relaxed rate carrying capacity model ------------------------------------
 
 Canaries_rr_k_init <- list()
 
@@ -366,7 +368,8 @@ Canaries_rr_k_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Canaries_rr_k[[max_loglik]]$loglik
 
-### Relaxed rate anagenesis diversity-independent model ###
+
+# Relaxed rate anagenesis diversity-independent model ---------------------
 
 Canaries_rr_lambda_a_di_init <- list()
 
@@ -417,7 +420,7 @@ Canaries_rr_lambda_a_di_BIC <-
   5 * (log(1000) + log(2 * pi)) -
   2 * Canaries_rr_lambda_a_di[[max_loglik]]$loglik
 
-### Relaxed rate anagenesis diversity-dependent model ###
+# Relaxed rate anagenesis diversity-dependent model -----------------------
 
 Canaries_rr_lambda_a_dd_init <- list()
 
