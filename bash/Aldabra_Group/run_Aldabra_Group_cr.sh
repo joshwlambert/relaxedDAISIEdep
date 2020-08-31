@@ -10,4 +10,5 @@
 
 module load R
 #for i in "${array[@]}"; do echo "$i"; done
-Rscript /home/p287218/relaxedDAISIE/scripts/Aldabra_Group_models${SLURM_ARRAY_TASK_ID}.R
+echo Aldabra_Group_${SLURM_ARRAY_TASK_ID}
+Rscript /home/p287218/relaxedDAISIE/scripts/Aldabra_Group_models/Aldabra_Group_${SLURM_ARRAY_TASK_ID}.R
