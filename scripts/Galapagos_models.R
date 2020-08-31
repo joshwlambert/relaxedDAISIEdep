@@ -411,7 +411,7 @@ Galapagos_rr_k_init <- list()
 
 for (i in seq_along(init_param_set)) {
   Galapagos_rr_k_init[[i]] <- DAISIE_ML_CS(
-    datalist = Comoros,
+    datalist = Galapagos,
     initparsopt = c(init_param_set[[i]][1],
                     init_param_set[[i]][2],
                     init_param_set[[i]][3],
