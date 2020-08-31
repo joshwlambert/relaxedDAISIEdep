@@ -1,5 +1,4 @@
 ### Aldabra_Group models ###
-# sample size, should be the same as M
 
 library(DAISIE)
 
@@ -19,6 +18,7 @@ for (i in 1:10) {
 # Constant rate diversity-independent model -------------------------------
 
 Aldabra_Group_cr_di_init <- list()
+Aldabra_Group_cr_di <- list()
 
 for (i in seq_along(init_param_set)) {
   Aldabra_Group_cr_di_init[[i]] <- DAISIE_ML_CS(
@@ -33,11 +33,7 @@ for (i in seq_along(init_param_set)) {
     ddmodel = 0,
     optimmethod = "simplex",
     CS_version = 1)
-}
 
-Aldabra_Group_cr_di <- list()
-
-for (i in seq_along(init_param_set)) {
   Aldabra_Group_cr_di[[i]] <- DAISIE_ML_CS(
     datalist = Aldabra_Group,
     initparsopt = c(Aldabra_Group_cr_di_init[[i]]$lambda_c,
