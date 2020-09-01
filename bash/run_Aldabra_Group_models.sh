@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --job-name=Aldabra_Group
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Aldabra_Group%a.log
-#SBATCH --array=0-4
+#SBATCH --array=0-8
 #SBATCH --mem=5GB
 
 mkdir -p results
