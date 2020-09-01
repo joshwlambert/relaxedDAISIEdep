@@ -1,4 +1,4 @@
-### Aldabra Group constant rate diversity independent model ###
+# Aldabra Group constant rate diversity independent model
 
 library(DAISIE)
 
@@ -13,9 +13,6 @@ for (i in 1:10) {
   init_param_set[[i]][5] <- runif(1, 0.1, 2)
   init_param_set[[i]][6] <- runif(1, 0.1, 1)
 }
-
-
-# Constant rate diversity-independent model -------------------------------
 
 Aldabra_Group_cr_di_init <- list()
 Aldabra_Group_cr_di <- list()
@@ -58,7 +55,8 @@ Aldabra_Group_cr_di_BIC <-
   4 * (log(1000) + log(2 * pi)) - 2 * Aldabra_Group_cr_di[[max_loglik]]$loglik
 
 #Save results
-results_file_path <- file.path(getwd(), "results", "Aldabra_Group_cr_di.RData")
+results_file_path <- file.path(getwd(), "results", "Aldabra_Group",
+                               "Aldabra_Group_cr_di.RData")
 Aldabra_Group_cr_di_results <- list(
   Aldabra_Group_cr_di_max_loglik = Aldabra_Group_cr_di_max_loglik,
   Aldabra_Group_cr_di_BIC = Aldabra_Group_cr_di_BIC)
