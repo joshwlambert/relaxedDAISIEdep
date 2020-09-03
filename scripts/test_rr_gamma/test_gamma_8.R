@@ -38,7 +38,7 @@ for (i in seq_along(rr_gamma_sim_data)) {
     optimmethod = "simplex",
     CS_version = create_CS_version(
       model = 2,
-      pick_parameter = "carrying_capacity"))
+      relaxed_par = "immigration"))
 }
 
 #Save results
