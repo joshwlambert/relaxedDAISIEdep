@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --job-name=test_gamma
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/test_gamma_%a.log
-#SBATCH --array=0-7
+#SBATCH --array=1-8
 #SBATCH --mem=5GB
 
 mkdir -p results
