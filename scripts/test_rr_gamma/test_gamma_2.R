@@ -28,7 +28,7 @@ rr_gamma_sim_data <- DAISIE_sim_relaxed_rate(
   relaxed_par = "immigration")
 
 rr_gamma_ml <- list()
-for (i in seq_alongrr_gamma_sim_data) {
+for (i in seq_along(rr_gamma_sim_data)) {
   rr_gamma_ml[[i]] <- DAISIE_ML_CS(
     datalist = rr_gamma_sim_data[[i]],
     initparsopt = as.numeric(param_space[2, ]),
