@@ -59,10 +59,7 @@ for (i in seq_along(sd)) {
       relaxed_par = "anagenesis")
 }
 
-rr_lambda_c_ml <- list()
-rr_mu_ml <- list()
-rr_k_ml <- list()
-rr_lambda_a_ml <- list()
+ml <- list()
 
 for (i in seq_along(sim)) {
   if (args[3] == "cr") {
