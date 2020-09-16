@@ -1,13 +1,13 @@
 library(DAISIE)
 
+args <- commandArgs(TRUE)
+
 results_dir <- paste("performance_analysis", args[2], args[3], sep = "_")
 results_dir_path <- file.path(getwd(),
                               "results",
                               "performance_analysis",
                               results_dir)
 dir.create(results_dir_path)
-
-args <- commandArgs(TRUE)
 
 set.seed(as.numeric(args[1]))
 sd <- c(0.1, 1, 5)
