@@ -1,5 +1,12 @@
 library(DAISIE)
 
+results_dir <- paste("performance_analysis", args[2], args[3], sep = "_")
+results_dir_path <- file.path(getwd(),
+                              "results",
+                              "performance_analysis",
+                              results_dir)
+dir.create(results_dir_path)
+
 args <- commandArgs(TRUE)
 
 set.seed(as.numeric(args[1]))
@@ -65,10 +72,8 @@ for (i in seq_along(sim)) {
       ddmodel = 11,
       optimmethod = "simplex",
       CS_version = 1)
-    results_file_path <- file.path(getwd(), "results", "performance_analysis",
-                                   "cr_ml.RData")
-    save(cr_ml,
-         file = results_file_path)
+    results_file_path <- file.path(results_dir_path, "cr_ml.RData")
+    save(cr_ml, file = results_file_path)
   }
   if (args[3] == "rr_lambda_c") {
     rr_lambda_c_ml[[i]] <- DAISIE_ML_CS(
@@ -82,10 +87,8 @@ for (i in seq_along(sim)) {
       CS_version = create_CS_version(model = 2,
                                      relaxed_par = "cladogenesis"))
 
-    results_file_path <- file.path(getwd(), "results", "performance_analysis",
-                                   "rr_lambda_c_ml.RData")
-    save(rr_lambda_c_ml,
-         file = results_file_path)
+    results_file_path <- file.path(results_dir_path, "rr_lambda_c_ml.RData")
+    save(rr_lambda_c_ml, file = results_file_path)
   }
   if (args[3] == "rr_mu") {
     rr_mu_ml[[i]] <- DAISIE_ML_CS(
@@ -98,10 +101,8 @@ for (i in seq_along(sim)) {
       optimmethod = "simplex",
       CS_version = create_CS_version(model = 2,
                                      relaxed_par = "extinction"))
-    results_file_path <- file.path(getwd(), "results", "performance_analysis",
-                                   "rr_mu_ml.RData")
-    save(rr_mu_ml,
-         file = results_file_path)
+    results_file_path <- file.path(results_dir_path, "rr_mu_ml.RData")
+    save(rr_mu_ml, file = results_file_path)
   }
   if (args[3] == "rr_k") {
     rr_k_ml[[i]] <- DAISIE_ML_CS(
@@ -114,10 +115,8 @@ for (i in seq_along(sim)) {
       optimmethod = "simplex",
       CS_version = create_CS_version(model = 2,
                                      relaxed_par = "carrying_capacity"))
-    results_file_path <- file.path(getwd(), "results", "performance_analysis",
-                                   "rr_k_ml.RData")
-    save(rr_k_ml,
-         file = results_file_path)
+    results_file_path <- file.path(results_dir_path, "rr_k_ml.RData")
+    save(rr_k_ml, file = results_file_path)
   }
   if (args[3] == "rr_lambda_a") {
     rr_lambda_a_ml[[i]] <- DAISIE_ML_CS(
@@ -130,9 +129,7 @@ for (i in seq_along(sim)) {
       optimmethod = "simplex",
       CS_version = create_CS_version(model = 2,
                                      relaxed_par = "anagenesis"))
-    results_file_path <- file.path(getwd(), "results", "performance_analysis",
-                                   "rr_lambda_a_ml.RData")
-    save(rr_lambda_a_ml,
-         file = results_file_path)
+    results_file_path <- file.path(results_dir_path, "rr_lambda_a_ml.RData")
+    save(rr_lambda_a_ml, file = results_file_path)
   }
 }
