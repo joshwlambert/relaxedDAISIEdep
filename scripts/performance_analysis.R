@@ -7,10 +7,7 @@ results <- paste("performance_analysis",
                  args[3],
                  args[1],
                  sep = "_")
-results_path <- file.path(getwd(),
-                          "results",
-                          "performance_analysis",
-                          results)
+results_path <- file.path(getwd(), "results", "performance_analysis")
 
 set.seed(as.numeric(args[1]))
 sd <- c(0.1, 1, 5)
