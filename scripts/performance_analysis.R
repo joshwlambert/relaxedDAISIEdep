@@ -9,7 +9,7 @@ if (args[2] == "cr") {
   sim <- DAISIE_sim_constant_rate(
     time = 5,
     M = 1000,
-    pars = c(1,1,10,0.1,1),
+    pars = c(1, 1, 30, 0.1, 1),
     replicates = 1)
 }
 
@@ -38,7 +38,7 @@ for (i in 1:3) {
     sim <- DAISIE_sim_relaxed_rate(
       time = 5,
       M = 1000,
-      pars = c(1, 1, 10, 0.1, 1, sd[i]),
+      pars = c(1, 1, 30, 0.1, 1, sd[i]),
       replicates = 1,
       relaxed_par = "extinction")
   }
@@ -46,7 +46,7 @@ for (i in 1:3) {
     sim <- DAISIE_sim_relaxed_rate(
       time = 5,
       M = 1000,
-      pars = c(1, 1, 10, 0.1, 1, sd[i]),
+      pars = c(1, 1, 30, 0.1, 1, sd[i]),
       replicates = 1,
       relaxed_par = "carrying_capacity")
   }
@@ -54,7 +54,7 @@ for (i in 1:3) {
     sim <- DAISIE_sim_relaxed_rate(
       time = 5,
       M = 1000,
-      pars = c(1,1,10,0.1,1,sd),
+      pars = c(1, 1, 30, 0.1, 1, sd[i]),
       replicates = 1,
       relaxed_par = "anagenesis")
 
