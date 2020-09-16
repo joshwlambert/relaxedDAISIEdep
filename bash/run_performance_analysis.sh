@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --job-name=run_performance
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/run_performance%a.log
-#SBATCH --array=1-1000
+#SBATCH --array=1-10
 #SBATCH --mem=5GB
 
 # sim_model and ml_model should be one of: cr, rr_lambda_c, rr_mu, rr_k, rr_lambda_a
@@ -15,7 +15,7 @@
 # rr_k = relaxed-rate carrying capacity model
 # rr_lambda_a = relaxed-rate anagenesis model
 
-#example: sbatch run_performance.sh rr_lambda_c rr_lambda_a
+#example: sbatch run_performance_analysis.sh rr_lambda_c rr_lambda_a
 
 sim_model=$1
 ml_model=$2
