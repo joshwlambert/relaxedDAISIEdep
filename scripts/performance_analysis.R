@@ -15,7 +15,7 @@ if (args[2] == "cr") {
 
 if (args[3] == "cr") {
   ml <- DAISIE_ML_CS(
-    datalist = sim,
+    datalist = sim[[1]],
     initparsopt = c(1, 1, 30, 0.01, 1),
     idparsopt = 1:5,
     parsfix = NULL,
@@ -61,7 +61,7 @@ for (i in 1:3) {
 
   if (args[3] == "rr_lambda_c") {
     ml <- DAISIE_ML_CS(
-      datalist = sim,
+      datalist = sim[[1]],
       initparsopt = c(1, 1, 30, 0.01, 1, sd[i]),
       idparsopt = 1:6,
       parsfix = NULL,
@@ -73,7 +73,7 @@ for (i in 1:3) {
   }
   if (args[3] == "rr_mu") {
     ml <- DAISIE_ML_CS(
-      datalist = sim,
+      datalist = sim[[1]],
       initparsopt = c(1, 1, 30, 0.01, 1, sd[i]),
       idparsopt = 1:6,
       parsfix = NULL,
@@ -85,7 +85,7 @@ for (i in 1:3) {
   }
   if (args[3] == "rr_k") {
     ml <- DAISIE_ML_CS(
-      datalist = sim,
+      datalist = sim[[1]],
       initparsopt = c(1, 1, 30, 0.01, 1, sd[i]),
       idparsopt = 1:6,
       parsfix = NULL,
@@ -97,7 +97,7 @@ for (i in 1:3) {
   }
   if (args[3] == "rr_lambda_a") {
     ml <- DAISIE_ML_CS(
-      datalist = sim,
+      datalist = sim[[1]],
       initparsopt = c(1, 1, 30, 0.01, 1, sd[i]),
       idparsopt = 1:6,
       parsfix = NULL,
