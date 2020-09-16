@@ -1,3 +1,5 @@
+library(DAISIE)
+
 args <- commandArgs(TRUE)
 
 set.seed(as.numeric(args[1]))
