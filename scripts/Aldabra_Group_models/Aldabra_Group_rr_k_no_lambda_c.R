@@ -35,11 +35,11 @@ for (i in seq_along(init_param_set)) {
 
   Aldabra_Group_rr_k_no_lambda_c[[i]] <- DAISIE_ML_CS(
     datalist = Aldabra_Group,
-    initparsopt = c(Aldabra_Group_rr_mu_dd_no_lambda_c_init[[i]]$mu,
-                    Aldabra_Group_rr_mu_dd_no_lambda_c_init[[i]]$K,
-                    Aldabra_Group_rr_mu_dd_no_lambda_c_init[[i]]$gamma,
-                    Aldabra_Group_rr_mu_dd_no_lambda_c_init[[i]]$lambda_a,
-                    Aldabra_Group_rr_mu_dd_no_lambda_c_init[[i]]$sd),
+    initparsopt = c(Aldabra_Group_rr_k_no_lambda_c_init[[i]]$mu,
+                    Aldabra_Group_rr_k_no_lambda_c_init[[i]]$K,
+                    Aldabra_Group_rr_k_no_lambda_c_init[[i]]$gamma,
+                    Aldabra_Group_rr_k_no_lambda_c_init[[i]]$lambda_a,
+                    Aldabra_Group_rr_k_no_lambda_c_init[[i]]$sd),
     idparsopt = c(2, 3, 4, 5, 6),
     parsfix = 0,
     idparsfix = 1,
