@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=run_performance
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/run_performance%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/run_performance%a%j.log
 #SBATCH --array=1-10
 #SBATCH --mem=5GB
 
