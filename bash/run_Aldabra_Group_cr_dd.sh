@@ -9,4 +9,4 @@
 #SBATCH --mem=5GB
 
 module load R
-Rscript /home/p287218/relaxedDAISIE/script/Aldabra_Group/Aldabra_Group_cr_ddv2.R${SLURM_ARRAY_TASK_ID}
+Rscript /home/p287218/relaxedDAISIE/script/Aldabra_Group/Aldabra_Group_cr_dd.R ${SLURM_ARRAY_TASK_ID}
