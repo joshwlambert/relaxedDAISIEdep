@@ -49,26 +49,29 @@ archipelago_analysis <- function(data,
   } else {
     CS_version <- 1
   }
+  suppressMessages(
+    init_ml <- DAISIE::DAISIE_ML_CS(
+      datalist = data,
+      initparsopt = init_param_set[idparsopt],
+      idparsopt = idparsopt,
+      parsfix = parsfix,
+      idparsfix = idparsfix,
+      ddmodel = ddmodel,
+      optimmethod = "simplex",
+      CS_version = CS_version)
+  )
 
-  init_ml <- DAISIE::DAISIE_ML_CS(
-    datalist = data,
-    initparsopt = init_param_set[idparsopt],
-    idparsopt = idparsopt,
-    parsfix = parsfix,
-    idparsfix = idparsfix,
-    ddmodel = ddmodel,
-    optimmethod = "simplex",
-    CS_version = CS_version)
-
-  ml <- DAISIE::DAISIE_ML_CS(
-    datalist = data,
-    initparsopt = as.numeric(init_ml)[idparsopt],
-    idparsopt = idparsopt,
-    parsfix = parsfix,
-    idparsfix = idparsfix,
-    ddmodel = ddmodel,
-    optimmethod = "simplex",
-    CS_version = CS_version)
+  suppressMessages(
+    ml <- DAISIE::DAISIE_ML_CS(
+      datalist = data,
+      initparsopt = as.numeric(init_ml)[idparsopt],
+      idparsopt = idparsopt,
+      parsfix = parsfix,
+      idparsfix = idparsfix,
+      ddmodel = ddmodel,
+      optimmethod = "simplex",
+      CS_version = CS_version)
+  )
 
   k <- length(idparsopt)
   m <- data[[1]]$not_present + (length(data) - 1)
@@ -94,9 +97,9 @@ archipelago_analysis <- function(data,
              showWarnings = FALSE)
   results_file_path <- file.path(getwd(), "results", archipelago, model_name)
   results <- list(
-     ml = ml,
-     BIC = BIC)
+    ml = ml,
+    BIC = BIC)
 
-   save(results,
-        file = results_file_path)
+  save(results,
+       file = results_file_path)
 }
