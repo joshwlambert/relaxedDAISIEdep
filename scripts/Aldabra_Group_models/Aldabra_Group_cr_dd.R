@@ -1,5 +1,7 @@
 args <- commandArgs(TRUE)
 
+data(Aldabra_Group)
+
 archipelago_analysis(data = Aldabra_Group,
                      archipelago = "Aldabra_Group",
                      idparsopt = 1:5,
