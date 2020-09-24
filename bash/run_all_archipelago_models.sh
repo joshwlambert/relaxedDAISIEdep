@@ -8,7 +8,6 @@
 #SBATCH --array=0-20
 #SBATCH --mem=5GB
 
-module load R
 models=(Aldabra_Group Azores Canaries Cape_Verde Chatham Comoros Galapagos \
         Greater_Antilles Guadalupe Guam_Marianas Hawaii Hispaniola Madeira \
         Marquesas New_Caledonia New_Zealand Norfolk Palau Samoa SaoTome_Principe \
