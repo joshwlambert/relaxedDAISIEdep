@@ -1,6 +1,4 @@
-commandArgs(TRUE)
-
-seed <- args[1]
+args <- commandArgs(TRUE)
 
 archipelago_analysis(data = Aldabra_Group,
                      archipelago = "Aldabra_Group",
@@ -8,5 +6,5 @@ archipelago_analysis(data = Aldabra_Group,
                      parsfix = NULL,
                      idparsfix = NULL,
                      ddmodel = 11,
-                     seed = seed,
+                     seed = args[1],
                      relaxed_model = FALSE)
