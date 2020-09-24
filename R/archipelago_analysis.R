@@ -8,7 +8,10 @@
 #' @param ddmodel numeric determining diversity-independence or -dependence
 #' @param seed numeric seed for the simulation
 #' @param relaxed_model boolean defining if the model is relaxed-rate
-#' @param relaxed_par string determining which parameter to relax
+#' @param relaxed_par string determining which parameter to relax, only required
+#' if relaxed_model is TRUE
+#' @param save_output boolean determining whether the output is saved or
+#' returned
 #'
 #' @export
 #'
@@ -29,7 +32,8 @@ archipelago_analysis <- function(data,
                                  ddmodel,
                                  seed,
                                  relaxed_model,
-                                 relaxed_par = NULL) {
+                                 relaxed_par = NULL,
+                                 save_output = TRUE) {
   set.seed(seed = seed,
            kind = "Mersenne-Twister",
            normal.kind = "Inversion",
@@ -77,7 +81,6 @@ archipelago_analysis <- function(data,
   m <- data[[1]]$not_present + (length(data) - 1)
   BIC <- k * (log(m) + log(2 * pi)) - 2 * ml$loglik
 
-
   if (relaxed_model) {
     if (ddmodel == 11) {
       model_name <- paste(archipelago, "_rr_", relaxed_par, "_dd_", seed, ".RData", sep = "")
@@ -100,6 +103,10 @@ archipelago_analysis <- function(data,
     ml = ml,
     BIC = BIC)
 
-  save(results,
-       file = results_file_path)
+  if (save_output) {
+    save(results,
+         file = results_file_path)
+  } else {
+    return(results)
+  }
 }

@@ -13,7 +13,8 @@ archipelago_analysis(
   ddmodel,
   seed,
   relaxed_model,
-  relaxed_par = NULL
+  relaxed_par = NULL,
+  save_output = TRUE
 )
 }
 \arguments{
@@ -33,7 +34,11 @@ archipelago_analysis(
 
 \item{relaxed_model}{boolean defining if the model is relaxed-rate}
 
-\item{relaxed_par}{string determining which parameter to relax}
+\item{relaxed_par}{string determining which parameter to relax, only required
+if relaxed_model is TRUE}
+
+\item{save_output}{boolean determining whether the output is saved or
+returned}
 }
 \description{
 Runs the maximum likelihood optimisation for a given DAISIE model
