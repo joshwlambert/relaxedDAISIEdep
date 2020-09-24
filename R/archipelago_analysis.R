@@ -34,11 +34,11 @@ archipelago_analysis <- function(data,
            kind = "Mersenne-Twister",
            normal.kind = "Inversion",
            sample.kind = "Rejection")
-  init_param_set <- runif(2, 0.1, 2)
-  init_param_set[3] <- runif(1, 30, 100)
-  init_param_set[4] <- runif(1, 0.001, 0.01)
-  init_param_set[5] <- runif(1, 0.1, 2)
-  init_param_set[6] <- runif(1, 0.1, 1)
+  init_param_set <- stats::runif(2, 0.1, 2)
+  init_param_set[3] <- stats::runif(1, 30, 100)
+  init_param_set[4] <- stats::runif(1, 0.001, 0.01)
+  init_param_set[5] <- stats::runif(1, 0.1, 2)
+  init_param_set[6] <- stats::runif(1, 0.1, 1)
 
   init_ml <- list()
   ml <- list()
