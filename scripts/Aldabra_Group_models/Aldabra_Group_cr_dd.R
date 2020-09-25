@@ -4,6 +4,7 @@ data(Aldabra_Group)
 
 relaxedDAISIE::archipelago_analysis(data = Aldabra_Group,
                                     archipelago = "Aldabra_Group",
+                                    model = "cr_dd",
                                     idparsopt = 1:5,
                                     parsfix = NULL,
                                     idparsfix = NULL,
