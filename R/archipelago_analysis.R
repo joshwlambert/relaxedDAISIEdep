@@ -65,7 +65,8 @@ archipelago_analysis <- function(data,
       idparsfix = idparsfix,
       ddmodel = ddmodel,
       optimmethod = "simplex",
-      CS_version = CS_version)
+      CS_version = CS_version,
+      cond = 5)
   )
 
   suppressMessages(
@@ -77,7 +78,8 @@ archipelago_analysis <- function(data,
       idparsfix = idparsfix,
       ddmodel = ddmodel,
       optimmethod = "simplex",
-      CS_version = CS_version)
+      CS_version = CS_version,
+      cond = 5)
   )
 
   k <- length(idparsopt)
