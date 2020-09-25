@@ -7,6 +7,7 @@
 archipelago_analysis(
   data,
   archipelago,
+  model,
   idparsopt,
   parsfix,
   idparsfix,
@@ -21,6 +22,8 @@ archipelago_analysis(
 \item{data}{list of DAISIE data}
 
 \item{archipelago}{string with the name of the archipelago}
+
+\item{model}{string with the name of the model}
 
 \item{idparsopt}{numeric vector with the id of parameters to optimise}
 
@@ -47,6 +50,7 @@ Runs the maximum likelihood optimisation for a given DAISIE model
 output <- archipelago_analysis(
 data = Aldabra_Group,
 archipelago = "Aldabra_Group",
+model = "cr_di",
 idparsopt = c(1,2,3,4,5),
 parsfix = NULL,
 idparsfix = NULL,

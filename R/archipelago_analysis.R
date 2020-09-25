@@ -2,6 +2,7 @@
 #'
 #' @param data list of DAISIE data
 #' @param archipelago string with the name of the archipelago
+#' @param model string with the name of the model
 #' @param idparsopt numeric vector with the id of parameters to optimise
 #' @param parsfix numeric vector with the value of the fixed parameters
 #' @param idparsfix numeric vector with the id of parameters to fix
@@ -18,6 +19,7 @@
 #' @examples output <- archipelago_analysis(
 #' data = Aldabra_Group,
 #' archipelago = "Aldabra_Group",
+#' model = "cr_di",
 #' idparsopt = c(1,2,3,4,5),
 #' parsfix = NULL,
 #' idparsfix = NULL,
@@ -26,6 +28,7 @@
 #' relaxed_model = FALSE)
 archipelago_analysis <- function(data,
                                  archipelago,
+                                 model,
                                  idparsopt,
                                  parsfix,
                                  idparsfix,
@@ -81,20 +84,8 @@ archipelago_analysis <- function(data,
   m <- data[[1]]$not_present + (length(data) - 1)
   BIC <- k * (log(m) + log(2 * pi)) - 2 * ml$loglik
 
-  if (relaxed_model) {
-    if (ddmodel == 11) {
-      model_name <- paste(archipelago, "_rr_", relaxed_par, "_dd_", seed, ".RData", sep = "")
-    } else {
-      model_name <- paste(archipelago, "_rr_", relaxed_par, "_di_", seed, ".RData", sep = "")
-    }
-  } else {
-    if (ddmodel == 11) {
-      model_name <- paste(archipelago, "_cr_", "dd_", seed, ".RData", sep = "")
-    } else {
-      model_name <- paste(archipelago, "_cr_", "di_", seed, ".RData", sep = "")
-    }
-  }
 
+  model_name <- paste(archipelago, "_", model, "_", seed, ".RData", sep = "")
   dir.create("results", showWarnings = FALSE)
   dir.create(path = paste("results/", archipelago, sep = ""),
              showWarnings = FALSE)
