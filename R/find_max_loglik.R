@@ -5,9 +5,6 @@
 #'
 #' @return list of two numeric elements
 #' @export
-#'
-#' @examples loglik <- find_max_loglik(archipelago = "Aldabra_Group",
-#'                                     model = "cr_di")
 find_max_loglik <- function(archipelago,
                             model) {
   model_names <- list()
