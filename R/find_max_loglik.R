@@ -10,7 +10,6 @@
 #'                                     model = "cr_di")
 find_max_loglik <- function(archipelago,
                             model) {
-  #reads in data
   model_names <- list()
   logliks <- list()
   BICs <- list()

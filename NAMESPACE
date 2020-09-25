@@ -2,3 +2,4 @@
 
 export(archipelago_analysis)
 export(calc_rr_approach_cr)
+export(find_max_loglik)
