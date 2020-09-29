@@ -87,6 +87,24 @@ Hawaii[[1]] <- list(island_age = Hawaii[[1]]$island_age,
 # save data set
 save(Hawaii, file = "Hawaii.RData")
 
+### Juan Fernandez ###
+
+#Remove informaton on area, distance and name
+Juan_Fernandez[[1]] <- list(island_age = Juan_Fernandez[[1]]$island_age,
+                            not_present = Juan_Fernandez[[1]]$not_present)
+
+# save data set
+save(Juan_Fernandez, file = "Juan_Fernandez.RData")
+
+### Lord Howe ###
+
+#Remove information on area, distance and name
+Lord_Howe[[1]] <- list(island_age = Lord_Howe[[1]]$island_age,
+                       not_present = Lord_Howe[[1]]$not_present)
+
+# save data set
+save(Lord_Howe, file = "Lord_Howe.RData")
+
 ### Madeira ###
 
 #Remove information on area, distance and name
@@ -114,6 +132,15 @@ Marquesas[[1]] <- list(island_age = Marquesas[[1]]$island_age,
 # save data set
 save(Marquesas, file = "Marquesas.RData")
 
+### Mauritius Island ###
+
+#Remove information on area, distance and name
+Mauritius_Island[[1]] <- list(island_age = Mauritius_Island[[1]]$island_age,
+                              not_present = Mauritius_Island[[1]]$not_present)
+
+# save data set
+save(Mauritius_Island, file = "Mauritius_Island.RData")
+
 ### New_Caledonia ###
 
 #Remove information on area, distance and name
@@ -122,6 +149,15 @@ New_Caledonia[[1]] <- list(island_age = New_Caledonia[[1]]$island_age,
 
 # save data set
 save(New_Caledonia, file = "New_Caledonia.RData")
+
+### Niue ###
+
+#Remove information on area, distance and name
+Niue[[1]] <- list(island_age = Niue[[1]]$island_age,
+                  not_present = Niue[[1]]$not_present)
+
+# save data set
+save(Niue, file = "Niue.RData")
 
 ### Norfolk ###
 
@@ -132,6 +168,15 @@ Norfolk[[1]] <- list(island_age = Norfolk[[1]]$island_age,
 # save data set
 save(Norfolk, file = "Norfolk.RData")
 
+### Ogasawara ###
+
+#Remove information on area, distance and name
+Ogasawara[[1]] <- list(island_age = Ogasawara[[1]]$island_age,
+                       not_present = Ogasawara[[1]]$not_present)
+
+# save data set
+save(Ogasawara, file = "Ogasawara.RData")
+
 ### Palau ###
 
 #Remove information on area, distance and name
@@ -140,6 +185,15 @@ Palau[[1]] <- list(island_age = Palau[[1]]$island_age,
 
 # save data set
 save(Palau, file = "Palau.RData")
+
+### Reunion ###
+
+#Remove information on area, distance and name
+Reunion[[1]] <- list(island_age = Reunion[[1]]$island_age,
+                     not_present = Reunion[[1]]$not_present)
+
+# save data set
+save(Reunion, file = "Reunion.RData")
 
 ### Samoa ###
 
@@ -167,3 +221,12 @@ Seychelles_Inner[[1]] <- list(island_age = Seychelles_Inner[[1]]$island_age,
 
 # save data set
 save(Seychelles_Inner, file = "Seychelles_Inner.RData")
+
+### Socorro ###
+
+#Remove information on area, distance and name
+Socorro[[1]] <- list(island_age = Socorro[[1]]$island_age,
+                     not_present = Socorro[[1]]$not_present)
+
+# save data set
+save(Socorro, file = "Socorro.RData")
