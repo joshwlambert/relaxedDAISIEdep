@@ -9,6 +9,7 @@ cr <- DAISIE_ML_CS(
   parsfix = NULL,
   idparsfix = NULL,
   ddmodel = 11,
+  cond = 0,
   optimmethod = "simplex",
   CS_version = 1)
 
