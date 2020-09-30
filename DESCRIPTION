@@ -17,3 +17,5 @@ Suggests:
     testthat,
     covr,
     ggplot2
+Remotes:
+     rsetienne/DAISIE@v3.1.0
