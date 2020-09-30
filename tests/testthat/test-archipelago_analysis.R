@@ -10,15 +10,15 @@ test_that("archipelago_analysis returns the correct ouput", {
                                    seed = 1,
                                    relaxed_model = FALSE,
                                    save_output = FALSE)
-    expected_output <- list(ml = data.frame(lambda_c = 1.88986504583e-10,
-                                            mu = 0.652282694565,
-                                            K = 0.571806826695,
-                                            gamma = 0.0164538541001,
-                                            lambda_a = 1.01020027363,
-                                            loglik = -73.362384727,
+    expected_output <- list(ml = data.frame(lambda_c = 1.07218523312338e-11,
+                                            mu = 0.621412899851853,
+                                            K = Inf,
+                                            gamma = 0.016057129238812,
+                                            lambda_a = 1.00796307163172,
+                                            loglik = -73.4101646006971,
                                             df = 5,
                                             conv = 0),
-                            BIC = 190.452931181)
+                            BIC = 190.548490928352)
 
     expect_equal(output, expected_output)
   } else{
@@ -52,7 +52,3 @@ test_that("archipelago_analysis correctly errors when input is incorrect", {
     skip("Run only on TRAVIS and AppVeyor")
   }
 })
-
-
-
-
