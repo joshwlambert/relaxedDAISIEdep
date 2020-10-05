@@ -3,9 +3,13 @@
 #SBATCH --partition=gelifes
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --job-name=Galapagos_models
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Galapagos_models.log
+#SBATCH --job-name=Galapagos
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Galapagos_models%a.log
+#SBATCH --array=0-8
 #SBATCH --mem=5GB
 
-module load R
-Rscript /home/p287218/relaxedDAISIE/scripts/Galapagos_models.R
+mkdir -p results/Galapagos
+models=(cr_di cr_dd cr_di_no_lambda_a cr_dd_no_lambda_a rr_lambda_c_di \
+        rr_lambda_c_dd rr_mu_di rr_mu_dd rr_k rr_lambda_a_di rr_lambda_a_dd)
+
+sbatch /home/p287218/relaxedDAISIE/bash/Galapagos_models/run_Galapagos_${models[SLURM_ARRAY_TASK_ID]}.sh
