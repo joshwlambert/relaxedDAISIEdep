@@ -1,8 +1,6 @@
 ---
-title: "Relaxing ..."
+title: relaxedDAISIE
 ---
-
-# relaxedDAISIE
 
 <!-- badges: start -->
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
@@ -17,6 +15,9 @@ et al. (2020) doi:
 This package is tailored to the Peregrine High Performance Computer Cluster at
 the University of Groningen.
 
+A full guide to using the package and reproducing the analyses of Lambert et al.
+can be found in the vignette called 'Reproducibility'.
+
 ## Installation
 
 You can install the released version of relaxedDAISIE from [github](https://github.com/joshwlambert/relaxedDAISIE) with:
@@ -29,22 +30,3 @@ The package can also be installed using the bash script:
 ```{bash}
 install_relaxedDAISIE.sh
 ```
-
-## Empirical Analysis
-
-Individuals archipelagos can be analysed by calling the respective
-*_model.sh file, for example:
-```{bash}
-Aldabra_Group_models.sh
-```
-
-All archipelago model can be run in parallel by running:
-```{bash}
-run_all_archipelago_models.sh
-```
-
-Once the models have been run the best maximum likelihood model can be extracted
-from the replicates using:
-``` r
-find_max_loglik()
-``` 
