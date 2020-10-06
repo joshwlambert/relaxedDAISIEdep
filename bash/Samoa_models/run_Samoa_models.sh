@@ -3,9 +3,14 @@
 #SBATCH --partition=gelifes
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --job-name=Samoa_models
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Samoa_models.log
+#SBATCH --job-name=Samoa
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Samoa_models%a.log
+#SBATCH --array=0-8
 #SBATCH --mem=5GB
 
-module load R
-Rscript /home/p287218/relaxedDAISIE/scripts/Samoa_models.R
+mkdir -p results/Samoa
+models=(cr_di cr_dd cr_di_no_lambda_c cr_dd_no_lambda_c rr_mu_di_no_lambda_c \
+        rr_mu_dd_no_lambda_c rr_k_no_lambda_c rr_lambda_a_di_no_lambda_c \
+        rr_lambda_a_dd_no_lambda_c)
+
+sbatch /home/p287218/relaxedDAISIE/bash/Samoa_models/run_Samoa_${models[SLURM_ARRAY_TASK_ID]}.sh
