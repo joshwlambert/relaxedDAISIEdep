@@ -40,7 +40,7 @@ bootstrap_lik_ratio <- function(
     sim_model_1 <- DAISIE::DAISIE_sim_relaxed_rate(
       time = time,
       M = m,
-      pars = as.numeric(model_1_output[1:6]),
+      pars = as.numeric(model_1[1:6]),
       replicates = 1,
       relaxed_par = relaxed_par_1,
       cond = 5)
@@ -49,7 +49,7 @@ bootstrap_lik_ratio <- function(
 
     ml_1_model_1 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_1[[1]],
-      initparsopt = as.numeric(model_1_output[1:6]),
+      initparsopt = as.numeric(model_1[1:6]),
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
@@ -61,7 +61,7 @@ bootstrap_lik_ratio <- function(
     sim_model_1 <- DAISIE::DAISIE_sim_constant_rate(
       time = time,
       M = m,
-      pars = as.numeric(model_1_output[1:5]),
+      pars = as.numeric(model_1[1:5]),
       replicates = 1,
       cond = 5)
 
@@ -69,7 +69,7 @@ bootstrap_lik_ratio <- function(
 
     ml_1_model_1 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_1[[1]],
-      initparsopt = as.numeric(model_1_output[1:5]),
+      initparsopt = as.numeric(model_1[1:5]),
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
@@ -82,7 +82,7 @@ bootstrap_lik_ratio <- function(
   if (relaxed_model_2) {
     ml_2_model_1 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_1[[1]],
-      initparsopt = as.numeric(model_1_output[1:6]),
+      initparsopt = as.numeric(model_1[1:6]),
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
@@ -93,7 +93,7 @@ bootstrap_lik_ratio <- function(
   } else {
     ml_2_model_1 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_1[[1]],
-      initparsopt = as.numeric(model_1_output[1:5]),
+      initparsopt = as.numeric(model_1[1:5]),
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
@@ -107,7 +107,7 @@ bootstrap_lik_ratio <- function(
     sim_model_2 <- DAISIE::DAISIE_sim_relaxed_rate(
       time = time,
       M = m,
-      pars = as.numeric(model_2_output[1:6]),
+      pars = as.numeric(model_2[1:6]),
       replicates = 1,
       relaxed_par = relaxed_par_2,
       cond = 5)
@@ -116,7 +116,7 @@ bootstrap_lik_ratio <- function(
 
     ml_1_model_2 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_1[[1]],
-      initparsopt = as.numeric(model_1_output[1:6]),
+      initparsopt = as.numeric(model_1[1:6]),
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
@@ -128,7 +128,7 @@ bootstrap_lik_ratio <- function(
     sim_model_2 <- DAISIE::DAISIE_sim_constant_rate(
       time = time,
       M = m,
-      pars = as.numeric(model_2_output[1:5]),
+      pars = as.numeric(model_2[1:5]),
       replicates = 1,
       cond = 5)
 
@@ -136,7 +136,7 @@ bootstrap_lik_ratio <- function(
 
     ml_1_model_2 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_1[[1]],
-      initparsopt = as.numeric(model_2_output[1:5]),
+      initparsopt = as.numeric(model_2[1:5]),
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
@@ -149,7 +149,7 @@ bootstrap_lik_ratio <- function(
   if (relaxed_model_1) {
     ml_2_model_2 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_2[[1]],
-      initparsopt = as.numeric(model_2_output[1:6]),
+      initparsopt = as.numeric(model_2[1:6]),
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
@@ -160,7 +160,7 @@ bootstrap_lik_ratio <- function(
   } else {
     ml_2_model_2 <- DAISIE::DAISIE_ML_CS(
       datalist = sim_model_2[[1]],
-      initparsopt = as.numeric(model_2_output[1:5]),
+      initparsopt = as.numeric(model_2[1:5]),
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
