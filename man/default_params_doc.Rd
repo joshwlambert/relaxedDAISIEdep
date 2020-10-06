@@ -78,8 +78,9 @@ from the function \code{archipelago_analysis}}
 \item{relaxed_model_2}{boolean defining if the model is relaxed-rate}
 
 \item{relaxed_par_1}{string determining which parameter to relax, only required
-if relaxed_model is TRUE
-#' @param relaxed_par_2 string determining which parameter to relax, only required
+if relaxed_model is TRUE}
+
+\item{relaxed_par_2}{string determining which parameter to relax, only required
 if relaxed_model is TRUE}
 }
 \description{
