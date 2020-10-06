@@ -1,18 +1,6 @@
 #' Runs the maximum likelihood optimisation for a given DAISIE model
 #'
-#' @param data list of DAISIE data
-#' @param archipelago string with the name of the archipelago
-#' @param model string with the name of the model
-#' @param idparsopt numeric vector with the id of parameters to optimise
-#' @param parsfix numeric vector with the value of the fixed parameters
-#' @param idparsfix numeric vector with the id of parameters to fix
-#' @param ddmodel numeric determining diversity-independence or -dependence
-#' @param seed numeric seed for the simulation
-#' @param relaxed_model boolean defining if the model is relaxed-rate
-#' @param relaxed_par string determining which parameter to relax, only required
-#' if relaxed_model is TRUE
-#' @param save_output boolean determining whether the output is saved or
-#' returned
+#' @inheritParams default_params_doc
 #'
 #' @export
 #'
@@ -84,7 +72,7 @@ archipelago_analysis <- function(data,
 
   k <- length(idparsopt)
   m <- data[[1]]$not_present + (length(data) - 1)
-  BIC <- k * (log(m) + log(2 * pi)) - 2 * ml$loglik
+  bic <- k * (log(m) + log(2 * pi)) - 2 * ml$loglik
 
 
   model_name <- paste(archipelago, "_", model, "_", seed, ".RData", sep = "")
@@ -94,7 +82,7 @@ archipelago_analysis <- function(data,
   results_file_path <- file.path(getwd(), "results", archipelago, model_name)
   results <- list(
     ml = ml,
-    BIC = BIC)
+    bic = bic)
 
   if (save_output) {
     save(results,
