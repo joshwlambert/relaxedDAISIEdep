@@ -16,6 +16,9 @@ RoxygenNote: 7.1.1
 Suggests: 
     testthat,
     covr,
-    ggplot2
+    ggplot2,
+    knitr,
+    rmarkdown
 Remotes:
      rsetienne/DAISIE@v3.1.0
+VignetteBuilder: knitr
