@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples stub
-bootstrap <- function(
+bootstrap_lik_ratio <- function(
   data,
   archipelago,
   model_1,

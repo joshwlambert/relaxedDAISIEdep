@@ -1,7 +1,7 @@
 test_that("bootstrap produces the correct output", {
   if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
     data(Aldabra_Group)
-    output <- bootstrap(
+    output <- bootstrap_lik_ratio(
       data = Aldabra_Group,
       archipelago = "Aldabra_Group",
       model_1 = data.frame(lambda_c = 0.8135786,
