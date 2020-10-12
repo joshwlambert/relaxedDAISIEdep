@@ -1,6 +1,6 @@
 test_that("archipelago_analysis returns the correct ouput", {
   if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
-    output <- archipelago_analysis(data = Aldabra_Group,
+    output <- relaxedDAISIE::archipelago_analysis(data = Aldabra_Group,
                                    archipelago = "Aldabra_Group",
                                    model = "cr_dd",
                                    idparsopt = 1:5,
@@ -18,7 +18,7 @@ test_that("archipelago_analysis returns the correct ouput", {
                                             loglik = -73.4101646006971,
                                             df = 5,
                                             conv = 0),
-                            BIC = 190.548490928352)
+                            bic = 190.548490928352)
 
     expect_equal(output, expected_output)
   } else{
