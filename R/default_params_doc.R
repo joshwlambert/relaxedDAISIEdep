@@ -22,6 +22,8 @@
 #' @param parsfix_2 numeric vector with the value of the fixed parameters
 #' @param idparsfix_1 numeric vector with the id of parameters to fix
 #' @param idparsfix_2 numeric vector with the id of parameters to fix
+#' @param ddmodel_1 numeric determining diversity-dependence in the model
+#' @param ddmodel_2 numeric determining diversity-dependence in the model
 #' @param relaxed_model_1 boolean defining if the model is relaxed-rate
 #' @param relaxed_model_2 boolean defining if the model is relaxed-rate
 #' @param relaxed_par_1 string determining which parameter to relax, only required
@@ -48,6 +50,8 @@ default_params_doc <- function(
   parsfix_2,
   idparsfix_1,
   idparsfix_2,
+  ddmodel_1,
+  ddmodel_2,
   relaxed_model_1,
   relaxed_model_2,
   relaxed_par_1,

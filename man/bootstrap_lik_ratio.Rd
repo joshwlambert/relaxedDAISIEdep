@@ -16,6 +16,8 @@ bootstrap_lik_ratio(
   parsfix_2,
   idparsfix_1,
   idparsfix_2,
+  ddmodel_1,
+  ddmodel_2,
   relaxed_model_1,
   relaxed_model_2,
   relaxed_par_1 = NULL,
@@ -46,6 +48,10 @@ from the function \code{archipelago_analysis}}
 
 \item{idparsfix_2}{numeric vector with the id of parameters to fix}
 
+\item{ddmodel_1}{numeric determining diversity-dependence in the model}
+
+\item{ddmodel_2}{numeric determining diversity-dependence in the model}
+
 \item{relaxed_model_1}{boolean defining if the model is relaxed-rate}
 
 \item{relaxed_model_2}{boolean defining if the model is relaxed-rate}
@@ -67,5 +73,36 @@ Runs the parametric bootstrapping analysis for the best two models from the
 empirical analysis of all candidate models.
 }
 \examples{
-stub
+output <- relaxedDAISIE::bootstrap_lik_ratio(
+data = Aldabra_Group,
+archipelago = "Aldabra_Group",
+model_1 = data.frame(lambda_c = 0.8135786,
+                     mu = 0.6530319,
+                     K = 0.5210479,
+                     gamma = 0.01645943,
+                     lambda_a = 1.01026,
+                     loglik = -73.36238,
+                     df = 5,
+                     conv = 0),
+model_2 = data.frame(lambda_c = 0.8135786,
+                     mu = 0.6530319,
+                     K = 0.5210479,
+                     gamma = 0.01645943,
+                     lambda_a = 1.01026,
+                     loglik = -73.36238,
+                     df = 5,
+                     conv = 0),
+idparsopt_1 = c(1, 2, 3, 4, 5),
+idparsopt_2 = c(1, 2, 3, 4, 5),
+parsfix_1 = NULL,
+parsfix_2 = NULL,
+idparsfix_1 = NULL,
+idparsfix_2 = NULL,
+ddmodel_1 = 11,
+ddmodel_2 = 11,
+relaxed_model_1 = FALSE,
+relaxed_model_2 = FALSE,
+relaxed_par_1 = NULL,
+relaxed_par_2 = NULL,
+seed = 1)
 }

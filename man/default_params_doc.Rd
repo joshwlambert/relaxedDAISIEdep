@@ -24,6 +24,8 @@ default_params_doc(
   parsfix_2,
   idparsfix_1,
   idparsfix_2,
+  ddmodel_1,
+  ddmodel_2,
   relaxed_model_1,
   relaxed_model_2,
   relaxed_par_1,
@@ -72,6 +74,10 @@ from the function \code{archipelago_analysis}}
 \item{idparsfix_1}{numeric vector with the id of parameters to fix}
 
 \item{idparsfix_2}{numeric vector with the id of parameters to fix}
+
+\item{ddmodel_1}{numeric determining diversity-dependence in the model}
+
+\item{ddmodel_2}{numeric determining diversity-dependence in the model}
 
 \item{relaxed_model_1}{boolean defining if the model is relaxed-rate}
 
