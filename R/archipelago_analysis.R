@@ -13,7 +13,8 @@
 #' idparsfix = NULL,
 #' ddmodel = 0,
 #' seed = 1,
-#' relaxed_model = FALSE)
+#' relaxed_model = FALSE,
+#' save_output = FALSE)
 archipelago_analysis <- function(data,
                                  archipelago,
                                  model,
@@ -74,17 +75,16 @@ archipelago_analysis <- function(data,
   m <- data[[1]]$not_present + (length(data) - 1)
   bic <- k * (log(m) + log(2 * pi)) - 2 * ml$loglik
 
-
-  model_name <- paste(archipelago, "_", model, "_", seed, ".RData", sep = "")
-  dir.create("results", showWarnings = FALSE)
-  dir.create(path = paste("results/", archipelago, sep = ""),
-             showWarnings = FALSE)
-  results_file_path <- file.path(getwd(), "results", archipelago, model_name)
   results <- list(
     ml = ml,
     bic = bic)
 
   if (save_output) {
+    model_name <- paste(archipelago, "_", model, "_", seed, ".RData", sep = "")
+    dir.create("results", showWarnings = FALSE)
+    dir.create(path = paste("results/", archipelago, sep = ""),
+               showWarnings = FALSE)
+    results_file_path <- file.path(getwd(), "results", archipelago, model_name)
     save(results,
          file = results_file_path)
   } else {

@@ -56,5 +56,6 @@ parsfix = NULL,
 idparsfix = NULL,
 ddmodel = 0,
 seed = 1,
-relaxed_model = FALSE)
+relaxed_model = FALSE,
+save_output = FALSE)
 }
