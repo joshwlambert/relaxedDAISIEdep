@@ -19,6 +19,8 @@ bootstrap_lik_ratio <- function(
   parsfix_2,
   idparsfix_1,
   idparsfix_2,
+  ddmodel_1,
+  ddmodel_2,
   relaxed_model_1,
   relaxed_model_2,
   relaxed_par_1 = NULL,
@@ -43,7 +45,8 @@ bootstrap_lik_ratio <- function(
       pars = as.numeric(model_1[1:6]),
       replicates = 1,
       relaxed_par = relaxed_par_1,
-      cond = 5)
+      cond = 5,
+      plot_sims = FALSE)
 
     message("Estimating under model 1")
 
@@ -53,6 +56,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
+      ddmodel = ddmodel_1,
+      optimmethod = "simplex",
       CS_version = DAISIE::create_CS_version(
         model = 2,
         relaxed_par = relaxed_par_1),
@@ -63,7 +68,8 @@ bootstrap_lik_ratio <- function(
       M = m,
       pars = as.numeric(model_1[1:5]),
       replicates = 1,
-      cond = 5)
+      cond = 5,
+      plot_sims = FALSE)
 
     message("Estimating under model 1")
 
@@ -73,6 +79,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
+      ddmodel = ddmodel_1,
+      optimmethod = "simplex",
       CS_version = 1,
       cond = 5)
   }
@@ -86,6 +94,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
+      ddmodel = ddmodel_1,
+      optimmethod = "simplex",
       CS_version = DAISIE::create_CS_version(
         model = 2,
         relaxed_par = relaxed_par_2),
@@ -97,6 +107,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_1,
       parsfix = parsfix_1,
       idparsfix = idparsfix_1,
+      ddmodel = ddmodel_1,
+      optimmethod = "simplex",
       CS_version = 1,
       cond = 5)
   }
@@ -110,7 +122,8 @@ bootstrap_lik_ratio <- function(
       pars = as.numeric(model_2[1:6]),
       replicates = 1,
       relaxed_par = relaxed_par_2,
-      cond = 5)
+      cond = 5,
+      plot_sims = FALSE)
 
     message("Estimating under model 1")
 
@@ -120,6 +133,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
+      ddmodel = ddmodel_2,
+      optimmethod = "simplex",
       CS_version = DAISIE::create_CS_version(
         model = 2,
         relaxed_par = relaxed_par_2),
@@ -130,7 +145,8 @@ bootstrap_lik_ratio <- function(
       M = m,
       pars = as.numeric(model_2[1:5]),
       replicates = 1,
-      cond = 5)
+      cond = 5,
+      plot_sims = FALSE)
 
     message("Estimating under model 1")
 
@@ -140,6 +156,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
+      ddmodel = ddmodel_2,
+      optimmethod = "simplex",
       CS_version = 1,
       cond = 5)
   }
@@ -153,6 +171,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
+      ddmodel = ddmodel_2,
+      optimmethod = "simplex",
       CS_version = DAISIE::create_CS_version(
         model = 2,
         relaxed_par = relaxed_par_2),
@@ -164,6 +184,8 @@ bootstrap_lik_ratio <- function(
       idparsopt = idparsopt_2,
       parsfix = parsfix_2,
       idparsfix = idparsfix_2,
+      ddmodel = ddmodel_2,
+      optimmethod = "simplex",
       CS_version = 1,
       cond = 5)
   }
