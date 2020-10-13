@@ -2,8 +2,6 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^scripts$
-^results$
-^logs$
 ^\.travis\.yml$
 ^appveyor\.yml$
 ^bash$
