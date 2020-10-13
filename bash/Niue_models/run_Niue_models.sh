@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Niue
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Niue_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Niue/Niue_models%a.log
 #SBATCH --array=0-3
 #SBATCH --mem=5GB
 
