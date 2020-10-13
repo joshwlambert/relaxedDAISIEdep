@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Lord_Howe
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Lord_Howe_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Lord_Howe/Lord_Howe_models%a.log
 #SBATCH --array=0-3
 #SBATCH --mem=5GB
 
