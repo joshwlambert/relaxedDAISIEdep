@@ -17,5 +17,4 @@ mkdir -p logs/Aldabra_Group logs/Azores logs/Canaries logs/Cape_Verde \
 
 module load R
 
-Rscript -e 'install.packages("remotes")'
 Rscript -e 'remotes::install_github("joshwlambert/relaxedDAISIE")'
