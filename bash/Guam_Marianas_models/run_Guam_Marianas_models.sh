@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Guam_Marianas
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Guam_Marianas_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Guam_Marianas/Guam_Marianas_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
