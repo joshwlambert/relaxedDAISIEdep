@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Azores
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Azores_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Azores/Azores_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
