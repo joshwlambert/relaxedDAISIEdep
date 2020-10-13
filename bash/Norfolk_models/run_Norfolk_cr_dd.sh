@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Norfolk
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Norfolk_cr_dd%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Norfolk/Norfolk_cr_dd%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=5GB
 
