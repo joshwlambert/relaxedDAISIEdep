@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Seychelles_Inner
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Seychelles_Inner_cr_di_no_lambda_c%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Seychelles_Inner/Seychelles_Inner_cr_di_no_lambda_c%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=5GB
 
