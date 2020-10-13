@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Cape_Verde
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Cape_Verde_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Cape_Verde/Cape_Verde_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
