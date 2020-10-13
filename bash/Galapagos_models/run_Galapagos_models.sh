@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Galapagos
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Galapagos_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Galapagos/Galapagos_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
