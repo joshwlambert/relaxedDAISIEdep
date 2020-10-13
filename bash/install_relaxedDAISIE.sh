@@ -7,13 +7,13 @@
 #SBATCH --output=install_relaxedDAISIE.log
 #SBATCH --mem=1GB
 
-mkdir -p log/Aldabra_Group log/Azores log/Canaries log/Cape_Verde log/Chatham \
-          log/Comoros log/Galapagos log/Greater_Antilles log/Guadalupe \
-          log/Guam_Marianas log/Hawaii log/Hispaniola log/Juan_Fernandez \
-          log/Lord_Howe log/Madeira log/Marquesas log/Mauritius_Island \
-          log/New_Caledonia log/New_Zealand log/Niue log/Norfolk log/Ogasawara \
-          log/Palau log/Reunion log/Samoa log/SaoTome_Principe \
-          log/Seychelles_Inner log/Socorro
+mkdir -p logs/Aldabra_Group logs/Azores logs/Canaries logs/Cape_Verde \
+          logs/Chatham logs/Comoros logs/Galapagos logs/Greater_Antilles \
+          logs/Guadalupe logs/Guam_Marianas logs/Hawaii logs/Hispaniola \
+          logs/Juan_Fernandez logs/Lord_Howe logs/Madeira logs/Marquesas \
+          logs/Mauritius_Island logs/New_Caledonia logs/New_Zealand logs/Niue \
+          logs/Norfolk logs/Ogasawara logs/Palau logs/Reunion logs/Samoa \
+          logs/SaoTome_Principe logs/Seychelles_Inner logs/Socorro
 
 module load R
 
