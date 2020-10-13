@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Aldabra_Group
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Aldabra_Group_rr_mu_dd_no_lambda_c%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Aldabra_Group/Aldabra_Group_rr_mu_dd_no_lambda_c%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=5GB
 
