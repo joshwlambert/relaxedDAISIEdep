@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Guadalupe
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Guadalupe_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Guadalupe/Guadalupe_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
