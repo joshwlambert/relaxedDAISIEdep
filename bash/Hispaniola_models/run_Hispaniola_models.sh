@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Hispaniola
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Hispaniola_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Hispaniola/Hispaniola_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
