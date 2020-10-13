@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=New_Zealand
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/New_Zealand_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/New_Zealand/New_Zealand_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
