@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Socorro
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Socorro_cr_di%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Socorro/Socorro_cr_di%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=5GB
 
