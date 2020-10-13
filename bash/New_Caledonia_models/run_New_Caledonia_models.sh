@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=New_Caledonia
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/New_Caledonia_models%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/New_Caledonia/New_Caledonia_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
