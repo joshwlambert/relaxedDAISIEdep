@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Juan_Fernandez
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Juan_Fernandez_rr_lambda_c_dd%a.log
+#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Juan_Fernandez/Juan_Fernandez_rr_lambda_c_dd%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=5GB
 
