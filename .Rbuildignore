@@ -6,3 +6,4 @@
 ^appveyor\.yml$
 ^bash$
 ^codecov\.yml$
+^results$
