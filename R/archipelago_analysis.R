@@ -40,10 +40,10 @@ archipelago_analysis <- function(data,
   ml <- list()
 
   if (relaxed_model) {
-    CS_version <- DAISIE::create_CS_version(model = 2,
+    CS_version <- DAISIE::create_CS_version(model = 2, #nolint
                                             relaxed_par = relaxed_par)
   } else {
-    CS_version <- 1
+    CS_version <- 1 #nolint
   }
   suppressMessages(
     init_ml <- DAISIE::DAISIE_ML_CS(
