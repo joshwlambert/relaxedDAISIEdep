@@ -11,6 +11,8 @@
 #'                                lik_ratio_model_2 = runif(1000, 0, 100))
 calc_power <- function(lik_ratio_alpha,
                        lik_ratio_model_2) {
+  testit::assert(is.numeric(lik_ratio_alpha))
+  testit::assert(is.numeric(lik_ratio_model_2))
   r_model_2 <- length(which(lik_ratio_model_2 > lik_ratio_alpha))
   power <- r_model_2 / (length(lik_ratio_model_2) + 1)
   return(power)
