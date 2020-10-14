@@ -11,6 +11,8 @@
 #'                                  lik_ratio_model_1 = runif(1000, 0, 100))
 calc_p_value <- function(lik_ratio_0,
                          lik_ratio_model_1) {
+  testit::assert(is.numeric(lik_ratio_0))
+  testit::assert(is.numeric(lik_ratio_model_1))
   r_model_1 <- length(which(lik_ratio_model_1 > lik_ratio_0))
   p_value <- (r_model_1 + 1) / (length(lik_ratio_model_1) + 1)
   return(p_value)
