@@ -26,10 +26,10 @@
 #' @param ddmodel_2 numeric determining diversity-dependence in the model
 #' @param relaxed_model_1 boolean defining if the model is relaxed-rate
 #' @param relaxed_model_2 boolean defining if the model is relaxed-rate
-#' @param relaxed_par_1 string determining which parameter to relax, only required
-#' if relaxed_model is TRUE
-#' @param relaxed_par_2 string determining which parameter to relax, only required
-#' if relaxed_model is TRUE
+#' @param relaxed_par_1 string determining which parameter to relax, only
+#' required if relaxed_model is TRUE
+#' @param relaxed_par_2 string determining which parameter to relax, only
+#' required if relaxed_model is TRUE
 default_params_doc <- function(
   data,
   archipelago,
