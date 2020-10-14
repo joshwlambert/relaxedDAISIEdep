@@ -3,7 +3,7 @@
 #' @inheritParams default_params_doc
 #' @return list of two numeric elements
 #' @export
-find_max_loglik <- function(archipelago,
+calc_max_loglik <- function(archipelago,
                             model) {
   results <- NULL
   file_names <- list.files(path = file.path(getwd(), "results", archipelago),
