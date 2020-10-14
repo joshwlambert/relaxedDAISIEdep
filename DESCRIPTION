@@ -2,8 +2,9 @@ Package: relaxedDAISIE
 Type: Package
 Title: Scripts and data for Lambert et al. (doi:
 Version: 0.1.0
+Date: 2020-10-14
 Depends: R (>= 4.0.0)
-Author: Joshua W Lambert
+Author: Joshua W Lambert [aut, cre]
 Maintainer: Joshua W Lambert <j.w.l.lambert@rug.nl>
 Description: Package containing all of the code needed to reproduce
     Lambert et al. (doi: ).
@@ -19,7 +20,9 @@ Suggests:
     ggplot2,
     knitr,
     rmarkdown,
-    remotes
+    remotes,
+    testit,
+    utils
 Remotes:
      rsetienne/DAISIE@v3.1.0
 VignetteBuilder: knitr
