@@ -49,7 +49,7 @@ calc_rr_approach_cr <- function(parameter = "cladogenesis",
   x <- 1
   for (i in seq(0.1, 5, 0.1)) {
     sd[x] <- i
-    CS_version <- list(
+    CS_version <- list( #nolint
       model = 2,
       relaxed_par = parameter,
       sd = i)
