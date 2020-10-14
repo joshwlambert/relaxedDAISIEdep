@@ -29,7 +29,11 @@ default_params_doc(
   relaxed_model_1,
   relaxed_model_2,
   relaxed_par_1,
-  relaxed_par_2
+  relaxed_par_2,
+  lik_ratio_0,
+  lik_ratio_model_1,
+  lik_ratio_model_2,
+  lik_ratio_alpha
 )
 }
 \arguments{
@@ -88,6 +92,18 @@ required if relaxed_model is TRUE}
 
 \item{relaxed_par_2}{string determining which parameter to relax, only
 required if relaxed_model is TRUE}
+
+\item{lik_ratio_0}{numeric initial likelihood ratio calculated from the
+likelihoods of the models fit to empirical data}
+
+\item{lik_ratio_model_1}{numeric vector of likelihood ratios calculated from
+fitting two models to a data set simulated under model 1}
+
+\item{lik_ratio_model_2}{numeric vector of likelihood ratios calculated from
+fitting two models to a data set simulated under model 2}
+
+\item{lik_ratio_alpha}{The likelihood ratio associated with the significance
+of the likelihood ratio test}
 }
 \description{
 Document to inherit the function documentation

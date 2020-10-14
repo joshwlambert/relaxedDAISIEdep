@@ -30,6 +30,14 @@
 #' required if relaxed_model is TRUE
 #' @param relaxed_par_2 string determining which parameter to relax, only
 #' required if relaxed_model is TRUE
+#' @param lik_ratio_0 numeric initial likelihood ratio calculated from the
+#' likelihoods of the models fit to empirical data
+#' @param lik_ratio_model_1 numeric vector of likelihood ratios calculated from
+#' fitting two models to a data set simulated under model 1
+#' @param lik_ratio_model_2 numeric vector of likelihood ratios calculated from
+#' fitting two models to a data set simulated under model 2
+#' @param lik_ratio_alpha The likelihood ratio associated with the significance
+#' of the likelihood ratio test
 default_params_doc <- function(
   data,
   archipelago,
@@ -55,7 +63,11 @@ default_params_doc <- function(
   relaxed_model_1,
   relaxed_model_2,
   relaxed_par_1,
-  relaxed_par_2
+  relaxed_par_2,
+  lik_ratio_0,
+  lik_ratio_model_1,
+  lik_ratio_model_2,
+  lik_ratio_alpha
 ) {
   # Nothing
 }

@@ -2,5 +2,8 @@
 
 export(archipelago_analysis)
 export(bootstrap_lik_ratio)
+export(calc_lik_ratio_alpha)
+export(calc_p_value)
+export(calc_power)
 export(calc_rr_approach_cr)
 export(find_max_loglik)
