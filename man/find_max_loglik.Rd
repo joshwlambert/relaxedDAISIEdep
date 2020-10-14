@@ -4,10 +4,12 @@
 \alias{find_max_loglik}
 \title{Finds the maximum loglikelihood and BIC value from a set of replicated models}
 \usage{
-find_max_loglik(archipelago)
+find_max_loglik(archipelago, model)
 }
 \arguments{
 \item{archipelago}{string with the name of the archipelago}
+
+\item{model}{string with the name of the model}
 }
 \value{
 list of two numeric elements
