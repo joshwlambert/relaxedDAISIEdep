@@ -34,9 +34,9 @@ test_that("bootstrap produces the correct output", {
        relaxed_par_2 = NULL,
        seed = 1)
 
-    expected_output <- list(lik_ratio_0 = 0,
-                            lik_ratio_model_1 = 0,
-                            lik_ratio_model_2 = 0)
+    expected_output <- list(lik_ratio_0 = 5,
+                            lik_ratio_model_1 = 1.05272723789,
+                            lik_ratio_model_2 = 1.08002495836e-12)
 
     expect_equal(output, expected_output)
   } else{
