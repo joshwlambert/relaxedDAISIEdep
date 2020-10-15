@@ -56,7 +56,8 @@ bootstrap_lik_ratio <- function(
   relaxed_model_2,
   relaxed_par_1 = NULL,
   relaxed_par_2 = NULL,
-  seed) {
+  seed,
+  save_output = TRUE) {
 
   lik_ratio_0 <- model_1$loglik - model_2$loglik
 
@@ -227,7 +228,15 @@ bootstrap_lik_ratio <- function(
 
   lik_ratio_model_2 <- ml_1_model_2$loglik - ml_2_model_2$loglik
 
-  return(list(lik_ratio_0 = lik_ratio_0,
-              lik_ratio_model_1 = lik_ratio_model_1,
-              lik_ratio_model_2 = lik_ratio_model_2))
+  results <- list(lik_ratio_0 = lik_ratio_0,
+                  lik_ratio_model_1 = lik_ratio_model_1,
+                  lik_ratio_model_2 = lik_ratio_model_2)
+
+  if (save_output) {
+    results_file_path <- file.path(getwd(), "results", archipelago)
+    save(results,
+         file = results_file_path)
+  } else {
+    return(results)
+  }
 }
