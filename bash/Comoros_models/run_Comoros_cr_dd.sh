@@ -6,7 +6,7 @@
 #SBATCH --job-name=Comoros
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Comoros/Comoros_cr_dd%a.log
 #SBATCH --array=1-10
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/Comoros_models/Comoros_cr_dd.R ${SLURM_ARRAY_TASK_ID}
