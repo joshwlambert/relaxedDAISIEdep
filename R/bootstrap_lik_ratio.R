@@ -38,7 +38,8 @@
 #' relaxed_model_2 = FALSE,
 #' relaxed_par_1 = NULL,
 #' relaxed_par_2 = NULL,
-#' seed = 1)
+#' seed = 1,
+#' save_output = FALSE)
 bootstrap_lik_ratio <- function(
   data,
   archipelago,
