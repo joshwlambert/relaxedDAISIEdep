@@ -231,7 +231,11 @@ bootstrap_lik_ratio <- function(
 
   results <- list(lik_ratio_0 = lik_ratio_0,
                   lik_ratio_model_1 = lik_ratio_model_1,
-                  lik_ratio_model_2 = lik_ratio_model_2)
+                  lik_ratio_model_2 = lik_ratio_model_2,
+                  ml_1_model_1 = ml_1_model_1,
+                  ml_2_model_1 = ml_2_model_1,
+                  ml_1_model_2 = ml_1_model_2,
+                  ml_2_model_1 = ml_2_model_2)
 
   if (save_output) {
     results_file_path <- file.path(getwd(), "results", archipelago)
