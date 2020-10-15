@@ -6,7 +6,7 @@
 #SBATCH --job-name=Greater_Antilles
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Greater_Antilles/Greater_Antilles_rr_mu_dd%a.log
 #SBATCH --array=1-10
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/Greater_Antilles_models/Greater_Antilles_rr_mu_dd.R ${SLURM_ARRAY_TASK_ID}
