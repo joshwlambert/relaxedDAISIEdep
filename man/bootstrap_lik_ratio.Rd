@@ -22,7 +22,8 @@ bootstrap_lik_ratio(
   relaxed_model_2,
   relaxed_par_1 = NULL,
   relaxed_par_2 = NULL,
-  seed
+  seed,
+  save_output = TRUE
 )
 }
 \arguments{
@@ -63,6 +64,9 @@ required if relaxed_model is TRUE}
 required if relaxed_model is TRUE}
 
 \item{seed}{numeric seed for the simulation}
+
+\item{save_output}{boolean determining whether the output is saved or
+returned}
 }
 \value{
 list of 4 elements each containing a dataframe with the maximum
