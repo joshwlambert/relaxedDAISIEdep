@@ -6,7 +6,7 @@
 #SBATCH --job-name=Guadalupe
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Guadalupe/Guadalupe_cr_di%a.log
 #SBATCH --array=1-10
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/Guadalupe_models/Guadalupe_cr_di.R ${SLURM_ARRAY_TASK_ID}
