@@ -10,4 +10,3 @@
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/Aldabra_Group_models/Aldabra_Group_bootstrap.R ${SLURM_ARRAY_TASK_ID}
-
