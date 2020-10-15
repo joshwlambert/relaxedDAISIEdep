@@ -32,7 +32,8 @@ test_that("bootstrap produces the correct output", {
        relaxed_model_2 = FALSE,
        relaxed_par_1 = NULL,
        relaxed_par_2 = NULL,
-       seed = 1)
+       seed = 1,
+       save_output = FALSE)
 
     expected_output <- list(lik_ratio_0 = 5,
                             lik_ratio_model_1 = 1.05272723789,
