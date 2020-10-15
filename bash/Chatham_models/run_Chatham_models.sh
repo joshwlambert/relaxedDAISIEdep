@@ -6,7 +6,7 @@
 #SBATCH --job-name=Chatham
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Chatham/Chatham_models%a.log
 #SBATCH --array=0-8
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 mkdir -p results/Chatham
 models=(cr_di cr_dd cr_di_no_lambda_c cr_dd_no_lambda_c rr_mu_di_no_lambda_c \
