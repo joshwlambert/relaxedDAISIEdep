@@ -8,7 +8,7 @@
 #' data = Aldabra_Group,
 #' archipelago = "Aldabra_Group",
 #' model = "cr_di",
-#' idparsopt = c(1,2,3,4,5),
+#' idparsopt = c(1, 2, 3, 4, 5),
 #' parsfix = NULL,
 #' idparsfix = NULL,
 #' ddmodel = 0,
@@ -80,13 +80,13 @@ archipelago_analysis <- function(data,
     bic = bic)
 
   if (save_output) {
-    model_name <- paste(archipelago, "_", model, "_", seed, ".RData", sep = "")
-    dir.create(path = file.path(here::here(), "data", archipelago, sep = ""),
-               showWarnings = FALSE)
-    results_file_path <- file.path(here::here(), "data", archipelago,
+    model_name <- paste(archipelago, "_", model, "_", seed, ".rds", sep = "")
+    dir.create(path = file.path(here::here(), "inst", "results", archipelago,
+                                sep = ""), showWarnings = FALSE)
+    results_file_path <- file.path(here::here(), "inst", "results", archipelago,
                                    model_name)
-    save(results,
-         file = results_file_path)
+    saveRDS(results,
+            file = results_file_path)
   } else {
     return(results)
   }
