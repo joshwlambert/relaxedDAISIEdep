@@ -17,3 +17,7 @@ list of two numeric elements
 \description{
 Finds the maximum loglikelihood and BIC value from a set of replicated models
 }
+\examples{
+output <- calc_max_loglik(archipelago = "Aldabra_Group",
+model = "cr_di")
+}
