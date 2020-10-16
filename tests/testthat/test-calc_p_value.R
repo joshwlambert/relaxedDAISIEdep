@@ -20,4 +20,3 @@ test_that("calc_p_value produces error", {
     skip("Run only on TRAVIS and AppVeyor")
   }
 })
-
