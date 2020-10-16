@@ -238,7 +238,9 @@ bootstrap_lik_ratio <- function(
                   ml_2_model_1 = ml_2_model_2)
 
   if (save_output) {
-    results_file_path <- file.path(getwd(), "results", archipelago)
+    model_name <- paste(archipelago, "_bootstrap_", seed, ".RData", sep = "")
+    results_file_path <- file.path(here::here(), "data", archipelago,
+                                   model_name)
     save(results,
          file = results_file_path)
   } else {
