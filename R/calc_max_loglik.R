@@ -3,24 +3,24 @@
 #' @inheritParams default_params_doc
 #' @return list of two numeric elements
 #' @export
+#'
+#' @examples output <- calc_max_loglik(archipelago = "Aldabra_Group",
+#' model = "cr_di")
 calc_max_loglik <- function(archipelago,
                             model) {
-  results <- NULL
-  file_names <- list.files(path = file.path(here::here(), "data", archipelago),
+  file_names <- list.files(path = file.path(here::here(), "inst", "results",
+                                            archipelago),
                            pattern = paste(model, "_[[:digit:]]", sep = ""))
-  logliks <- c()
-  bics <- c()
-  for (i in seq_along(file_names)) {
-    load(file.path(here::here(), "data", archipelago, file_names[i], sep = ""))
-    logliks[i] <- as.numeric(results$ml[6])
-    bics[i] <- results$bic
-  }
+  files <- paste(file.path(here::here(), "inst", "results", archipelago,
+                           file_names, sep = ""))
+  results <- lapply(files, readRDS)
+  mls <- lapply(results, "[[", 1)
+  logliks <- as.numeric(unlist(lapply(mls, "[", 6)))
+  bics <- unlist(lapply(results, "[[", 2))
   max_loglik <- max(logliks)
   min_bic <- min(bics)
   global_optim_loglik <- which(max_loglik == logliks)
   global_optim_bic <- which(min_bic == bics)
   testit::assert(global_optim_loglik == global_optim_bic)
-  load(file.path(here::here(), "data", archipelago,
-                 file_names[global_optim_loglik], sep = ""))
-  return(results)
+  return(results[global_optim_loglik])
 }
