@@ -42,7 +42,7 @@ test_that("archipelago_analysis correctly saves ouput", {
       save_output = TRUE)
       output <- file.exists(paste(
         "C:/Users/user/Documents/github/relaxedDAISIE/",
-        "data/Aldabra_Group/Aldabra_Group_cr_dd_1.RData",
+        "inst/results/Aldabra_Group/Aldabra_Group_cr_dd_1.rds",
         sep = ""))
 
     expect_true(output)
