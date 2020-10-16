@@ -3,9 +3,6 @@
 #' @inheritParams default_params_doc
 #' @return list of two numeric elements
 #' @export
-#'
-#' @examples output <- calc_max_loglik(archipelago = "Aldabra_Group",
-#' model = "cr_di")
 calc_max_loglik <- function(archipelago,
                             model) {
   file_names <- list.files(path = file.path(here::here(), "inst", "results",
