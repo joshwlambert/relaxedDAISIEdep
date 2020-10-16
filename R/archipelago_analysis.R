@@ -81,10 +81,10 @@ archipelago_analysis <- function(data,
 
   if (save_output) {
     model_name <- paste(archipelago, "_", model, "_", seed, ".RData", sep = "")
-    dir.create("results", showWarnings = FALSE)
-    dir.create(path = paste("results/", archipelago, sep = ""),
+    dir.create(path = file.path(here::here(), "data", archipelago, sep = ""),
                showWarnings = FALSE)
-    results_file_path <- file.path(getwd(), "results", archipelago, model_name)
+    results_file_path <- file.path(here::here(), "data", archipelago,
+                                   model_name)
     save(results,
          file = results_file_path)
   } else {

@@ -1,15 +1,16 @@
 test_that("archipelago_analysis returns the correct ouput", {
   if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
-    output <- relaxedDAISIE::archipelago_analysis(data = Aldabra_Group,
-                                   archipelago = "Aldabra_Group",
-                                   model = "cr_dd",
-                                   idparsopt = 1:5,
-                                   parsfix = NULL,
-                                   idparsfix = NULL,
-                                   ddmodel = 11,
-                                   seed = 1,
-                                   relaxed_model = FALSE,
-                                   save_output = FALSE)
+    expect_silent(relaxedDAISIE::archipelago_analysis(
+      data = Aldabra_Group,
+      archipelago = "Aldabra_Group",
+      model = "cr_dd",
+      idparsopt = 1:5,
+      parsfix = NULL,
+      idparsfix = NULL,
+      ddmodel = 11,
+      seed = 1,
+      relaxed_model = FALSE,
+      save_output = FALSE))
     expected_output <- list(ml = data.frame(lambda_c = 1.07218523312338e-11,
                                             mu = 0.621412899851853,
                                             K = Inf,
@@ -21,6 +22,28 @@ test_that("archipelago_analysis returns the correct ouput", {
                             bic = 190.548490928352)
 
     expect_equal(output, expected_output)
+  } else{
+    skip("Run only on TRAVIS and AppVeyor")
+  }
+})
+
+test_that("archipelago_analysis correctly saves ouput", {
+  if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
+    relaxedDAISIE::archipelago_analysis(data = Aldabra_Group,
+                                        archipelago = "Aldabra_Group",
+                                        model = "cr_dd",
+                                        idparsopt = 1:5,
+                                        parsfix = NULL,
+                                        idparsfix = NULL,
+                                        ddmodel = 11,
+                                        seed = 1,
+                                        relaxed_model = FALSE,
+                                        save_output = TRUE)
+    output <- file.exists(paste("C:/Users/user/Documents/github/relaxedDAISIE/",
+                                "data/Aldabra_Group/Aldabra_Group_cr_dd_1.RData",
+                                sep = ""))
+
+    expect_true(output)
   } else{
     skip("Run only on TRAVIS and AppVeyor")
   }
