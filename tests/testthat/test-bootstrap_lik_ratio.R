@@ -120,7 +120,7 @@ test_that("bootstrap_lik_ratio correctly saves output", {
 
     output <- file.exists(paste(
       "C:/Users/user/Documents/github/relaxedDAISIE/",
-      "data/Aldabra_Group/Aldabra_Group.RData",
+      "inst/results/Aldabra_Group/Aldabra_Group_bootstrap_1.rds",
       sep = ""))
 
     expect_true(output)
