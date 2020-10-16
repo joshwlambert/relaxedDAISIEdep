@@ -6,13 +6,12 @@
 calc_max_loglik <- function(archipelago,
                             model) {
   results <- NULL
-  file_names <- list.files(path = file.path(getwd(), "results", archipelago),
+  file_names <- list.files(path = file.path(here::here(), "data", archipelago),
                            pattern = paste(model, "_[[:digit:]]", sep = ""))
   logliks <- c()
   bics <- c()
   for (i in seq_along(file_names)) {
-    file <- paste("./results/", archipelago, "/", file_names[i], sep = "")
-    load(file)
+    load(file.path(here::here(), "data", archipelago, file_names[i], sep = ""))
     logliks[i] <- as.numeric(results$ml[6])
     bics[i] <- results$bic
   }
@@ -21,8 +20,7 @@ calc_max_loglik <- function(archipelago,
   global_optim_loglik <- which(max_loglik == logliks)
   global_optim_bic <- which(min_bic == bics)
   testit::assert(global_optim_loglik == global_optim_bic)
-  file <- paste("./results/", archipelago, "/", file_names[global_optim_loglik],
-                sep = "")
-  load(file)
+  load(file.path(here::here(), "data", archipelago,
+                 file_names[global_optim_loglik], sep = ""))
   return(results)
 }
