@@ -8,7 +8,7 @@
 #SBATCH --array=0-8
 #SBATCH --mem=5GB
 
-mkdir -p results/Hispaniola
+mkdir -p inst/results/Hispaniola
 models=(cr_di cr_dd cr_di_no_lambda_a cr_dd_no_lambda_a rr_lambda_c_no_lambda_a \
         rr_lambda_c_no_lambda_a rr_mu_di_no_lambda_a rr_mu_dd_no_lambda_a \
         rr_k_no_lambda_a)

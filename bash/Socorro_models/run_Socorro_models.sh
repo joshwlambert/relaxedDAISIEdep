@@ -8,7 +8,7 @@
 #SBATCH --array=0-3
 #SBATCH --mem=5GB
 
-mkdir -p results/Socorro
+mkdir -p inst/results/Socorro
 models=(cr_di cr_dd cr_di_no_lambda_c cr_dd_no_lambda_c)
 
 sbatch /home/p287218/relaxedDAISIE/bash/Socorro_models/run_Socorro_${models[SLURM_ARRAY_TASK_ID]}.sh

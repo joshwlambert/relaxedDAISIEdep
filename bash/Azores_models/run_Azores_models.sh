@@ -8,7 +8,7 @@
 #SBATCH --array=0-8
 #SBATCH --mem=1GB
 
-mkdir -p results/Azores
+mkdir -p inst/results/Azores
 models=(cr_di cr_dd cr_di_no_lambda_c cr_dd_no_lambda_c rr_mu_di_no_lambda_c \
         rr_mu_dd_no_lambda_c rr_k_no_lambda_c rr_lambda_a_di_no_lambda_c \
         rr_lambda_a_dd_no_lambda_c)
