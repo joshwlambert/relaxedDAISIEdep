@@ -9,8 +9,9 @@
 #SBATCH --mem=5GB
 
 models=(Aldabra_Group Azores Canaries Cape_Verde Chatham Comoros Galapagos \
-        Greater_Antilles Guadalupe Guam_Marianas Hawaii Hispaniola Madeira \
-        Marquesas New_Caledonia New_Zealand Norfolk Palau Samoa SaoTome_Principe \
-        Seychelles_Inner)
-mkdir -p results/${models[SLURM_ARRAY_TASK_ID]}
+        Greater_Antilles Guadalupe Guam_Marianas Hawaii Hispaniola \
+        Juan_Fernandez Lord_Howe Madeira Marquesas Mauritius_Island \
+        New_Caledonia New_Zealand Niue Norfolk Ogasawara Palau Reunion Samoa \
+        SaoTome_Principe Seychelles_Inner Socorro)
+mkdir -p inst/results/${models[SLURM_ARRAY_TASK_ID]}
 sbatch /home/p287218/relaxedDAISIE/bash/${models[SLURM_ARRAY_TASK_ID]}/run_${models[SLURM_ARRAY_TASK_ID]}_models.sh
