@@ -80,15 +80,11 @@ archipelago_analysis <- function(data,
     bic = bic)
 
   if (save_output) {
-    print("step 1")
     model_name <- paste(archipelago, "_", model, "_", seed, ".rds", sep = "")
-    print("step 2")
     dir.create(path = file.path(here::here(), "inst", "results", archipelago,
                                 sep = ""), showWarnings = FALSE)
-    print("step 3")
     results_file_path <- file.path(here::here(), "inst", "results", archipelago,
                                    model_name)
-    print("step 4")
     saveRDS(results,
             file = results_file_path)
   } else {
