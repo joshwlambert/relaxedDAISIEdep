@@ -6,7 +6,7 @@
 #'
 #' @examples create_archipelagos()
 create_archipelagos <- function() {
-  data(archipelagos41, package = "DAISIE")
+  utils::data(archipelagos41, package = "DAISIE")
   for (i in seq_along(archipelagos41)) {
     assign(paste(archipelagos41[[i]][[1]]$name), archipelagos41[[i]])
   }
