@@ -9,7 +9,7 @@ create_archipelagos_alt_m <- function() {
   file_paths <- file.path(
     here::here(), "data",
     list.files(path = file.path(here::here(), "data")))
-  data <- lapply(file_paths, load, .GlobalEnv)
+  data <- lapply(file_paths, load)
   Azores_alt_m <- Azores
   Azores_alt_m[[1]]$not_present <- 300 - (length(Azores) - 1)
   save(Azores_alt_m, file = "data/Azores_alt_m.RData")
@@ -52,7 +52,7 @@ create_archipelagos_alt_m <- function() {
   Mauritius_Island_alt_m <- Mauritius_Island
   Mauritius_Island_alt_m[[1]]$not_present <- 500 - (length(Mauritius_Island) - 1)
   save(Mauritius_Island_alt_m, file = "data/Mauritius_Island_alt_m.RData")
-  New_Caledonia_alt_m <- New_Caledonnia
+  New_Caledonia_alt_m <- New_Caledonia
   New_Caledonia_alt_m[[1]]$not_present <- 400 - (length(New_Caledonia) - 1)
   save(New_Caledonia_alt_m, file = "data/New_Caledonia_alt_m.RData")
   Niue_alt_m <- Niue
@@ -76,7 +76,7 @@ create_archipelagos_alt_m <- function() {
   SaoTome_Principe_alt_m <- SaoTome_Principe
   SaoTome_Principe_alt_m[[1]]$not_present <- 1500 - (length(SaoTome_Principe) - 1)
   save(SaoTome_Principe_alt_m, file = "data/SaoTome_Principe_alt_m.RData")
-  Socorro_alt_m <- Socorro_Principe
+  Socorro_alt_m <- Socorro
   Socorro_alt_m[[1]]$not_present <- 1500 - (length(Socorro) - 1)
   save(Socorro_alt_m, file = "data/Socorro_alt_m.RData")
 
