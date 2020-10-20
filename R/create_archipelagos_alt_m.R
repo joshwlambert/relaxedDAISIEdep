@@ -4,7 +4,7 @@
 #' @return String
 #' @export
 #'
-#' @examples create_archipelagos_alt_m()
+#' @examples \dontrun{create_archipelagos_alt_m()}
 create_archipelagos_alt_m <- function() {
   file_paths <- file.path(
     here::here(), "data",

@@ -15,5 +15,5 @@ Extracts and saves individual archipelago data from the archipelagos41
 dataset in the DAISIE R package
 }
 \examples{
-create_archipelagos()
+\dontrun{create_archipelagos()}
 }

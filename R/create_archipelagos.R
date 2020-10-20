@@ -4,7 +4,7 @@
 #' @return String
 #' @export
 #'
-#' @examples create_archipelagos()
+#' @examples \dontrun{create_archipelagos()}
 create_archipelagos <- function() {
   utils::data(archipelagos41, package = "DAISIE")
   for (i in seq_along(archipelagos41)) {

@@ -15,5 +15,5 @@ Creates and saves archipelago data with alternative mainland species pool
 size
 }
 \examples{
-create_archipelagos_alt_m()
+\dontrun{create_archipelagos_alt_m()}
 }
