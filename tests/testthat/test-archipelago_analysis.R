@@ -28,7 +28,6 @@ test_that("archipelago_analysis returns the correct ouput", {
 })
 
 test_that("archipelago_analysis correctly saves ouput", {
-  skip("TRAVIS doesn't recognise file address")
   if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
     relaxedDAISIE::archipelago_analysis(
       data = Aldabra_Group,

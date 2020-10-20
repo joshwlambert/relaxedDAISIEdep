@@ -1,5 +1,4 @@
 test_that("calc_max_loglik produces correct output", {
-  skip("TRAVIS doesn't recognise file address")
   if (Sys.getenv("TRAVIS") != "" || Sys.getenv("APPVEYOR") != "") {
     output <- calc_max_loglik(archipelago = "Aldabra_Group",
                               model = "cr_di")
