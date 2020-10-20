@@ -5,11 +5,12 @@
 #' @export
 calc_max_loglik <- function(archipelago,
                             model) {
-  file_names <- list.files(path = file.path(here::here(), "inst", "results",
-                                            archipelago),
-                           pattern = paste(model, "_[[:digit:]]", sep = ""))
-  files <- paste(file.path(here::here(), "inst", "results", archipelago,
-                           file_names, sep = ""))
+  file_names <- list.files(path = file.path(
+    system.file(package = "relaxedDAISIE"),
+    "results", archipelago),
+    pattern = paste(model, "_[[:digit:]]", sep = ""))
+  files <- paste(file.path(system.file(package = "relaxedDAISIE"),
+                           "results", archipelago, file_names, sep = ""))
   results <- lapply(files, readRDS)
   mls <- lapply(results, "[[", 1)
   logliks <- as.numeric(unlist(lapply(mls, "[", 6)))
