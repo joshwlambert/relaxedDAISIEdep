@@ -40,10 +40,10 @@ archipelago_analysis <- function(data,
   ml <- list()
 
   if (relaxed_model) {
-    CS_version <- DAISIE::create_CS_version(model = 2, #nolint
+    cs_version <- DAISIE::create_CS_version(model = 2,
                                             relaxed_par = relaxed_par)
   } else {
-    CS_version <- 1 #nolint
+    cs_version <- 1
   }
   suppressMessages(
     init_ml <- DAISIE::DAISIE_ML_CS(
@@ -54,7 +54,7 @@ archipelago_analysis <- function(data,
       idparsfix = idparsfix,
       ddmodel = ddmodel,
       optimmethod = "simplex",
-      CS_version = CS_version,
+      CS_version = cs_version,
       cond = 5)
   )
 
@@ -67,7 +67,7 @@ archipelago_analysis <- function(data,
       idparsfix = idparsfix,
       ddmodel = ddmodel,
       optimmethod = "simplex",
-      CS_version = CS_version,
+      CS_version = cs_version,
       cond = 5)
   )
 
