@@ -13,7 +13,7 @@ calc_max_loglik <- function(archipelago,
                            "results", archipelago, file_names, sep = ""))
   results <- lapply(files, readRDS)
   mls <- lapply(results, "[[", 1)
-  logliks <- as.numeric(unlist(lapply(mls, "[", 6)))
+  logliks <- as.numeric(unlist(lapply(mls, "[", "loglik")))
   bics <- unlist(lapply(results, "[[", 2))
   max_loglik <- max(logliks)
   min_bic <- min(bics)
