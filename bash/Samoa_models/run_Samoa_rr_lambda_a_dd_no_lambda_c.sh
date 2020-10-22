@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Samoa
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Samoa/Samoa_rr_lambda_a_dd_no_lambda_c%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/Samoa/Samoa_rr_lambda_a_dd_no_lambda_c%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=1GB
 

@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=SaoTome_Principe
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/SaoTome_Principe/SaoTome_Principe_models%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/SaoTome_Principe/SaoTome_Principe_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=1GB
 

@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=island_models
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/island_models%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/island_models%a.log
 #SBATCH --array=0-20
 #SBATCH --mem=1GB
 
