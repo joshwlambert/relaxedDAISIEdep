@@ -6,7 +6,7 @@
 #SBATCH --job-name=Norfolk
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Norfolk/Norfolk_cr_dd_no_lambda_c%a.log
 #SBATCH --array=1-10
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/Norfolk_models/Norfolk_cr_dd_no_lambda_c.R ${SLURM_ARRAY_TASK_ID}

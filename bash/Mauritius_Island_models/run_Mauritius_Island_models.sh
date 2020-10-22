@@ -6,7 +6,7 @@
 #SBATCH --job-name=Mauritius_Island
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Mauritius_Island/Mauritius_Island_models%a.log
 #SBATCH --array=0-3
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 mkdir -p inst/results/Mauritius_Island
 models=(cr_di cr_dd cr_di_no_lambda_c cr_dd_no_lambda_c)

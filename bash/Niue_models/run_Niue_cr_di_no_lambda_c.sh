@@ -6,7 +6,7 @@
 #SBATCH --job-name=Niue
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Niue/Niue_cr_di_no_lambda_c%a.log
 #SBATCH --array=1-10
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/Niue_models/Niue_cr_di_no_lambda_c.R ${SLURM_ARRAY_TASK_ID}

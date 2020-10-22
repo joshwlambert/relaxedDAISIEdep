@@ -6,7 +6,7 @@
 #SBATCH --job-name=Ogasawara
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Ogasawara/Ogasawara_models%a.log
 #SBATCH --array=0-3
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 mkdir -p inst/results/Ogasawara
 models=(cr_di cr_dd cr_di_no_lambda_c cr_dd_no_lambda_c)

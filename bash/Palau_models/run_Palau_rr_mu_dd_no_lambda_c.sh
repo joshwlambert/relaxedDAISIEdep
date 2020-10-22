@@ -6,7 +6,7 @@
 #SBATCH --job-name=Palau
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Palau/Palau_rr_mu_dd_no_lambda_c%a.log
 #SBATCH --array=1-10
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/Palau_models/Palau_rr_mu_dd_no_lambda_c.R ${SLURM_ARRAY_TASK_ID}

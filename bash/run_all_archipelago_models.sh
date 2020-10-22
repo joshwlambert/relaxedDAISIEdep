@@ -6,7 +6,7 @@
 #SBATCH --job-name=island_models
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/island_models%a.log
 #SBATCH --array=0-20
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 models=(Aldabra_Group Azores Canaries Cape_Verde Chatham Comoros Galapagos \
         Greater_Antilles Guadalupe Guam_Marianas Hawaii Hispaniola \

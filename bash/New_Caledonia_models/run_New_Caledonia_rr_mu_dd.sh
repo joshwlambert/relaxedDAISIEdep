@@ -6,7 +6,7 @@
 #SBATCH --job-name=New_Caledonia
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/New_Caledonia/New_Caledonia_rr_mu_dd%a.log
 #SBATCH --array=1-10
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 module load R
 Rscript /home/p287218/relaxedDAISIE/scripts/New_Caledonia_models/New_Caledonia_rr_mu_dd.R ${SLURM_ARRAY_TASK_ID}
