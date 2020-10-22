@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Greater_Antilles
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Greater_Antilles/Greater_Antilles_models%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/Greater_Antilles/Greater_Antilles_models%a.log
 #SBATCH --array=0-8
 #SBATCH --mem=1GB
 

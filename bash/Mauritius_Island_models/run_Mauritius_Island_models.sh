@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Mauritius_Island
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Mauritius_Island/Mauritius_Island_models%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/Mauritius_Island/Mauritius_Island_models%a.log
 #SBATCH --array=0-3
 #SBATCH --mem=1GB
 

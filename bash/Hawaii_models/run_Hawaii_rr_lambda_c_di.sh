@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Hawaii
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Hawaii/Hawaii_rr_lambda_c_di%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/Hawaii/Hawaii_rr_lambda_c_di%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=1GB
 

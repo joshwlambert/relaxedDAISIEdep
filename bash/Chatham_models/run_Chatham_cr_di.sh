@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Chatham
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Chatham/Chatham_cr_di%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/Chatham/Chatham_cr_di%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=1GB
 

@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Juan_Fernandez
-#SBATCH --output=/home/p287218/relaxedDAISIE/logs/Juan_Fernandez/Juan_Fernandez_rr_mu_di%a.log
+#SBATCH --output=/data/p287218/relaxedDAISIE/logs/Juan_Fernandez/Juan_Fernandez_rr_mu_di%a.log
 #SBATCH --array=1-10
 #SBATCH --mem=1GB
 
