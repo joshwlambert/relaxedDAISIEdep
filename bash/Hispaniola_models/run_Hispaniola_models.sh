@@ -6,7 +6,7 @@
 #SBATCH --job-name=Hispaniola
 #SBATCH --output=/home/p287218/relaxedDAISIE/logs/Hispaniola/Hispaniola_models%a.log
 #SBATCH --array=0-8
-#SBATCH --mem=5GB
+#SBATCH --mem=1GB
 
 mkdir -p inst/results/Hispaniola
 models=(cr_di cr_dd cr_di_no_lambda_a cr_dd_no_lambda_a rr_lambda_c_no_lambda_a \
