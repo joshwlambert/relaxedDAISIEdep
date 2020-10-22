@@ -12,4 +12,4 @@ mkdir -p inst/results/Canaries
 models=(cr_di cr_dd rr_lambda_c_di rr_lambda_c_dd rr_mu_di rr_mu_dd rr_k \
         rr_lambda_a_di rr_lambda_a_dd)
 
-sbatch /home/p287218/relaxedDAISIE/bash/Canaries_models/run_Canaries_${models[SLURM_ARRAY_TASK_ID]}.sh
+sbatch /data/p287218/relaxedDAISIE/bash/Canaries_models/run_Canaries_${models[SLURM_ARRAY_TASK_ID]}.sh

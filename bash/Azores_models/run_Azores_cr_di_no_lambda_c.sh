@@ -9,4 +9,4 @@
 #SBATCH --mem=1GB
 
 module load R
-Rscript /home/p287218/relaxedDAISIE/scripts/Azores_models/Azores_cr_di_no_lambda_c.R ${SLURM_ARRAY_TASK_ID}
+Rscript /data/p287218/relaxedDAISIE/scripts/Azores_models/Azores_cr_di_no_lambda_c.R ${SLURM_ARRAY_TASK_ID}
