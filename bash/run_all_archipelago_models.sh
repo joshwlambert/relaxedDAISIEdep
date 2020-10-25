@@ -14,4 +14,4 @@ models=(Aldabra_Group Azores Canaries Cape_Verde Chatham Comoros Galapagos \
         New_Caledonia New_Zealand Niue Norfolk Ogasawara Palau Reunion Samoa \
         SaoTome_Principe Seychelles_Inner Socorro)
 mkdir -p inst/results/${models[SLURM_ARRAY_TASK_ID]}
-sbatch /home/p287218/relaxedDAISIE/bash/${models[SLURM_ARRAY_TASK_ID]}/run_${models[SLURM_ARRAY_TASK_ID]}_models.sh
+sbatch /data/p287218/relaxedDAISIE/bash/${models[SLURM_ARRAY_TASK_ID]}/run_${models[SLURM_ARRAY_TASK_ID]}_models.sh

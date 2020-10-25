@@ -9,4 +9,4 @@
 #SBATCH --mem=1GB
 
 module load R
-Rscript /home/p287218/relaxedDAISIE/scripts/Galapagos_models/Galapagos_cr_dd_no_lambda_a.R ${SLURM_ARRAY_TASK_ID}
+Rscript /data/p287218/relaxedDAISIE/scripts/Galapagos_models/Galapagos_cr_dd_no_lambda_a.R ${SLURM_ARRAY_TASK_ID}

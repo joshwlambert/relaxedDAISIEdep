@@ -9,4 +9,4 @@
 #SBATCH --mem=1GB
 
 module load R
-Rscript /home/p287218/relaxedDAISIE/scripts/New_Caledonia_models/New_Caledonia_cr_di.R ${SLURM_ARRAY_TASK_ID}
+Rscript /data/p287218/relaxedDAISIE/scripts/New_Caledonia_models/New_Caledonia_cr_di.R ${SLURM_ARRAY_TASK_ID}

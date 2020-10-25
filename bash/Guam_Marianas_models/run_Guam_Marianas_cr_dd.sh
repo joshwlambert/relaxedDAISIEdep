@@ -9,4 +9,4 @@
 #SBATCH --mem=1GB
 
 module load R
-Rscript /home/p287218/relaxedDAISIE/scripts/Guam_Marianas_models/Guam_Marianas_cr_dd.R ${SLURM_ARRAY_TASK_ID}
+Rscript /data/p287218/relaxedDAISIE/scripts/Guam_Marianas_models/Guam_Marianas_cr_dd.R ${SLURM_ARRAY_TASK_ID}

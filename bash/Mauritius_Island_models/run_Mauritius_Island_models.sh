@@ -11,4 +11,4 @@
 mkdir -p inst/results/Mauritius_Island
 models=(cr_di cr_dd cr_di_no_lambda_c cr_dd_no_lambda_c)
 
-sbatch /home/p287218/relaxedDAISIE/bash/Mauritius_Island_models/run_Mauritius_Island_${models[SLURM_ARRAY_TASK_ID]}.sh
+sbatch /data/p287218/relaxedDAISIE/bash/Mauritius_Island_models/run_Mauritius_Island_${models[SLURM_ARRAY_TASK_ID]}.sh
