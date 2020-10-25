@@ -9,6 +9,9 @@ calc_max_loglik <- function(archipelago,
     system.file(package = "relaxedDAISIE"),
     "results", archipelago),
     pattern = paste(model, "_[[:digit:]]", sep = ""))
+  if (length(file_names) == 0) {
+    stop("No files exist for this archipelago or model")
+  }
   files <- paste(file.path(system.file(package = "relaxedDAISIE"),
                            "results", archipelago, file_names, sep = ""))
   results <- lapply(files, readRDS)
