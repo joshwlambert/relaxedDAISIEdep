@@ -45,7 +45,7 @@ archipelago_analysis <- function(data,
   } else {
     cs_version <- 1
   }
-  suppressMessages(
+  suppressWarnings(suppressMessages(
     init_ml <- DAISIE::DAISIE_ML_CS(
       datalist = data,
       initparsopt = init_param_set[idparsopt],
@@ -56,9 +56,9 @@ archipelago_analysis <- function(data,
       optimmethod = "simplex",
       CS_version = cs_version,
       cond = 5)
-  )
+  ))
 
-  suppressMessages(
+  suppressWarnings(suppressMessages(
     ml <- DAISIE::DAISIE_ML_CS(
       datalist = data,
       initparsopt = as.numeric(init_ml)[idparsopt],
@@ -69,7 +69,7 @@ archipelago_analysis <- function(data,
       optimmethod = "simplex",
       CS_version = cs_version,
       cond = 5)
-  )
+  ))
 
   k <- length(idparsopt)
   m <- data[[1]]$not_present + (length(data) - 1)
