@@ -4,7 +4,7 @@ data(Palau)
 
 relaxedDAISIE::archipelago_analysis(data = Palau,
                                     archipelago = "Palau",
-                                    model = "rr_mu_dd_no_lambda_c",
+                                    model = "rr_lambda_a_dd_no_lambda_c",
                                     idparsopt = 2:6,
                                     parsfix = 0,
                                     idparsfix = 1,
