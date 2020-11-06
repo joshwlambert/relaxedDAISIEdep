@@ -25,5 +25,5 @@ Suggests:
     testit,
     utils
 Remotes:
-     rsetienne/DAISIE@Newton
+     rsetienne/DAISIE@develop
 VignetteBuilder: knitr
