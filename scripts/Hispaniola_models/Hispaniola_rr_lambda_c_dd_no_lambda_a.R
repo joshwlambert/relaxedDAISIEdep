@@ -4,7 +4,7 @@ data(Hispaniola)
 
 relaxedDAISIE::archipelago_analysis(data = Hispaniola,
                                     archipelago = "Hispaniola",
-                                    model = "rr_k",
+                                    model = "rr_lambda_c_dd_no_lambda_a",
                                     idparsopt = c(1, 2, 3, 4, 6),
                                     parsfix = 0,
                                     idparsfix = 5,
