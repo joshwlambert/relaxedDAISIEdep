@@ -2,7 +2,6 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^scripts$
-^\.travis\.yml$
-^appveyor\.yml$
 ^bash$
 ^codecov\.yml$
+^\.github$
