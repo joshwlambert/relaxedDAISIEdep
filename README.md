@@ -6,6 +6,7 @@ title: relaxedDAISIE
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![R build status](https://github.com/joshwlambert/relaxedDAISIE/workflows/R-CMD-check/badge.svg)](https://github.com/joshwlambert/relaxedDAISIE/actions)
 [![Codecov test coverage](https://codecov.io/gh/joshwlambert/relaxedDAISIE/branch/master/graph/badge.svg)](https://codecov.io/gh/joshwlambert/relaxedDAISIE?branch=master)
+[![Dependencies](https://tinyverse.netlify.com/badge/relaxedDAISIE)](https://github.com/joshwlambert/relaxedDAISIE/)
 <!-- badges: end -->
 
 relaxedDAISIE is a package that contains all the code to reproduce Lambert
