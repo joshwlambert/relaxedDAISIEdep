@@ -33,7 +33,8 @@ default_params_doc(
   lik_ratio_0,
   lik_ratio_model_1,
   lik_ratio_model_2,
-  lik_ratio_alpha
+  lik_ratio_alpha,
+  verbose
 )
 }
 \arguments{
@@ -104,6 +105,8 @@ fitting two models to a data set simulated under model 2}
 
 \item{lik_ratio_alpha}{The likelihood ratio associated with the significance
 of the likelihood ratio test}
+
+\item{verbose}{logical determining whether function prints}
 }
 \description{
 Document to inherit the function documentation

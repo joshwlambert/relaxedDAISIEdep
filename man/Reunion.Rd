@@ -25,13 +25,9 @@ An object of class \code{list} of length 14:
 Valente et al. (2020) doi:
 \url{https://doi.org/10.1038/s41586-020-2022-5}
 }
-\usage{
-Reunion
-}
 \description{
 A dataset containing the age of the archipelago, number of species on
 mainland not present on the island, and each colonising clade with
 colonisation and branching times, endemicity status, missing species, and the
 type of species.
 }
-\keyword{datasets}

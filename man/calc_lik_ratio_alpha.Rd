@@ -18,7 +18,3 @@ numeric
 Calculates the likelihood ratio significance value (lik_ratio_alpha) at
 significance threshold of 0.05.
 }
-\examples{
-output <- calc_lik_ratio_alpha(
-lik_ratio_model_1 = runif(1000, 0, 100))
-}

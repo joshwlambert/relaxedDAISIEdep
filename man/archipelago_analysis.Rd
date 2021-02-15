@@ -43,20 +43,9 @@ if relaxed_model is TRUE}
 
 \item{save_output}{boolean determining whether the output is saved or
 returned}
+
+\item{verbose}{logical determining whether function prints}
 }
 \description{
 Runs the maximum likelihood optimisation for a given DAISIE model
-}
-\examples{
-output <- archipelago_analysis(
-data = Aldabra_Group,
-archipelago = "Aldabra_Group",
-model = "cr_di",
-idparsopt = c(1, 2, 3, 4, 5),
-parsfix = NULL,
-idparsfix = NULL,
-ddmodel = 0,
-seed = 1,
-relaxed_model = FALSE,
-save_output = FALSE)
 }

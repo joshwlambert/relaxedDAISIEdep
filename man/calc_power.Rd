@@ -23,7 +23,3 @@ Calculates the power for the bootstrapping likelihood ratio test from a
 single value of the likelihood ratio significance value (lik_ratio_alpha)
 and a set of likelihood ratios (lik_ratio_model_2).
 }
-\examples{
-output <- calc_power(lik_ratio_alpha = 5,
-                               lik_ratio_model_2 = runif(1000, 0, 100))
-}

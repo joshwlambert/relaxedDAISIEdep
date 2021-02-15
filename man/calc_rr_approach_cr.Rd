@@ -24,6 +24,3 @@ Calculates the difference in likelihood for a clade (single lineage or
 radiation) across different standard deviations of gamma distribution of
 the relaxed-rate DAISIE model.
 }
-\examples{
-calc_rr_approach_cr(parameter = "cladogenesis", clade = "lineage")
-}

@@ -1,7 +1,8 @@
 #' @name Aldabra_Group
 #' @title Birds of Aldabra Group archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -27,8 +28,9 @@ NULL
 
 #' @name Azores
 #' @title Birds of Azores archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -54,8 +56,9 @@ NULL
 
 #' @name Azores_alt_m
 #' @title Birds of Azores archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -81,8 +84,9 @@ NULL
 
 #' @name Canaries
 #' @title Birds of the Canary Islands
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -108,8 +112,9 @@ NULL
 
 #' @name Canaries_alt_m
 #' @title Birds of the Canary Islands with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -135,8 +140,9 @@ NULL
 
 #' @name Cape_Verde
 #' @title Birds of the Cape Verde archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -163,8 +169,9 @@ NULL
 #' @name Cape_Verde_alt_m
 #' @title Birds of the Cape Verde archipelago with alternative mainland species pool
 #' size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -190,8 +197,9 @@ NULL
 
 #' @name Chatham
 #' @title Birds of Chatham archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -217,8 +225,9 @@ NULL
 
 #' @name Chatham_alt_m
 #' @title Birds of Chatham archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -244,8 +253,9 @@ NULL
 
 #' @name Comoros
 #' @title Birds of Comoros archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -271,8 +281,9 @@ NULL
 
 #' @name Galapagos
 #' @title Birds of the Galapagos archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -299,8 +310,9 @@ NULL
 #' @name Galapagos_alt_m
 #' @title Birds of the Galapagos archipelago with alternative mainland species pool
 #' size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -326,8 +338,9 @@ NULL
 
 #' @name Greater_Antilles
 #' @title Bats of the Greater Antilles archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -354,8 +367,9 @@ NULL
 #' @name Greater_Antilles_alt_m
 #' @title Bats of the Greater Antilles archipelago  with alternative mainland species
 #' pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -381,8 +395,9 @@ NULL
 
 #' @name Guadalupe
 #' @title Birds of Guadalupe
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -408,8 +423,9 @@ NULL
 
 #' @name Guadalupe_alt_m
 #' @title Birds of Guadalupe with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -435,8 +451,9 @@ NULL
 
 #' @name Guam_Marianas
 #' @title Birds of Marianas with Guam archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -463,8 +480,9 @@ NULL
 #' @name Guam_Marianas_alt_m
 #' @title Birds of Marianas with Guam archipelago with alternative mainland species
 #' pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -490,8 +508,9 @@ NULL
 
 #' @name Hawaii
 #' @title Birds of the Hawaii archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -517,8 +536,9 @@ NULL
 
 #' @name Hawaii_alt_m
 #' @title Birds of the Hawaii archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -544,8 +564,9 @@ NULL
 
 #' @name Hispaniola
 #' @title Frogs of Hispaniola
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -570,8 +591,9 @@ NULL
 
 #' @name Juan_Fernandez
 #' @title Birds of Juan Fernandez archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -598,8 +620,9 @@ NULL
 #' @name Juan_Fernandez_alt_m
 #' @title Birds of Juan Fernandez archipelago with alternative mainland species pool
 #' size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -625,8 +648,9 @@ NULL
 
 #' @name Lord_Howe
 #' @title Birds of Lord Howe archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -652,8 +676,9 @@ NULL
 
 #' @name Lord_Howe_alt_m
 #' @title Birds of Lord Howe archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -679,8 +704,9 @@ NULL
 
 #' @name Madeira
 #' @title Birds of the Madeira archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -706,8 +732,9 @@ NULL
 
 #' @name Madeira_alt_m
 #' @title Birds of the Madeira archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -733,8 +760,9 @@ NULL
 
 #' @name Marquesas
 #' @title Birds of the Marquesas archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -761,8 +789,9 @@ NULL
 #' @name Marquesas_alt_m
 #' @title Birds of the Marquesas archipelago with alternative mainland species pool
 #' size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -788,8 +817,9 @@ NULL
 
 #' @name Mauritius_Island
 #' @title Birds of Mauritius Island
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -815,8 +845,9 @@ NULL
 
 #' @name Mauritius_Island_alt_m
 #' @title Birds of Mauritius Island with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -842,8 +873,9 @@ NULL
 
 #' @name New_Caledonia
 #' @title Birds of the New Caledonia archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -870,8 +902,9 @@ NULL
 #' @name New_Caledonia_alt_m
 #' @title Birds of the New Caledonia archipelago with alternative mainland species
 #' pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -897,8 +930,9 @@ NULL
 
 #' @name New_Zealand
 #' @title Birds of New Zealand
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -924,8 +958,9 @@ NULL
 
 #' @name Niue
 #' @title Birds of Niue
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -951,8 +986,9 @@ NULL
 
 #' @name Niue_alt_m
 #' @title Birds of Niue with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -978,8 +1014,9 @@ NULL
 
 #' @name Norfolk
 #' @title Birds of the Norfolk archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1005,8 +1042,9 @@ NULL
 
 #' @name Norfolk_alt_m
 #' @title Birds of the Norfolk archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1032,8 +1070,9 @@ NULL
 
 #' @name Ogasawara
 #' @title Birds of Ogasawara archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1059,8 +1098,9 @@ NULL
 
 #' @name Ogasawara_alt_m
 #' @title Birds of Ogasawara archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1086,8 +1126,9 @@ NULL
 
 #' @name Palau
 #' @title Birds of the Palau archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1113,8 +1154,9 @@ NULL
 
 #' @name Palau_alt_m
 #' @title Birds of the Palau archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1140,8 +1182,9 @@ NULL
 
 #' @name Reunion
 #' @title Birds of Reunion
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1167,8 +1210,9 @@ NULL
 
 #' @name Reunion_alt_m
 #' @title Birds of Reunion with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1194,8 +1238,9 @@ NULL
 
 #' @name Samoa
 #' @title Birds of the Samoa archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1221,8 +1266,9 @@ NULL
 
 #' @name Samoa_alt_m
 #' @title Birds of the Samoa archipelago with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1248,8 +1294,9 @@ NULL
 
 #' @name SaoTome_Principe
 #' @title Birds of the Sao Tome and Principe archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1276,8 +1323,9 @@ NULL
 #' @name SaoTome_Principe_alt_m
 #' @title Birds of the Sao Tome and Principe archipelago with alternative mainland
 #' species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1303,8 +1351,9 @@ NULL
 
 #' @name Seychelles_Inner
 #' @title Birds of the Seychelles Inner archipelago
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1330,8 +1379,9 @@ NULL
 
 #' @name Socorro
 #' @title Birds of Socorro
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.
@@ -1357,8 +1407,9 @@ NULL
 
 #' @name Socorro_alt_m
 #' @title Birds of Socorro with alternative mainland species pool size
+#' @docType data
 #'
-#' A dataset containing the age of the archipelago, number of species on
+#' @description A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
 #' colonisation and branching times, endemicity status, missing species, and the
 #' type of species.

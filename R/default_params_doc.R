@@ -38,6 +38,7 @@
 #' fitting two models to a data set simulated under model 2
 #' @param lik_ratio_alpha The likelihood ratio associated with the significance
 #' of the likelihood ratio test
+#' @param verbose logical determining whether function prints
 default_params_doc <- function(
   data,
   archipelago,
@@ -67,7 +68,8 @@ default_params_doc <- function(
   lik_ratio_0,
   lik_ratio_model_1,
   lik_ratio_model_2,
-  lik_ratio_alpha
+  lik_ratio_alpha,
+  verbose
 ) {
   # Nothing
 }

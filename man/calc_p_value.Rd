@@ -23,7 +23,3 @@ Calculates the p value for the bootstrapping likelihood ratio test from a
 single value of likelihood ratio zeor (lik_ratio_0) and a set of likelihood
 ratios (likelihood_ratio_model_1).
 }
-\examples{
-output <- calc_p_value(lik_ratio_0 = 10,
-                                 lik_ratio_model_1 = runif(1000, 0, 100))
-}
