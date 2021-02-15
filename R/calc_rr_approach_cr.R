@@ -11,7 +11,6 @@
 #' @return A list of two numeric vectors
 #' @export
 #'
-#' @examples calc_rr_approach_cr(parameter = "cladogenesis", clade = "lineage")
 calc_rr_approach_cr <- function(parameter = "cladogenesis",
                                 clade = "lineage") {
   pars1 <- c(2.500, 2.700, 20.000, 0.009, 1.010)

@@ -7,8 +7,6 @@
 #' @return numeric
 #' @export
 #'
-#' @examples output <- calc_p_value(lik_ratio_0 = 10,
-#'                                  lik_ratio_model_1 = runif(1000, 0, 100))
 calc_p_value <- function(lik_ratio_0,
                          lik_ratio_model_1) {
   testit::assert(is.numeric(lik_ratio_0))

@@ -7,8 +7,6 @@
 #' @return numeric
 #' @export
 #'
-#' @examples output <- calc_power(lik_ratio_alpha = 5,
-#'                                lik_ratio_model_2 = runif(1000, 0, 100))
 calc_power <- function(lik_ratio_alpha,
                        lik_ratio_model_2) {
   testit::assert(is.numeric(lik_ratio_alpha))

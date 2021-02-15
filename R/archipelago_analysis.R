@@ -4,17 +4,6 @@
 #'
 #' @export
 #'
-#' @examples output <- archipelago_analysis(
-#' data = Aldabra_Group,
-#' archipelago = "Aldabra_Group",
-#' model = "cr_di",
-#' idparsopt = c(1, 2, 3, 4, 5),
-#' parsfix = NULL,
-#' idparsfix = NULL,
-#' ddmodel = 0,
-#' seed = 1,
-#' relaxed_model = FALSE,
-#' save_output = FALSE)
 archipelago_analysis <- function(data,
                                  archipelago,
                                  model,
@@ -25,7 +14,8 @@ archipelago_analysis <- function(data,
                                  seed,
                                  relaxed_model,
                                  relaxed_par = NULL,
-                                 save_output = TRUE) {
+                                 save_output = TRUE,
+                                 verbose = TRUE) {
   set.seed(seed = seed,
            kind = "Mersenne-Twister",
            normal.kind = "Inversion",
