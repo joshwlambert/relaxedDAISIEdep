@@ -15,7 +15,8 @@ archipelago_analysis(
   seed,
   relaxed_model,
   relaxed_par = NULL,
-  save_output = TRUE
+  save_output = TRUE,
+  verbose = TRUE
 )
 }
 \arguments{
