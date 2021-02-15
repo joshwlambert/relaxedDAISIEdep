@@ -1,4 +1,5 @@
-#' Birds of Aldabra Group archipelago
+#' @name Aldabra_Group
+#' @title Birds of Aldabra Group archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -22,9 +23,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Aldabra_Group"
+NULL
 
-#' Birds of Azores archipelago
+#' @name Azores
+#' @title Birds of Azores archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -48,9 +50,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Azores"
+NULL
 
-#' Birds of Azores archipelago with alternative mainland species pool size
+#' @name Azores_alt_m
+#' @title Birds of Azores archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -74,9 +77,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Azores_alt_m"
+NULL
 
-#' Birds of the Canary Islands
+#' @name Canaries
+#' @title Birds of the Canary Islands
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -100,9 +104,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Canaries"
+NULL
 
-#' Birds of the Canary Islands with alternative mainland species pool size
+#' @name Canaries_alt_m
+#' @title Birds of the Canary Islands with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -126,9 +131,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Canaries_alt_m"
+NULL
 
-#' Birds of the Cape Verde archipelago
+#' @name Cape_Verde
+#' @title Birds of the Cape Verde archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -152,9 +158,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Cape_Verde"
+NULL
 
-#' Birds of the Cape Verde archipelago with alternative mainland species pool
+#' @name Cape_Verde_alt_m
+#' @title Birds of the Cape Verde archipelago with alternative mainland species pool
 #' size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -179,9 +186,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Cape_Verde_alt_m"
+NULL
 
-#' Birds of Chatham archipelago
+#' @name Chatham
+#' @title Birds of Chatham archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -205,9 +213,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Chatham"
+NULL
 
-#' Birds of Chatham archipelago with alternative mainland species pool size
+#' @name Chatham_alt_m
+#' @title Birds of Chatham archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -231,9 +240,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Chatham_alt_m"
+NULL
 
-#' Birds of Comoros archipelago
+#' @name Comoros
+#' @title Birds of Comoros archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -257,9 +267,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Comoros"
+NULL
 
-#' Birds of the Galapagos archipelago
+#' @name Galapagos
+#' @title Birds of the Galapagos archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -283,9 +294,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Galapagos"
+NULL
 
-#' Birds of the Galapagos archipelago with alternative mainland species pool
+#' @name Galapagos_alt_m
+#' @title Birds of the Galapagos archipelago with alternative mainland species pool
 #' size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -310,9 +322,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Galapagos_alt_m"
+NULL
 
-#' Bats of the Greater Antilles archipelago
+#' @name Greater_Antilles
+#' @title Bats of the Greater Antilles archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -336,9 +349,10 @@
 #' }
 #' @source Valente et al. (2017) doi:
 #' \url{https://doi.org/10.1038/s41559-016-0026}
-"Greater_Antilles"
+NULL
 
-#' Bats of the Greater Antilles archipelago  with alternative mainland species
+#' @name Greater_Antilles_alt_m
+#' @title Bats of the Greater Antilles archipelago  with alternative mainland species
 #' pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -363,9 +377,10 @@
 #' }
 #' @source Valente et al. (2017) doi:
 #' \url{https://doi.org/10.1038/s41559-016-0026}
-"Greater_Antilles_alt_m"
+NULL
 
-#' Birds of Guadalupe
+#' @name Guadalupe
+#' @title Birds of Guadalupe
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -389,9 +404,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Guadalupe"
+NULL
 
-#' Birds of Guadalupe with alternative mainland species pool size
+#' @name Guadalupe_alt_m
+#' @title Birds of Guadalupe with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -415,9 +431,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Guadalupe_alt_m"
+NULL
 
-#' Birds of Marianas with Guam archipelago
+#' @name Guam_Marianas
+#' @title Birds of Marianas with Guam archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -441,9 +458,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Guam_Marianas"
+NULL
 
-#' Birds of Marianas with Guam archipelago with alternative mainland species
+#' @name Guam_Marianas_alt_m
+#' @title Birds of Marianas with Guam archipelago with alternative mainland species
 #' pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -468,9 +486,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Guam_Marianas_alt_m"
+NULL
 
-#' Birds of the Hawaii archipelago
+#' @name Hawaii
+#' @title Birds of the Hawaii archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -494,9 +513,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Hawaii"
+NULL
 
-#' Birds of the Hawaii archipelago with alternative mainland species pool size
+#' @name Hawaii_alt_m
+#' @title Birds of the Hawaii archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -520,9 +540,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Hawaii_alt_m"
+NULL
 
-#' Frogs of Hispaniola
+#' @name Hispaniola
+#' @title Frogs of Hispaniola
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -545,9 +566,10 @@
 #'   ...
 #' }
 #' @source Etienne et al. (in prep)
-"Hispaniola"
+NULL
 
-#' Birds of Juan Fernandez archipelago
+#' @name Juan_Fernandez
+#' @title Birds of Juan Fernandez archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -571,9 +593,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Juan_Fernandez"
+NULL
 
-#' Birds of Juan Fernandez archipelago with alternative mainland species pool
+#' @name Juan_Fernandez_alt_m
+#' @title Birds of Juan Fernandez archipelago with alternative mainland species pool
 #' size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -598,9 +621,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Juan_Fernandez_alt_m"
+NULL
 
-#' Birds of Lord Howe archipelago
+#' @name Lord_Howe
+#' @title Birds of Lord Howe archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -624,9 +648,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Lord_Howe"
+NULL
 
-#' Birds of Lord Howe archipelago with alternative mainland species pool size
+#' @name Lord_Howe_alt_m
+#' @title Birds of Lord Howe archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -650,9 +675,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Lord_Howe_alt_m"
+NULL
 
-#' Birds of the Madeira archipelago
+#' @name Madeira
+#' @title Birds of the Madeira archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -676,9 +702,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Madeira"
+NULL
 
-#' Birds of the Madeira archipelago with alternative mainland species pool size
+#' @name Madeira_alt_m
+#' @title Birds of the Madeira archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -702,9 +729,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Madeira_alt_m"
+NULL
 
-#' Birds of the Marquesas archipelago
+#' @name Marquesas
+#' @title Birds of the Marquesas archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -728,9 +756,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Marquesas"
+NULL
 
-#' Birds of the Marquesas archipelago with alternative mainland species pool
+#' @name Marquesas_alt_m
+#' @title Birds of the Marquesas archipelago with alternative mainland species pool
 #' size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -755,9 +784,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Marquesas_alt_m"
+NULL
 
-#' Birds of Mauritius Island
+#' @name Mauritius_Island
+#' @title Birds of Mauritius Island
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -781,9 +811,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Mauritius_Island"
+NULL
 
-#' Birds of Mauritius Island with alternative mainland species pool size
+#' @name Mauritius_Island_alt_m
+#' @title Birds of Mauritius Island with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -807,9 +838,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Mauritius_Island_alt_m"
+NULL
 
-#' Birds of the New Caledonia archipelago
+#' @name New_Caledonia
+#' @title Birds of the New Caledonia archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -833,9 +865,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"New_Caledonia"
+NULL
 
-#' Birds of the New Caledonia archipelago with alternative mainland species
+#' @name New_Caledonia_alt_m
+#' @title Birds of the New Caledonia archipelago with alternative mainland species
 #' pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -860,9 +893,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"New_Caledonia_alt_m"
+NULL
 
-#' Birds of New Zealand
+#' @name New_Zealand
+#' @title Birds of New Zealand
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -886,9 +920,10 @@
 #' }
 #' @source Valente et al. (2019) doi:
 #' \url{https://doi.org/10.1016/j.cub.2019.06.058}
-"New_Zealand"
+NULL
 
-#' Birds of Niue
+#' @name Niue
+#' @title Birds of Niue
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -912,9 +947,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Niue"
+NULL
 
-#' Birds of Niue with alternative mainland species pool size
+#' @name Niue_alt_m
+#' @title Birds of Niue with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -938,9 +974,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Niue_alt_m"
+NULL
 
-#' Birds of the Norfolk archipelago
+#' @name Norfolk
+#' @title Birds of the Norfolk archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -964,9 +1001,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Norfolk"
+NULL
 
-#' Birds of the Norfolk archipelago with alternative mainland species pool size
+#' @name Norfolk_alt_m
+#' @title Birds of the Norfolk archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -990,9 +1028,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Norfolk_alt_m"
+NULL
 
-#' Birds of Ogasawara archipelago
+#' @name Ogasawara
+#' @title Birds of Ogasawara archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1016,9 +1055,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Ogasawara"
+NULL
 
-#' Birds of Ogasawara archipelago with alternative mainland species pool size
+#' @name Ogasawara_alt_m
+#' @title Birds of Ogasawara archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1042,9 +1082,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Ogasawara_alt_m"
+NULL
 
-#' Birds of the Palau archipelago
+#' @name Palau
+#' @title Birds of the Palau archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1068,9 +1109,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Palau"
+NULL
 
-#' Birds of the Palau archipelago with alternative mainland species pool size
+#' @name Palau_alt_m
+#' @title Birds of the Palau archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1094,9 +1136,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Palau_alt_m"
+NULL
 
-#' Birds of Reunion
+#' @name Reunion
+#' @title Birds of Reunion
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1120,9 +1163,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Reunion"
+NULL
 
-#' Birds of Reunion with alternative mainland species pool size
+#' @name Reunion_alt_m
+#' @title Birds of Reunion with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1146,9 +1190,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Reunion_alt_m"
+NULL
 
-#' Birds of the Samoa archipelago
+#' @name Samoa
+#' @title Birds of the Samoa archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1172,9 +1217,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Samoa"
+NULL
 
-#' Birds of the Samoa archipelago with alternative mainland species pool size
+#' @name Samoa_alt_m
+#' @title Birds of the Samoa archipelago with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1198,9 +1244,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Samoa_alt_m"
+NULL
 
-#' Birds of the Sao Tome and Principe archipelago
+#' @name SaoTome_Principe
+#' @title Birds of the Sao Tome and Principe archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1224,9 +1271,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"SaoTome_Principe"
+NULL
 
-#' Birds of the Sao Tome and Principe archipelago with alternative mainland
+#' @name SaoTome_Principe_alt_m
+#' @title Birds of the Sao Tome and Principe archipelago with alternative mainland
 #' species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
@@ -1251,9 +1299,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"SaoTome_Principe_alt_m"
+NULL
 
-#' Birds of the Seychelles Inner archipelago
+#' @name Seychelles_Inner
+#' @title Birds of the Seychelles Inner archipelago
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1277,9 +1326,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Seychelles_Inner"
+NULL
 
-#' Birds of Socorro
+#' @name Socorro
+#' @title Birds of Socorro
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1303,9 +1353,10 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Socorro"
+NULL
 
-#' Birds of Socorro with alternative mainland species pool size
+#' @name Socorro_alt_m
+#' @title Birds of Socorro with alternative mainland species pool size
 #'
 #' A dataset containing the age of the archipelago, number of species on
 #' mainland not present on the island, and each colonising clade with
@@ -1329,5 +1380,5 @@
 #' }
 #' @source Valente et al. (2020) doi:
 #' \url{https://doi.org/10.1038/s41586-020-2022-5}
-"Socorro_alt_m"
+NULL
 
