@@ -4,6 +4,9 @@
 #' @return String
 #' @export
 create_data <- function() {
+  archipelagos41 <- NULL
+  frogs_datalist <- NULL
+  Bats_GreaterAntilles <- NULL
   utils::data(archipelagos41, package = "DAISIE")
   utils::data(frogs_datalist, package = "DAISIE")
   utils::data(Bats_GreaterAntilles, package = "DAISIE")
@@ -54,6 +57,7 @@ create_data <- function() {
   Galapagos_alt_m[[1]]$not_present <- 500 - (length(Galapagos) - 1)
   save(Galapagos_alt_m, file = "data/Galapagos_alt_m.RData")
 
+  save(Bats_GreaterAntilles, file = "data/Greater_Antilles.RData")
   Greater_Antilles_alt_m <- Greater_Antilles
   Greater_Antilles_alt_m[[1]]$not_present <- 20 - (length(Greater_Antilles) - 1)
   save(Greater_Antilles_alt_m, file = "data/Greater_Antilles_alt_m.RData")
