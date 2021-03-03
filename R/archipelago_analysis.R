@@ -43,7 +43,6 @@ archipelago_analysis <- function(data,
       parsfix = parsfix,
       idparsfix = idparsfix,
       ddmodel = ddmodel,
-      optimmethod = "simplex",
       CS_version = cs_version,
       cond = 5)
   ))
@@ -56,7 +55,6 @@ archipelago_analysis <- function(data,
       parsfix = parsfix,
       idparsfix = idparsfix,
       ddmodel = ddmodel,
-      optimmethod = "simplex",
       CS_version = cs_version,
       cond = 5)
   ))
