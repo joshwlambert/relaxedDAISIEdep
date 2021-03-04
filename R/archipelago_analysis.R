@@ -26,7 +26,6 @@ archipelago_analysis <- function(data,
   init_param_set[5] <- stats::runif(1, 0.1, 2)
   init_param_set[6] <- stats::runif(1, 0.1, 1)
 
-  init_ml <- list()
   ml <- list()
 
   if (relaxed_model) {
