@@ -36,21 +36,9 @@ archipelago_analysis <- function(data,
     cs_version <- 1
   }
   suppressWarnings(suppressMessages(
-    init_ml <- DAISIE::DAISIE_ML_CS(
-      datalist = data,
-      initparsopt = init_param_set[idparsopt],
-      idparsopt = idparsopt,
-      parsfix = parsfix,
-      idparsfix = idparsfix,
-      ddmodel = ddmodel,
-      CS_version = cs_version,
-      cond = 5)
-  ))
-
-  suppressWarnings(suppressMessages(
     ml <- DAISIE::DAISIE_ML_CS(
       datalist = data,
-      initparsopt = as.numeric(init_ml)[idparsopt],
+      initparsopt = init_param_set[idparsopt],
       idparsopt = idparsopt,
       parsfix = parsfix,
       idparsfix = idparsfix,
