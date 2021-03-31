@@ -1,0 +1,32 @@
+---
+title: "Reproducibility"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Reproducibility}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(relaxedDAISIE)
+```
+
+1) The models are run on each data set. The bash script "submit_run_analyis"
+is called from DAISIEutils. This bash script requires the name of the data
+these are:
+
+\itemize{
+ \item Aldabra Group
+ \item Azores
+ \item Canaries
+ \item Cape Verde
+}
+
+2) 
