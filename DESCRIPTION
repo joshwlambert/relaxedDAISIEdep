@@ -22,9 +22,7 @@ Suggests:
     rmarkdown,
     remotes,
     testit,
-    utils,
-    DAISIEutils
+    utils
 Remotes:
-     rsetienne/DAISIE@v3.2.0,
-     tece-lab/DAISIEutils@develop
+     rsetienne/DAISIE@v3.2.0
 VignetteBuilder: knitr

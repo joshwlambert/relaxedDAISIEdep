@@ -2,14 +2,18 @@
 % Please edit documentation in R/default_params_doc.R
 \name{default_params_doc}
 \alias{default_params_doc}
-\title{Document to inherit the function documentation
- @param parameter String determining which parameter is relaxed
- @param clade String either "lineage" or "clade"}
+\title{Document to inherit the function documentation}
 \usage{
 default_params_doc(parameter, clade)
 }
+\arguments{
+\item{parameter}{A string defining which parameter to relaxed. Options are:
+\code{"cladogenesis"}, \code{"extinction"}, \code{"carrying_capacity"}, or
+\code{"anagenesis"}.}
+
+\item{clade}{A string defining whether to use single lineage or a radiation.
+Options are: \code{"lineage"} or \code{"radiation"}.}
+}
 \description{
 Document to inherit the function documentation
- @param parameter String determining which parameter is relaxed
- @param clade String either "lineage" or "clade"
 }
