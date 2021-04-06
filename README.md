@@ -6,8 +6,8 @@
 
 relaxedDAISIE is a package that contains the data for Lambert et al. (2021) doi:
 
-The package interfaces with the DAISIEutils R package which works with the 
-Peregrine High Performance Computer Cluster at the Universit of Groningen.
+The package interfaces with the DAISIEutils R package (github.com/tece-lab/DAISIEutils)
+which works with the Peregrine High Performance Computer Cluster at the Universit of Groningen.
 
 A guide to reproducing the analyses of Lambert et al. (2021) can be found in the
 vignette called 'Reproducibility'.
