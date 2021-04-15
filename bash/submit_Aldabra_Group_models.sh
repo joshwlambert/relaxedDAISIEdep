@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --job-name=Aldabra_Group
-#SBATCH --output=logs/DAISIE/Aldabra_Group.log
+#SBATCH --output=logs/Aldabra_Group.log
 #SBATCH --mem=5GB
 #SBATCH --partition=gelifes
 
