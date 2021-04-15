@@ -9,5 +9,5 @@
 
 sbatch DAISIEutils/bash/submit_run_daisie_ml.sh Aldabra_Group cr_di relaxedDAISIE 5
 
-sbatch --dependency=singleton --job-name=DAISIE DAISIEutils/bash/submit_run_daisie_ml.sh Aldabra_Group_cr_dd relaxedDAISIE 5
+sbatch --dependency=singleton --job-name=DAISIE DAISIEutils/bash/submit_run_daisie_ml.sh Aldabra_Group cr_dd relaxedDAISIE 5
 
