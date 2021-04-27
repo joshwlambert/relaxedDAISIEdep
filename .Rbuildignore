@@ -2,6 +2,6 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^scripts$
-^bash$
 ^codecov\.yml$
 ^\.github$
+^bash$
