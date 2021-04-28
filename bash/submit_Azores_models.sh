@@ -7,16 +7,16 @@
 #SBATCH --mem=5GB
 #SBATCH --partition=gelifes
 
-sbatch DAISIEutils/bash/submit_run_daisie_ml.sh Azores cr_di_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores cr_di_0lac relaxedDAISIE 5
 
-sbatch --dependency=singleton --job-name=daisie_ml DAISIEutils/bash/submit_run_daisie_ml.sh Azores cr_dd_0lac relaxedDAISIE 5
+sbatch --dependency=singleton --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores cr_dd_0lac relaxedDAISIE 5
 
-sbatch --dependency=singleton --job-name=daisie_ml DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_mu_di_0lac relaxedDAISIE 5
+sbatch --dependency=singleton --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_mu_di_0lac relaxedDAISIE 5
 
-sbatch --dependency=singleton --job-name=daisie_ml DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_mu_dd_0lac relaxedDAISIE 5
+sbatch --dependency=singleton --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_mu_dd_0lac relaxedDAISIE 5
 
-sbatch --dependency=singleton --job-name=daisie_ml DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_k_0lac relaxedDAISIE 5
+sbatch --dependency=singleton --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_k_0lac relaxedDAISIE 5
 
-sbatch --dependency=singleton --job-name=daisie_ml DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_laa_di_0lac relaxedDAISIE 5
+sbatch --dependency=singleton --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_laa_di_0lac relaxedDAISIE 5
 
-sbatch --dependency=singleton --job-name=daisie_ml DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_laa_dd_0lac relaxedDAISIE 5
+sbatch --dependency=singleton --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_laa_dd_0lac relaxedDAISIE 5
