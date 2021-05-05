@@ -32,5 +32,3 @@ sbatch --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_l
 sleep 5
 
 sbatch --job-name=ml_Azores DAISIEutils/bash/submit_run_daisie_ml.sh Azores rr_laa_dd_0lac relaxedDAISIE 5
-
-sleep 5

@@ -32,5 +32,3 @@ sbatch --job-name=ml_Chatham DAISIEutils/bash/submit_run_daisie_ml.sh Chatham rr
 sleep 5
 
 sbatch --job-name=ml_Chatham DAISIEutils/bash/submit_run_daisie_ml.sh Chatham rr_laa_dd_0lac relaxedDAISIE 5
-
-sleep 5
