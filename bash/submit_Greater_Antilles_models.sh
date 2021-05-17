@@ -7,36 +7,36 @@
 #SBATCH --mem=5GB
 #SBATCH --partition=gelifes
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles cr_di relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles cr_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles cr_dd relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles cr_dd relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles rr_lac_di relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles rr_lac_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles rr_lac_dd relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles rr_lac_dd relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles rr_mu_di relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles rr_mu_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles rr_mu_dd relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles rr_mu_dd relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles rr_k relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles rr_k relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles rr_laa_di relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles rr_laa_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml.sh Greater_Antilles rr_laa_dd relaxedDAISIE 5
+sbatch --job-name=ml_Greater_Antilles DAISIEutils/bash/submit_run_daisie_ml_long.sh Greater_Antilles rr_laa_dd relaxedDAISIE 5

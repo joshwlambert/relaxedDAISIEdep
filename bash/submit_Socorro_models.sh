@@ -7,28 +7,28 @@
 #SBATCH --mem=5GB
 #SBATCH --partition=gelifes
 
-sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml.sh Socorro cr_di_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml_long.sh Socorro cr_di_0lac relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml.sh Socorro cr_dd_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml_long.sh Socorro cr_dd_0lac relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml.sh Socorro rr_mu_di_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml_long.sh Socorro rr_mu_di_0lac relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml.sh Socorro rr_mu_dd_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml_long.sh Socorro rr_mu_dd_0lac relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml.sh Socorro rr_k_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml_long.sh Socorro rr_k_0lac relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml.sh Socorro rr_laa_di_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml_long.sh Socorro rr_laa_di_0lac relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml.sh Socorro rr_laa_dd_0lac relaxedDAISIE 5
+sbatch --job-name=ml_Socorro DAISIEutils/bash/submit_run_daisie_ml_long.sh Socorro rr_laa_dd_0lac relaxedDAISIE 5

@@ -7,36 +7,36 @@
 #SBATCH --mem=5GB
 #SBATCH --partition=gelifes
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia cr_di relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia cr_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia cr_dd relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia cr_dd relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia rr_lac_di relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia rr_lac_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia rr_lac_dd relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia rr_lac_dd relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia rr_mu_di relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia rr_mu_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia rr_mu_dd relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia rr_mu_dd relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia rr_k relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia rr_k relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia rr_laa_di relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia rr_laa_di relaxedDAISIE 5
 
 sleep 5
 
-sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml.sh New_Caledonia rr_laa_dd relaxedDAISIE 5
+sbatch --job-name=ml_New_Caledonia DAISIEutils/bash/submit_run_daisie_ml_long.sh New_Caledonia rr_laa_dd relaxedDAISIE 5
