@@ -113,15 +113,15 @@ test_that("calc_rr_approach_cr anagenesis lineage produces correct output", {
 
 test_that("calc_rr_approach_cr cladogenesis radiation produces correct
           output", {
-    skip("WIP")
-    delta_loglik <- calc_rr_approach_cr(parameter = "cladogenesis",
-                                        clade = "radiation")
-    testthat::expect_length(delta_loglik, 2)
-    testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
-    testthat::expect_true(is.numeric(delta_loglik$sd))
-    testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
-    testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
-    testthat::expect_equal(
+    delta_loglik <- calc_rr_approach_cr(
+      parameter = "cladogenesis",
+      clade = "radiation")
+    expect_length(delta_loglik, 2)
+    expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
+    expect_true(is.numeric(delta_loglik$sd))
+    expect_true(is.numeric(delta_loglik$delta_likelihood))
+    expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
+    expect_equal(
       delta_loglik$delta_likelihood,
       c(0.150030423453071, 0.572822017860771, 1.195231445574999,
         1.922155267819285, 2.665766073888195, 3.365165314558464,
@@ -143,15 +143,15 @@ test_that("calc_rr_approach_cr cladogenesis radiation produces correct
 })
 
 test_that("calc_rr_approach_cr extinction radiation produces correct output", {
-  skip("WIP")
-    delta_loglik <- calc_rr_approach_cr(parameter = "extinction",
-                                        clade = "radiation")
-    testthat::expect_length(delta_loglik, 2)
-    testthat::expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
-    testthat::expect_true(is.numeric(delta_loglik$sd))
-    testthat::expect_true(is.numeric(delta_loglik$delta_likelihood))
-    testthat::expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
-    testthat::expect_equal(
+    delta_loglik <- calc_rr_approach_cr(
+      parameter = "extinction",
+      clade = "radiation")
+    expect_length(delta_loglik, 2)
+    expect_equal(names(delta_loglik), c("sd", "delta_likelihood"))
+    expect_true(is.numeric(delta_loglik$sd))
+    expect_true(is.numeric(delta_loglik$delta_likelihood))
+    expect_equal(delta_loglik$sd, seq(0.1, 5.0, 0.1))
+    expect_equal(
       delta_loglik$delta_likelihood,
       c(0.0740239111733541, 0.2749207721938021, 0.5525359186609844,
         0.8543025852117907, 1.1430554739386878, 1.3998517450988288,
