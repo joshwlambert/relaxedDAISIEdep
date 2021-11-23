@@ -14,19 +14,25 @@ knitr::opts_chunk$set(
 )
 ```
 
+Required packages:
+
 ```{r setup}
 library(relaxedDAISIE)
+library(DAISIEutils)
 ```
 
-1) The models are run on each data set. The bash script "submit_run_analyis"
-is called from DAISIEutils. This bash script requires the name of the data
+High performance cluster computing (HPCC) protocol to reproduce results:
+
+1) Clone abovementioned repositories to HPCC
+
+2) Run DAISIEutils/bash/install_DAISIEutils.sh
+
+3) The models are run on each data set. The bash script "submit_run_daisie_ml"
+is called from DAISIEutils. The order in which the models are  This bash script requires the name of the data
 these are:
 
-\itemize{
- \item Aldabra Group
- \item Azores
- \item Canaries
- \item Cape Verde
-}
+ * relaxedDAISIE/bash/submit_Aldabra_Group_models.sh
+ * relaxedDAISIE/bash/submit_Azores_models.sh
+ * relaxedDAISIE/bash/submit_Canaries_models.sh
+ * relaxedDAISIE/Cape Verde
 
-2) 
