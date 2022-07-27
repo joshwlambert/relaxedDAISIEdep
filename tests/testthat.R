@@ -1,4 +1,4 @@
 library(testthat)
-library(relaxedDAISIE)
+library(relaxedDAISIEdep)
 
-test_check("relaxedDAISIE")
+test_check("relaxedDAISIEdep")
